@@ -4852,7 +4852,7 @@ self["list"].instance.setItemHeight(40)
 <widget name="timeline4" position="20,30" zPosition="1" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline5" position="20,30" zPosition="1" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="list" position="20,83" size="1178,675" itemHeight="75" Wrap="1" EntryFontWrap="no" foregroundColor="button" backgroundColor="#06161616" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" ServiceBackgroundColorSelected="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
-<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="0,83" size="3,673" zPosition="5" alphatest="blend"/>
+<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="20,83" size="3,673" zPosition="5" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
