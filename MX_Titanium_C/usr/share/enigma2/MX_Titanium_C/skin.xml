@@ -6796,4 +6796,13 @@ shadowOffset="2,2" font="Regular;56" valign="center" halign="right" >
 <widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
+<screen name="MessageBoxWizard" position="center,200" size="1300,720" title="Message">
+<widget name="wizard" pixmap="MX_Titanium_C/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="ErrorPixmap" pixmap="MX_Titanium_C/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
+<widget name="QuestionPixmap" pixmap="MX_Titanium_C/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
+<widget name="InfoPixmap" pixmap="MX_Titanium_C/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="text" position="20,120" size="820,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="list" position="20,380" size="820,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+</screen>
 </skin>
