@@ -246,7 +246,7 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_Titanium_C/recbg.png" position="1665,140" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_Titanium_C/rec_1.png" position="1665,970" size="30,30" zPosition="2" alphatest="blend"> 
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_Titanium_C/rec_1.png" position="1665,140" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="global.CurrentTime" render="Bhclock" position="1760,125" zPosition="2" size="48,48" transparent="1">
@@ -573,7 +573,7 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_Titanium_C/recbg.png" position="1665,140" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_Titanium_C/rec_1.png" position="1665,970" size="30,30" zPosition="2" alphatest="blend"> 
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_Titanium_C/rec_1.png" position="1665,140" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="global.CurrentTime" render="Bhclock" position="1760,125" zPosition="2" size="48,48" transparent="1">
