@@ -184,13 +184,20 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap position="1527,44" size="52,38" zPosition="1" pixmap="MX_Titanium_C/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="1" pixmap="MX_Titanium_C/ico_sd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsSD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="2" pixmap="MX_Titanium_C/ico_hd_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsHD</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="3" pixmap="MX_Titanium_C/ico_uhd_on.png" alphatest="blend">
 <convert type="ServiceInfo">Is4K</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="4" pixmap="MX_Titanium_C/ico_ip_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsStream</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_Titanium_C/icon_hbbtv_off.png" position="1590,44" zPosition="1" size="52,38" alphatest="blend"/>
@@ -517,13 +524,20 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap position="1527,44" size="52,38" zPosition="1" pixmap="MX_Titanium_C/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="1" pixmap="MX_Titanium_C/ico_sd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsSD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="2" pixmap="MX_Titanium_C/ico_hd_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsHD</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="3" pixmap="MX_Titanium_C/ico_uhd_on.png" alphatest="blend">
 <convert type="ServiceInfo">Is4K</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1527,44" size="52,38" zPosition="4" pixmap="MX_Titanium_C/ico_ip_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsStream</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_Titanium_C/icon_hbbtv_off.png" position="1590,44" zPosition="1" size="52,38" alphatest="blend"/>
