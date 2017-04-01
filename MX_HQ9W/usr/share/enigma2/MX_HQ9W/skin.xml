@@ -1,7 +1,7 @@
 <skin>
 <!--
 MX HQ9W
-Open black hole version: 0.6
+Open black hole version: 1.0
 skin author: Matrix10
 This skin is a Freeware. Everyone can modify and use it in other images,
 but don't tell it's yours, or your idea!		-->
@@ -182,12 +182,19 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_sd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsSD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsHD</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_ip_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsStream</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="4" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
 <convert type="ServiceInfo">Is4K</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
@@ -235,13 +242,22 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="EventTime">Duration</convert>
 <convert type="ClockToText">InMinutes</convert>
 </widget>
-<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,144" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/sub_1.png" position="297,144" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,120" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="MX_HQ9W/upd.png" position="297,120" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ConditionalShowHide" />
+</widget>
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,164" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/sub_1.png" position="297,164" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ServiceInfo">SubservicesAvailable</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,144" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/rec_1.png" position="1661,144" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,120" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/rec_1.png" position="1661,120" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ConditionalShowHide">Blink</convert>
+</widget>
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,164" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/stream.png" position="1661,164" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ClientsStreaming"/>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="global.CurrentTime" render="Bhclock" position="1740,135" zPosition="2" size="48,48" transparent="1">
@@ -506,12 +522,19 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_sd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsSD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsHD</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_ip_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsStream</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="4" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
 <convert type="ServiceInfo">Is4K</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
@@ -559,13 +582,22 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="EventTime">Duration</convert>
 <convert type="ClockToText">InMinutes</convert>
 </widget>
-<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,144" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/sub_1.png" position="297,144" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,120" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="MX_HQ9W/upd.png" position="297,120" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ConditionalShowHide" />
+</widget>
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="297,164" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/sub_1.png" position="297,164" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ServiceInfo">SubservicesAvailable</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,144" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/rec_1.png" position="1661,144" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,120" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/rec_1.png" position="1661,120" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ConditionalShowHide">Blink</convert>
+</widget>
+<ePixmap pixmap="MX_HQ9W/recbg.png" position="1661,164" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9W/stream.png" position="1661,164" size="30,30" zPosition="2" alphatest="blend"> 
+<convert type="ClientsStreaming"/>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="global.CurrentTime" render="Bhclock" position="1740,135" zPosition="2" size="48,48" transparent="1">
@@ -2126,6 +2158,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ9W/menu/help.png" position="1582,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/menu/pvr.png" position="1682,810" size="48,48" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="1192,0" size="3,790" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="340,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="640,810" size="48,48" alphatest="blend"/>
@@ -2135,12 +2168,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="key_yellow" position="705,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="key_blue" position="1005,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="list" position="20,20" size="1170,680" itemHeight="40"  scrollbarMode="showOnDemand" enableWrapAround="1" font="Regular;28" pbarShift="10" pbarHeight="20" pbarLargeWidth="70" pbarColour="yellow" pbarColourSeen="green" pbarColourRec="red" partIconeShift="2" spaceIconeText="10" iconsWidth="35" trashShift="2" dirShift="2" spaceRight="5" dateWidth="250" backgroundColor="bgbutton" foregroundColor="button" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1180x40.png" selectionPixmap="MX_HQ9W/menu/button1180x40.png" transparent="1"/>
-<widget source="Service" render="Label" position="40,720" zPosition="3" size="510,60" font="Regular;34" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<widget source="Service" render="Label" position="40,740" zPosition="3" size="510,60" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceTime">Duration</convert>
 <convert type="ClockToText">AsLength</convert>
 </widget>
-<widget source="Service" render="Label" position="1218,380" zPosition="1" size="560,40" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1">
-<convert type="EventName">Name</convert>
+<widget source="Service" render="Label"  position="1218,380" zPosition="1" size="560,35" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1">
+<convert type="MovieInfo">RecordServiceName</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="1200,340" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="ServicePosition">Position</convert>
@@ -2151,15 +2184,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Progress" position="1315,345" zPosition="1" pixmap="MX_HQ9W/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="ServicePosition">Position</convert>
 </widget>
+<widget source="Service" render="Label" position="200,740" zPosition="3" size="200,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="MovieInfo">FileSize</convert>
+</widget>
 <widget source="Service" render="Label" position="1218,420" zPosition="1" size="560,355" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventName">ExtendedDescription</convert>
 </widget>
 <widget name="chosenletter" position="20,20" size="1170,680" foregroundColor="yellow" font="Regular;28" halign="center" valign="center" backgroundColor="bgmain" transparent="1" zPosition="4"/>
 <widget name="movie_sort" position="1182,822" size="45,24" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend"/>
 <widget name="movie_off" position="1282,822" size="45,24" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend"/>
-<widget name="TrashcanSize" position="250,730" size="250,40" zPosition="1" halign="left" valign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="waitingtext" position="40,730" size="1170,40" zPosition="1" halign="left" valign="center" font="Regular;30" backgroundColor="bgbutton" foregroundColor="button" transparent="1"/>
-<widget name="freeDiskSpace" position="20,730" size="1170,40" zPosition="1" halign="right" valign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="TrashcanSize" position="400,740" size="250,40" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="waitingtext" position="40,740" size="1170,40" zPosition="1" halign="left" font="Regular;28" backgroundColor="bgbutton" foregroundColor="button" transparent="1"/>
+<widget name="freeDiskSpace" position="20,740" size="1160,40" zPosition="1" halign="right" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="DescriptionBorder" position="0,0" size="0,0"/>
 </screen>
 <screen name="NumberZap" position="center,center" size="380,60" title="Channel:" >>
