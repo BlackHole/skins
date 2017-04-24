@@ -1019,37 +1019,6 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
 </convert>
 </widget>    
 </screen>
-<screen name="DeliteSetupOSD2" position="30,120" size="820,850" title="Osd Settings">
-<widget name="lsinactive" position="60,37" zPosition="1" pixmap="MX_Titanium_C/icons/ninactive.png" size="35,35" alphatest="blend"/>
-<widget name="lsactive" position="60,37" zPosition="2" pixmap="MX_Titanium_C/icons/nactive.png" size="35,35" alphatest="blend"/>
-<widget name="lab1" position="120,40" size="780,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="lbinactive" position="60,112" zPosition="1" pixmap="MX_Titanium_C/icons/ninactive.png" size="35,35" alphatest="blend"/>
-<widget name="lbactive" position="60,112" zPosition="2" pixmap="MX_Titanium_C/icons/nactive.png" size="35,35" alphatest="blend"/>
-<widget name="lab2" position="120,115" size="650,35" font="Regular;26" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="lpinactive" position="60,187" zPosition="1" pixmap="MX_Titanium_C/icons/ninactive.png" size="35,35" alphatest="blend"/>
-<widget name="lpactive" position="60,187" zPosition="2" pixmap="MX_Titanium_C/icons/nactive.png" size="35,35" alphatest="blend"/>
-<widget name="lab4" position="120,190" size="780,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="lzinactive" position="60,262" zPosition="1" pixmap="MX_Titanium_C/icons/ninactive.png" size="35,35" alphatest="blend"/>
-<widget name="lzactive" position="60,262" zPosition="2" pixmap="MX_Titanium_C/icons/nactive.png" size="35,35" alphatest="blend"/>
-<widget name="lab5" position="120,265" size="780,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="lcinactive" position="60,337" zPosition="1" pixmap="MX_Titanium_C/icons/ninactive.png" size="35,35" alphatest="blend"/>
-<widget name="lcactive" position="60,337" zPosition="2" pixmap="MX_Titanium_C/icons/nactive.png" size="35,35" alphatest="blend"/>
-<widget name="lab6" position="120,340" size="780,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="lab3" position="120,415" size="480,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="labsize" position="565,415" size="80,35" font="Regular;28" halign="center" valign="center" backgroundColor="#0009546e"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteSetupOSDConf2" position="30,120" size="820,850" title="OSD Setup">
-<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-<convert type="ClockToText">Default</convert>
-</widget>
-</screen>
 <screen name="DeliteSetupFp" position="30,120" size="820,850" title="Fast Plugin Setup">
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
@@ -1115,19 +1084,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="DeliteHdd" position="30,120" size="820,850" title="Hard Drive Panel">
-<widget name="infotext" position="65,120" size="670,420" font="Regular;24" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab1" position="65,550" size="150,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" valign="center" transparent="1"/>
-<widget name="labstop" position="220,550" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="220,550" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="DeliteOpenvpn" position="30,120" size="820,850" title="OpenVpn Panel">
 <widget name="lab1" position="65,120" size="225,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="lab1a" position="250,120" size="630,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -1149,56 +1105,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <screen name="DeliteVpnLog" position="508,285" size="903,458" title="OpenVpn Log">
 <widget name="infotext" position="15,15" size="870,428" font="Regular;24"/>
 </screen>
-<screen name="DeliteSamba" position="30,120" size="820,850" title="Samba Panel">
-<widget name="lab1" position="65,120" size="270,70" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labactive" position="340,120" size="225,70" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="65,225" size="270,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="340,225" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="340,225" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteTelnet" position="30,120" size="820,850" title="Telnet Panel">
-<widget name="lab1" position="30,120" size="785,90" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="30,250" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="340,250" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteFtp" position="30,120" size="820,850" title="Ftp Panel">
-<widget name="lab1" position="30,120" size="785,90" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="30,250" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="340,250" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="BhNfsServer" position="30,120" size="820,850" title="Open Black Hole Nfs Server Panel">
-<widget name="lab1" position="65,120" size="320,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labactive" position="390,120" size="225,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="65,225" size="270,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="390,225" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="390,225" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="ServiceInfo" position="30,120" size="820,850" title="Serviceinfo">
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
@@ -1209,130 +1115,25 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <widget name="key_blue" position="600,770" size="225,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="infolist" position="10,30" size="800,660" font="Regular;28" itemHeight="40" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showOnDemand" transparent="1"/>
 </screen>
-<screen name="About" position="30,120" size="820,850" title="About">
-<eLabel text="Skin MX Titanium C" position="495,10" size="300,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel text="Open Black Hole" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="798,645" zPosition="2" split="1" dividechar=":" colposition="0"/>
-<ePixmap pixmap="MX_Titanium_C/mx.png" position="680,725" size="110,18" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="2" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="60,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="330,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="600,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="NabProcInfo" position="30,120" size="820,850" title="Process Info">
-<widget name="pibartit" zPosition="2" position="20,20" size="780,35" font="Regular;28" valign="center" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="infotext" position="20,70" size="780,770" font="Regular;24" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
-</screen>
-<screen name="NabEnsetInfo" position="30,120" size="820,850" title="Settings Info">
-<widget name="infotext" position="20,20" size="780,820" font="Regular;24" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
-</screen>
-<screen name="DeliteCCcMain" position="30,120" size="560,850" title="CCcam Info">
-<widget source="list" render="Listbox" enableWrapAround="1" position="0,10" size="560,825" zPosition="1" scrollbarMode="showNever" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (20, 7), size = (525, 40), flags = RT_HALIGN_LEFT, text =0) ],
-"fonts": [gFont("Regular",34)],
-"itemHeight":55
-}
-</convert>
-</widget>
-<widget name="Linconn" position="20,580" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcSetup" position="30,120" size="820,850" title="CCcam Info Setup">
-<widget name="lab1" position="20,20" size="780,187" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="config" position="20,220" size="780,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel text="Virtual Keyboard" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteCCcHo" position="30,120" size="820,850" title="Cccam Main Info">
-<widget name="infotext" position="20,20" size="780,780" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" /> 
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcEnt" position="30,120" size="820,850" title="Cccam Entitlements Info">
-<widget name="infotext" position="20,20" size="780,780" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcSe" position="30,120" size="820,850" title="Servers">
-<widget source="list" render="Listbox" position="20,20" size="780,600" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="20,640" size="780,160" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcAc" position="30,120" size="820,850" title="">
-<widget source="list" render="Listbox" position="20,20" size="780,600" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="20,640" size="780,160" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcCl" position="30,120" size="820,850" title="Servers">
-<widget source="list" render="Listbox" position="20,20" size="780,600" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="20,640" size="780,160" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcSh" position="30,120" size="820,850" title="Active Clients">
-<widget source="list" render="Listbox" position="20,20" size="780,600" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="20,640" size="780,160" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
-<screen name="DeliteCCcPr" position="30,120" size="820,850" title="Active Clients">
-<widget source="list" render="Listbox" position="20,20" size="780,600" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="20,640" size="780,160" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Linconn" position="20,810" size="780,35" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313"/>
-</screen>
 <screen name="Volume" position="682,80" zPosition="1" size="555,52" title="Volume" flags="wfNoBorder">
 <ePixmap pixmap="MX_Titanium_C/vol_back.png" position="0,0" size="555,52" />
 <widget name="Volume" position="59,19" zPosition="1" size="452,14" transparent="1"/>
 </screen>
 <screen name="Mute" position="100,80"  size="82,75" title="Mute" backgroundColor="transparent2" zPosition="10" flags="wfNoBorder">
 <ePixmap pixmap="MX_Titanium_C/muteback.png" position="1,1" size="82,75" zPosition="-5" alphatest="blend"/>
+</screen>
+<screen name="Seekbar" position="center,60" size="800,75" title="Seekbar" backgroundColor="transparent2" flags="wfNoBorder">
+<ePixmap position="0,0" zPosition="-1" size="800,75" pixmap="MX_Titanium_C/Seekbar.png"/>
+<widget name="cursor" position="0,28" size="20,20" pixmap="MX_Titanium_C/slider-seek.png" alphatest="blend" zPosition="4"/>
+<ePixmap position="130,34" size="540,9" pixmap="MX_Titanium_C/progressbarbackground.png" alphatest="blend" zPosition="2" />
+<widget name="PositionGauge" position="130,34" size="540,9"/>
+<widget source="session.CurrentService" render="PositionGauge" position="130,34" size="540,9" pointer="MX_Titanium_C/progressbar.png:540,0" transparent="1" zPosition="3">
+<convert type="ServicePosition">Gauge</convert>
+</widget>
+<widget name="time" position="10,22" size="120,35" font="Regular;30" halign="center" backgroundColor="#444444" transparent="1"/>
+<widget source="session.CurrentService" render="Label" position="670,22" size="120,35" font="Regular;30" halign="center" backgroundColor="#444444" transparent="1">
+<convert type="ServicePosition">Length</convert>
+</widget>
 </screen>
 <screen name="menu_mainmenu" position="26,40" size="700,1000" backgroundColor="transparent2" title="Main Menu" flags="wfNoBorder">
 <ePixmap pixmap="MX_Titanium_C/menu/menubg.png" position="0,0" size="564,1000" zPosition="-1" alphatest="on"/>
@@ -1663,7 +1464,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1685,7 +1486,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1707,7 +1508,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1729,7 +1530,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1752,7 +1553,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1774,7 +1575,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1792,7 +1593,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1811,7 +1612,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -1963,7 +1764,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="timerlist" position="0,20" size="820,630" zPosition="2" font="Regular;28" itemHeight="105" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+<widget name="timerlist" position="0,10" size="820,675" zPosition="2" itemHeight="75" rowSplit="40" setEventNameFont="Regular;28" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="300" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="TimerLog" position="135,150" size="1650,840" title="Timer log">
 <widget name="loglist" position="15,15" size="1620,525" scrollbarMode="showOnDemand"/>
@@ -2042,7 +1843,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <screen name="HelpMenu" position="center,200" size="1300,720" title="help...">
 <widget name="list" position="20,10" size="820,700" zPosition="2" font="Regular;28" itemHeight="32" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <widget name="long_key" position="993,585" size="142,35" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="rc" position="993,70" size="142,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="142,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Titanium_C/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -2147,14 +1948,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 </screen>
 <screen name="MovieContextMenu" position="30,120" size="820,850" title="Movielist menu">
 <widget name="menu" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
-<screen name="RecordPathsSettings" position="30,120" size="820,850" title="Recording paths">
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 </screen>
 <screen name="LocationBox" position="30,120" size="820,850" title="Select Location">
 <ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="755,720" size="48,48" alphatest="blend"/>
@@ -2578,27 +2371,6 @@ MultiContentEntryText(pos = (510, 5), size = (300, 35), flags = RT_HALIGN_LEFT, 
 <widget name="text" position="15,30" size="825,35" font="Regular;28"/>
 <widget name="input" position="15,82" size="825,35" font="Regular;28"/>
 </screen>
-<screen name="EPGSearch" position="center,200" size="1300,720" title="Epg Search">
-<widget name="list" render="Listbox" position="20,20" size="1260,600" font="Regular;28" itemHeight="40" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="1235,650" size="48,48" alphatest="blend"/>
-</screen>
-<screen name="EPGSearchSetup" position="center,200" size="1300,720" title="EPGSearch Setup">
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="1260,560" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="help" render="Label" position="20,580" size="1260,40" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-</screen>
 <screen name="Nab_DoStartCam" position="713,210" size="494,145" title="Wait while starting Cam" flags="wfNoBorder">
 <widget name="connect" position="0,0" size="494,145" zPosition="-1" pixmaps="MX_Titanium_C/startcam_1.png,MX_Titanium_C/startcam_2.png,MX_Titanium_C/startcam_3.png,MX_Titanium_C/startcam_4.png" transparent="1"/>
 <widget name="lab1" position="5,5" halign="center" size="360,135" zPosition="1" font="Regular;26" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -2782,24 +2554,6 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget name="text" position="18,52" size="800,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 <widget name="list" position="10,130" size="816,340" selectionDisabled="1" foregroundColor="#fcfcfc" transparent="1"/>
 </screen>
-<screen name="DeliteCronMang" position="30,120" size="820,850" title="Cron Manager">
-<widget source="list" render="Listbox" position="5,20" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList" />
-</widget>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteSetupCronConf" position="30,120" size="820,850" title="Cron Setup">
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="config" position="5,20" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel text="Virtual Keyboard" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="FileBrowser" position="30,120" size="820,850" title="DVD File Browser">
 <widget name="filelist" position="5,20" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
@@ -2883,44 +2637,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 20), size = (80, 80), png = 2),
 <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="Linconn" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1"/>>
-</screen>
-<screen name="DeliteKernelModules" position="30,120" size="820,850" title="Extra Kernel Modules Setup">
-<widget name="config" position="5,20" size="810,720" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteKernelModShow" position="30,120" size="820,850" title="Active Kernel Modules">
-<widget source="list" render="Listbox" position="5,20" size="810,600" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (5, 2), size = (810, 36), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-],
-"fonts": [gFont("Regular", 30)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-<widget name="statuslab" position="5,720" size="810,100" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-</screen>
-<screen name="DeliteAutocamMan" position="30,120" size="820,850" title="Autocam Manager">
-<widget name="defaultcam" position="5,20" size="810,50" font="Regular;30" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="list" render="Listbox" position="5,100" size="810,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList"/>
-</widget>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeliteSetupAutocam" position="30,120" size="820,850" title="Autocam Setup">
-<widget name="config" position="5,20" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="AdapterSetup" position="30,120" size="820,850" title="Network Setup">
 <widget source="Adaptertext" render="Label" position="10,30" size="210,35" zPosition="1" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3249,62 +2965,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <screen name="Nab_debOut" position="center,center" size="900,360" title="Open Black Hole Message">
 <widget name="outlabel" position="30,30" size="840,345" font="Regular;28" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 </screen>
-<screen name="Bh_Bepg_main" position="30,120" size="820,850" title="Open Black Hole Epg Backup">
-<widget name="lab1" position="10,120" size="785,90" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="10,250" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="370,250" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="370,250" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="menu_bhbackup" position="30,120" size="560,850" title="Backup Menu">
-<widget source="menu" render="Listbox" enableWrapAround="1" position="0,10" size="560,825" zPosition="1" scrollbarMode="showNever" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (20, 7), size = (525, 40), flags = RT_HALIGN_LEFT, text =0) ],
-"fonts": [gFont("Regular",34)],
-"itemHeight":55
-}
-</convert>
-</widget>
-</screen>
-<screen name="Bh_Bpersonal_main" position="30,120" size="820,850" title="Open Black Hole Personal Backup">
-<widget name="lab1" position="10,30" size="800,600" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Bpersonal_setuP" position="30,120" size="820,850" title="Open Black Hole Personal Backup Setup">
-<widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Bepg_setuP" position="30,120" size="820,850" title="Open Black Hole EPG Setup">
-<widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Bfull_main" position="30,120" size="820,850" title="Open Black Hole Full Backup">
-<widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="lab1" position="30,30" size="810,600" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="ManualFancontrol" position="30,120" size="820,850" title="Standbymode Fancontrol settings">
 <widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <widget source="current" render="Label" position="10,585" size="800,40" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" halign="center" transparent="1"/>
@@ -3335,67 +2995,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="BhMediatomb" position="30,120" size="820,850" title="UPnP Server Panel">
-<widget name="lab1" position="20,120" size="780,90" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="20,250" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="320,250" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="320,250" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="WlanSelection" position="30,120" size="820,850" title="Wireless Adapter Selection...">
-<widget name="menulist" position="10,20" size="800,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="description" render="Label" position="10,650" size="800,40" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" halign="center" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="WlanSetup" position="30,120" size="820,850" title="Wireless Network Setup Menu...">
-<widget name="menulist" position="10,20" size="800,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="description" render="Label" position="10,500" size="800,120" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" halign="center" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="WlanConfig" position="30,120" size="820,850" title="Wireless Network Configuration...">
-<widget name="config" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel text="IP Address : " position="10,470" size="225,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="ipaddress" render="Label" position="510,470" halign="right" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<eLabel text="NetMask : " position="10,510" size="225,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="netmask" render="Label" position="510,510" halign="right" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<eLabel text="Gateway : " position="10,550" size="200,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="gateway" render="Label" position="510,550" halign="right" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget name="HelpWindow" position="200,700" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-<widget name="VKeyIcon" pixmap="MX_Titanium_C/buttons/key_text.png" position="10,785" zPosition="10" size="35,25" transparent="1" alphatest="blend" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="WlanScanAp" position="30,120" size="820,850" title="Wireless Network AP Scan...">
-<widget name="menulist" position="10,20" size="800,350" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="Address" render="Label" position="10,380" size="600,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />		
-<widget source="ESSID" render="Label" position="10,420" size="600,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />		
-<widget source="Protocol" render="Label" position="10,460" size="600,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />		
-<widget source="Frequency" render="Label" position="10,500" size="600,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />		
-<widget source="Encryption key" render="Label" position="10,540" size="400,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />		
-<widget source="BitRate" render="Label" position="10,580" size="600,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="WlanScan" position="30,120" size="820,850" title="WlanScan">
 <widget source="info" render="Label" position="0,700" size="820,35" zPosition="1" halign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
@@ -3442,28 +3041,6 @@ MultiContentEntryText(pos = (510,50),size = (300,35),font=1,flags = RT_HALIGN_LE
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <widget source="key_red" render="Label" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="VuplusAuthenticity" position="center,200" size="1300,720" title="Return the Love Event (only for genuine box)">
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="1260,200" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="text1" position="20,250" size="1260,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="text2" position="20,300" size="1260,180" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-</screen>
-<screen name="BhTunerServer" position="30,120" size="820,850" title="Open Black Hole Tuner Server Panel">
-<widget name="lab1" position="10,30" size="800,560" font="Regular;26" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="10,650" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="250,645" size="320,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="250,645" size="320,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="BhNetBrowser" position="30,120" size="820,850" title="Select Network Interface">
 <widget source="list" render="Listbox" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
 <convert type="StringList" />
@@ -3487,14 +3064,6 @@ MultiContentEntryText(pos = (510,50),size = (300,35),font=1,flags = RT_HALIGN_LE
 </screen>
 <screen name="RemoteControlCode" position="30,120" size="820,850" title="Remote Control Code Setting">
 <widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="UI3DSetupScreen" position="30,120" size="820,850" title="UI 3D setup">
-<widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
@@ -3646,121 +3215,6 @@ MultiContentEntryPixmapAlphaTest(pos = (738, 4), size = (40, 40), png = 1),
 <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="BhRedPanel" position="center,200" size="1300,720" title="Open Black Hole Parallel Universes Teleportation">
-<widget name="list" position="20,20" size="820,440" itemHeight="105" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="lab1" position="870,30" size="400,40" font="Regular;26" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
-<widget name="lab2" position="870,70" size="400,550" font="Regular;26" foregroundColor="button" backgroundColor="bgbutton" halign="left" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="BhUniverseConfig" position="30,120" size="820,850" title="Parallel Universe Setup">
-<widget name="config" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="lab1" position="10,540" zPosition="1" size="800,90" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="BhRedDisabled" position="30,120" size="820,850" title="Expand your universe.">
-<widget name="lab1" position="10,30" zPosition="1" size="800,600" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="BhRedWrong" position="30,120" size="820,850" title="Outdated universes.">
-<widget name="lab1" position="10,30" zPosition="1" size="800,600" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="StreamTVList" position="30,120" size="820,850" title="StreamTV List">
-<widget name="streamlist" position="10,20" size="800,800" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
-<screen name="StreamTVPlayer" position="0,830" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_Titanium_C/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_Titanium_C/movie.png" alphatest="blend"/>
-<ePixmap position="95,45" size="180,32" zPosition="10" pixmap="MX_Titanium_C/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_Titanium_C/camera.png" alphatest="blend"/>
-<widget source="global.CurrentTime" render="Label" position="1650,41" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="#008dbc" backgroundColor="#10262626" transparent="1">
-<convert type="ClockToText">Default</convert>
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1780,43" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="#008dbc" backgroundColor="#10262626" transparent="1">
-<convert type="ClockToText">Format::%S</convert>
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1360,162" size="240,35" font="Regular;28" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ClockToText">Format:%d.%m.%Y</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="330,162" size="450,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServicePosition">Position</convert>
-</widget>
-<widget name="channel_name" position="315,46" size="1275,40" font="Regular;34" halign="center" foregroundColor="#008dbc" backgroundColor="#10262626"  transparent="1"/>
-<widget name="channel_icon" position="240,103" zPosition="12" size="35,35" alphatest="blend" />
-<widget name="channel_uri" position="315,100" size="1275,60" font="Regular;26" halign="center" foregroundColor="button" backgroundColor="bgosd" transparent="1"/>
-<ePixmap position="900,180" zPosition="1" size="150,25" pixmap="MX_Titanium_C/mp_buttons.png" alphatest="blend"/>
-</screen>
-<screen name="WirelessAccessPoint" position="30,120" size="820,850" title="Wireless Access Point">
-<widget name="config" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="current_settings" render="Label" position="10,455" size="800,35" font="Regular;30" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
-<widget source="IPAddress_text" render="Label" position="10,500" size="285,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="Netmask_text" render="Label" position="10,540" size="285,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="Gateway_text" render="Label" position="10,580" size="285,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="IPAddress" render="Label" position="450,500" size="360,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="Netmask" render="Label" position="450,540" size="360,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<widget source="Gateway" render="Label" position="450,580" size="360,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="ModemManager" position="30,120" size="820,850" title="3G Modem Manager">
-<widget name="menulist" position="10,20" size="400,225" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="usbinfo" position="420,20" size="390,225" font="Regular;26" halign="left" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-<widget name="statusTitle" position="10,275" size="800,180" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-<widget name="statusInfo" position="10,350" size="800,300" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="ModemManual" position="30,120" size="820,850" title="3G Modem Manager Config">
-<widget name="menulist" position="10,20" size="400,600" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="apnInfo" position="420,20" size="390,600" font="Regular;26" halign="left" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="EditModemManual" position="30,120" size="820,850" title="3G Modem Manager Config Edit">
-<widget name="config" position="10,20" size="800,600" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="HelpWindow" position="200,700" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-<widget name="VKeyIcon" pixmap="MX_Titanium_C/buttons/key_text.png" position="10,720" zPosition="10" size="35,25" transparent="1" alphatest="blend" />
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="BhSetupGreen" position="30,120" size="820,850" title="Open Black Hole Green Panel Setup">
 <widget source="list" render="Listbox" enableWrapAround="1" position="20,20" size="780,600" zPosition="1" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
@@ -3781,18 +3235,6 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
 <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="LiveStreamingLinks" position="30,120" size="820,850" title="Add stream URL">
-<widget name="menu" position="10,20" size="800,630" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="statusbar" render="Label" position="10,650" zPosition="10" size="800,35" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="LiveStreamingLinksHeader" position="30,120" size="820,850" title="Add stream URL">
-<widget name="menu" position="10,20" size="800,805" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
 <screen name="ZappingModeSelection" position="30,120" size="820,850" title="Zapping Mode Selection">
 <widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
@@ -3800,32 +3242,6 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="BhPcsc" position="30,120" size="820,850" title="Open Black Hole Pcsc Panel">
-<widget name="lab1" position="65,120" size="785,90" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="65,250" size="450,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="370,250" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="370,250" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-<convert type="ClockToText">Default</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
-</screen>
-<screen name="AutoShutDownConfiguration" position="30,120" size="820,850" title="AutoShutDown Setup">
-<widget name="config" position="10,20" size="800,700" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="buttonred" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="buttongreen" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="buttonyellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="BhSpeedUp" position="30,120" size="820,850" title="Open Black Hole Speed Up">
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
@@ -3849,37 +3265,6 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
 <widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Feed_Settings2" position="30,120" size="820,850" title="BH Feeds Settings">
-<widget name="lab1" position="10,595" size="800,60" halign="center" font="Regular;28" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab2" position="10,575" size="800,60" font="Regular;28" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab3" position="10,640" size="800,35" font="Regular;28" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget source="list" render="Listbox" position="10,20" size="800,540" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (0, 10), size = (800, 35), flags = RT_HALIGN_LEFT, font=0, text = 0),
-MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, font=1, text = 1),
-],
-"fonts": [gFont("Regular", 26),gFont("Regular", 26)],
-"itemHeight": 90
-}
-</convert>
-</widget>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Feed_SettingsSetup" position="30,120" size="820,850" title="BH Feeds Settings Setup">
-<widget name="config" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="lab1" position="10,540" zPosition="1" size="800,35" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="labprov" position="10,580" zPosition="1" size="800,60" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="DLNADeviceBrowser" position="30,120" size="820,850" title="Device Browser">
 <widget name="devicelist" position="10,20" size="800,700" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
@@ -3931,33 +3316,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="NetDriveSetup" position="30,120" size="820,850" title="Network Drive Setup">
-<widget name="config" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="introduction" position="10,650" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="VKeyIcon" pixmap="MX_Titanium_C/buttons/key_text.png" position="10,650" zPosition="10" size="35,25" transparent="1" alphatest="blend" />
-</screen>
-<screen name="NetDrivebrowser" position="30,120" size="820,850" title="NetDrive Setup > Mount Point">
-<widget name="filelist" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="status" render="Label" position="10,580" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="ServerEditor" position="30,120" size="820,850" title="FTP Server Editor">
 <widget name="config" position="10,20" size="800,595" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
@@ -3972,27 +3330,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 </screen>
 <screen name="StreamingChannelFromServerScreen" position="30,120" size="820,850" title="Select bouquets to convert">
 <widget name="list" position="10,20" size="800,595" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="addonsParentalConfig" position="30,120" size="820,850" title="Addons parental control setup">
-<widget name="config" position="10,20" size="800,560" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="WOLSetup" position="30,120" size="820,850" title="WakeOnLan Setup">
-<widget name="config" position="10,20" size="800,560" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="introduction" position="10,650" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
@@ -4025,23 +3362,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="LCD1text" render="Label" position="990,700" size="850,30" zPosition="1" font="Regular;22" halign="center" backgroundColor="bgmain" transparent="1" />
 <widget source="LCD2text" render="Label" position="990,750" size="850,30" zPosition="1" font="Regular;22" halign="center" backgroundColor="bgmain" transparent="1" />			
 </screen>
-<screen name="AudioEffect" position="30,120" size="820,850" title="AudioEffect">
-<widget name="config" position="10,20" size="800,490" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="description" render="Label" position="10,650" size="800,120" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" halign="center" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Bh_Fastepg_main" position="30,120" size="820,850" title="FastEpg">
-<widget source="list" render="Listbox" position="10,20" size="800,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList"/>
-</widget>
-<widget name="lab1" position="10,580" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-</screen>
 <screen name="TimeDateInput" position="center,center" size="900,450" title="Time/Date Input">
 <widget name="cancel" pixmap="MX_Titanium_C/buttons/red.png" position="15,0" size="210,60" alphatest="on" />
 <widget name="ok" pixmap="MX_Titanium_C/buttons/green.png" position="675,0" size="210,60" alphatest="on" />
@@ -4059,46 +3379,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="mbInstallMain" position="30,120" size="820,850" title="Meoboot">
-<widget name="lab1" position="10,20" size="800,180" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="lab2" position="10,220" size="800,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget source="list" render="Listbox" position="10,360" size="800,360" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList"/>
-</widget>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Mystart" position="30,120" size="820,850" title="Meoboot">
-<widget name="lab1" position="10,20" size="800,50" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="lab2" position="10,70" size="800,50" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="lab3" position="390,130" size="80,80" transparent="1" alphatest="blend"/>
-<widget name="lab4" position="10,220" size="800,50" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="lab5" position="10,270" size="800,50" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget source="list" render="Listbox" position="10,330" size="800,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList"/>
-</widget>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="mbImageSetup" position="30,120" size="820,850" title="MeoBoot Image Install">
-<widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="MyHelp" position="30,120" size="820,850" title="Meoboot Help">
-<widget name="lab1" position="10,30" size="800,800" font="Regular;26" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="QuitMainloopScreen" position="0,0" size="1920,1080" backgroundColor="black" flags="wfNoBorder">
 <ePixmap pixmap="MX_Titanium_C/icons/input_info.png" position="934,500" size="53,53" alphatest="blend" />
@@ -4394,15 +3674,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_yellow" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="OSDScreenPosition" position="0,0" size="1920,1080" title="Screen Position Setup" backgroundColor="transparent" flags="wfNoBorder">
-<ePixmap pixmap="MX_Titanium_C/positioner.png" position="0,0" size="1920,1080" zPosition="-1" alphatest="on"/>
-<ePixmap alphatest="on" pixmap="MX_Titanium_C/positioner.png" position="1,0" size="1920,1080" transparent="0" zPosition="-20" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="760,840" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="1112,840" size="48,48" alphatest="blend"/>
-<widget name="cancel" render="Label" position="820,840" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="ok" render="Label" position="1172,840" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="430,655" size="1056,200" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
 <screen name="HotkeySetup" position="30,120" size="820,850" title="Hotkey Setup">
 <widget name="list" position="10,20" size="800,640" font="Regular;26" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <widget name="choosen" position="10,650" size="800,100" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
@@ -4411,14 +3682,6 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="480,780" size="48,48" alphatest="blend"/>
 <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="540,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="OSD3DSetupScreen" position="30,120" size="820,850" title="OSD 3D setup">
-<widget name="config" position="10,20" size="800,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="480,780" size="48,48" alphatest="blend"/>
-<widget name="cancel" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="ok" position="540,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="HdmiCECSetupScreen" position="30,120" size="820,850" title="HDMI CEC setup">
 <widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
@@ -4469,56 +3732,6 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <screen name="BhsysInfo" position="30,120" size="820,850" title="Open Black Hole Info">
 <widget name="lab1" position="20,20" size="800,820" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="left" transparent="1"/>
 </screen>
-<screen name="AC3LipSyncSetup" position="30,120" size="820,850" title="AC3 Lip Sync Setup">
-<widget name="config" position="10,20" size="800,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="PluginInfo" position="10,650" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Config" position="30,120" size="820,850" title="Autobackup Configuration">
-<widget name="config" position="10,20" size="800,560" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="status" position="10,600" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="statusbar" position="10,650" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Satscan" position="30,120" size="820,850" title="Satscan">
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="text" position="2,635" zPosition="1" size="816,55" halign="center" valign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="FastScanScreen" position="30,120" size="820,850" title="Fast Scan">
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="introduction" position="2,635" zPosition="1" size="816,55" halign="center" valign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="FastScanStatus" position="30,120" size="820,850" title="Fast Scan">
-<widget name="frontend" pixmap="MX_Titanium_C/icons/scan-s.png" position="22,22" size="64,64" transparent="1" alphatest="blend"/>
-<widget name="scan_progress" position="20,110" size="800,30" borderWidth="2" borderColor="#cccccc"/>
-<widget name="scan_state" position="20,150" size="800,35" zPosition="2" font="Regular;30" backgroundColor="transpBlack" transparent="1"/>
-</screen>
 <screen name="PositionerSetupLog" position="30,120" size="820,850" title="Positioner Setup Log">
 <widget name="list" position="10,20" size="800,800" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
@@ -4544,42 +3757,12 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <convert type="FrontendInfo">SNR</convert>
 </widget>
 </screen>
-<screen name="MemoryInfo" position="30,120" size="820,850" title="Memory Info">
-<widget name="lmemtext"  font="Regular;23" position="10,10" size="300,670" zPosition="1" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="lmemvalue" font="Regular;23" position="10,10" size="300,670" zPosition="2" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="rmemtext"  font="Regular;24" position="460,10" size="300,670" zPosition="1" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="rmemvalue" font="Regular;24" position="460,10" size="300,670" zPosition="2" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="pfree" position="305,137" size="70,20" font="Regular;18" zPosition="1" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="pused" position="305,470" size="70,20" font="Regular;18" zPosition="1" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<widget name="slide" position="380,10" size="18,670" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
-<widget name="info" position="450,400" size="300,150" font="Regular;20" zPosition="1" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="TranslationInfo" position="30,120" size="820,850" title="Translation Info">
 <widget source="TranslatorName" render="Label" position="10,20" size="800,300" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
 <widget source="TranslationInfo" render="Label" position="10,340" size="800,300" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
 <widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="MovieBrowserConfiguration" position="30,120" size="820,850" title="Movie Browser Configuration">
-<widget name="config" position="10,20" size="800,720" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_green" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="TextBox" position="30,120" size="820,850" title="">
-<widget name="text" position="20,20" zPosition="1" size="800,810" halign="left" enableWrapAround="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="MessageBoxSimple" position="center,340" size="900,10" title="Message">
 <widget name="text" position="97,15" size="780,0" font="Regular;28"/>
@@ -4706,163 +3889,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="MountsHeader" render="Label" position="20,490" size="800,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="mounts" render="Label" position="20,540" size="800,200" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="Infopanel" position="30,120" size="820,850" title="Info Panel">
-<widget source="lab3" render="Label" position="20,100" size="800,40" font="Regular;30" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="Mlist" position="20,20" size="780,600" font="Regular;28" valign="center" itemHeight="75" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="2" backgroundColor="#272727"/>
-<widget name="label1" position="20,790" size="800,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-</screen>
 <screen name="SystemMemoryInfo" position="30,120" size="820,850" title="Memory Information">
 <widget source="lab1" render="Label" position="20,10" size="800,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="lab2" render="Label" position="20,60" size="800,40" font="Regular;30" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget name="AboutScrollLabel" position="20,110" size="798,730" scrollbarMode="showOnDemand" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="SystemNetworkInfo" position="30,120" size="820,850" title="Network Information">
-<widget name="AboutScrollLabel" position="20,20" size="1000,280" itemHeight="40" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" halign="left" />
-<widget source="LabelBSSID" render="Label" position="20,310" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="LabelESSID" render="Label" position="20,350" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="LabelQuality" render="Label" position="20,390" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="LabelSignal" render="Label" position="20,430" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="LabelBitrate" render="Label" position="20,470" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="LabelEnc" render="Label" position="20,510" size="300,40" font="Regular;28" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget source="BSSID" render="Label" position="350,310" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="ESSID" render="Label" position="350,350" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="quality" render="Label" position="350,390" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="signal" render="Label" position="350,430" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="bitrate" render="Label" position="350,470" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="enc" render="Label" position="350,510" size="450,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="AboutScrollLabel" position="20,20" size="1000,600" itemHeight="40" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" halign="left" />
 <eLabel position="0,755" size="820,3" zPosition="2" backgroundColor="#272727"/>
+<widget name="devicepic" pixmaps="MX_Titanium_C/icons/ethernet.png,MX_Titanium_C/icons/wifi.png" position="470,770" size="64,64" transparent="1" alphatest="blend" zPosition="2"/>
 <widget source="IFtext" render="Label" position="20,790" size="140,40" zPosition="5" font="Regular;28" halign="left" transparent="1" foregroundColor="info" backgroundColor="bgbutton" />
 <widget source="IF" render="Label" position="160,790" size="300,40" zPosition="5" font="Regular;28" halign="left" transparent="1" foregroundColor="info" backgroundColor="bgbutton" />
 <widget source="Statustext" render="Label" position="650,790" size="100,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="statuspic" position="750,800" size="15,16" pixmaps="MX_Titanium_C/buttons/button_green.png,MX_Titanium_C/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="blend"/>
-</screen>
-<screen name="Info" position="30,120" size="820,850" title="Info Panel">
-<widget name="label2" position="20,10" size="780,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="label1" position="20,60" size="780,780" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="HddMount" position="30,120" size="820,850" title="Mount Manager">
-<widget source="list" render="Listbox" position="10,20" size="800,540" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (80, 0), size = (720, 40), font=0, text = 0),
-MultiContentEntryText(pos = (80, 50), size = (720, 32), font=1, flags = RT_VALIGN_TOP, text = 1),
-MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
-],
-"fonts": [gFont("Regular", 30),gFont("Regular", 28)],
-"itemHeight": 90
-}
-</convert>
-</widget>
-<widget name="label1" position="20,580" size="800,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DevicePanelConf" position="30,120" size="820,850" title="Choose where to mount your devices to:">
-<ePixmap pixmap="MX_Titanium_C/menu/arrow_h.png" position="750,690" size="48,48" alphatest="blend"/>
-<widget name="config" position="20,20" size="780,600" font="Regular;24" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="Linconn" zPosition="2" position="20,660" size="780,30" font="Regular;24" halign="center" backgroundColor="#9f1313"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="SoftwarePanel" position="30,120" size="820,850" title="Software Panel">
-<widget name="a_off" pixmap="MX_Titanium_C/icons/aoff.png" position="20,0" zPosition="2" size="35,158" alphatest="blend"/>
-<widget name="a_red" pixmap="MX_Titanium_C/icons/ared.png" position="20,0" zPosition="2" size="35,158" alphatest="blend"/>
-<widget name="a_yellow" pixmap="MX_Titanium_C/icons/ayellow.png" position="20,0" zPosition="2" size="35,158" alphatest="blend" />
-<widget name="a_green" pixmap="MX_Titanium_C/icons/agreen.png" position="20,0" zPosition="2" size="35,158" alphatest="blend" />
-<widget name="feedstatusRED" position="20,60" size="780,50" font="Regular;40" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="feedstatusYELLOW" position="20,60" size="780,50" font="Regular;40" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="feedstatusGREEN" position="20,60" size="780,50" font="Regular;40" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="list" render="Listbox" position="5,200" size="810,375" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (10, 0), size = (740, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (10, 38), size = (740, 32), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-MultiContentEntryPixmapAlphaTest(pos = (750, 12), size = (50, 50), png = 4), # index 4 is the status pixmap
-MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 5), # index 4 is the div pixmap
-],
-"fonts": [gFont("Regular", 30),gFont("Regular", 28)],
-"itemHeight": 75}
-</convert>
-</widget>
-<widget name="packagetext" position="20,670" size="500,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="packagenr" position="520,670" size="200,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="CronManager" position="30,120" size="820,850" title="Cron Manager">
-<widget name="lab1" position="65,20" size="270,70" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labdisabled" position="340,20" size="225,70" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labactive" position="340,20" size="225,70" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="65,125" size="270,35" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labstop" position="340,125" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
-<widget name="labrun" position="340,125" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
-<widget source="list" render="Listbox" position="20,180" size="780,400" font="Regular;22" itemHeight="28" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-<convert type="StringList"/>
-</widget>
-<widget name="key" zPosition="2" position="20,650" size="780,30" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="SetupCronConf" position="30,120" size="820,850" title="Preferences">
-<ePixmap pixmap="MX_Titanium_C/menu/arrow_h.png" position="750,690" size="48,48" alphatest="blend"/>
-<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="VKeyIcon" position="0,0" size="0,0" transparent="1"/>
-<widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="ScriptRunner" position="30,120" size="820,850" title="Job Manager">
-<ePixmap pixmap="MX_Titanium_C/menu/arrow_h.png" position="750,690" size="48,48" alphatest="blend"/>
-<widget name="list" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<applet type="onLayoutFinish">
-self["list"].instance.setItemHeight(40)
-</applet>
-<widget name="lab1" zPosition="2" position="20,640" size="780,40" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Swap" position="30,120" size="820,850" title="Swap File Manager">
-<widget name="autostart_off" position="20,24" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-<widget name="autostart_on" position="20,24" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
-<widget name="lab1" position="70,20" size="500,40" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab2" position="20,90" size="200,40" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab3" position="20,160" size="200,40" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="lab4" position="20,230" size="200,40" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="labplace" position="210,90" size="540,40" font="Regular;30" valign="center" halign="center" backgroundColor="#0009546e"/>
-<widget name="labsize" position="210,160" size="540,40" font="Regular;30" valign="center" halign="center" backgroundColor="#0009546e"/>
-<widget name="inactive" position="210,230" size="225,40" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
-<widget name="active" position="210,230" size="225,40" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="GraphicalEPGPIG" position="center,105" size="1820,880" title="GraphicalEPGPIG">
 <eLabel position="1208,20" size="570,320" zPosition="2" backgroundColor="black"/>
@@ -5362,105 +4401,6 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget source="key_green" render="Label" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Volume_adjust" position="center,200" size="1300,720" title="Audio">
-<ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="1220,650" size="48,48" alphatest="blend"/>
-<widget name="ServiceList" position="20,80" size="1260,400" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="press_menu" render="Label" position="20,530" size="1260,100" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="ServiceList.desc" position="20,20" size="1260,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Volume_Config" position="center,200" size="1300,720" title="Volume_Config">
-<widget name="config" position="20,20" size="1260,400" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="Change_volume" position="center,200" size="1300,720" title="Change_volume">
-<widget name="config" position="20,20" size="1260,600" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="mySmallChannelSelection" position="center,200" size="1300,720" title="Select service to add...">
-<widget name="list" position="20,20" size="1260,600" zPosition="2" font="Regular;28" enableWrapAround="1" fieldMargins="10" itemsDistances="10" progressbarHeight="8" progressBarWidth="50" progressbarBorderWidth="2" colorServiceRecorded="#800000" colorServicePseudoRecorded="#f47d19" colorServiceStreamed="grey" colorServiceDescription="#afafaf" colorServiceDescriptionSelected="white" colorEventProgressbarBorder="#cccccc" colorEventProgressbarBorderSelected="white" foregroundColorServiceNotAvail="#999999" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="VFDSkinSelector" position="center,200" size="1300,720" title="VFD Skin Selector">
-<widget name="SkinList" position="20,20" size="1260,200" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-</widget>
-<widget name="Preview" position="510,230" size="280,210" alphatest="blend"/>
-<widget name="lab1" position="20,450" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab2" position="20,510" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab3" position="20,570" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="LCDClockSelector" position="center,200" size="1300,720" title="LCD Clock Selector">
-<widget name="SkinList" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-</widget>
-<widget name="Preview" position="510,230" size="280,210" alphatest="blend"/>
-<widget name="lab1" position="20,450" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab2" position="20,510" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab3" position="20,570" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-</screen>
-<screen name="LCDSkinSelector" position="center,200" size="1300,720" title="LCD Skin Selector">
-<widget name="SkinList" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
-</widget>
-<widget name="Preview" position="510,230" size="280,210" alphatest="blend"/>
-<widget name="lab1" position="20,450" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab2" position="20,510" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="lab3" position="20,570" size="1260,60" zPosition="1" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-</screen>
-<screen name="XMLTVImportConfig" position="30,120" size="820,850" title="XMLTVImportConfiguration">
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="config" position="20,20" size="780,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="status" position="10,600" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="statusbar" position="10,650" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-</screen>
-<screen name="SleepTimerEdit" position="30,120" size="820,850" title="Sleep Timer">
-<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget name="description" position="10,650" size="780,35" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="AutoDiseqc" position="center,center" size="600,320" title=" ">
 <widget source="statusbar" render="Label" position="20,20" zPosition="1" size="580,70" halign="center" valign="center" font="Regular;28" transparent="1" foregroundColor="button" backgroundColor="bgkey"/>
@@ -5962,9 +4902,6 @@ self["list"].instance.setItemHeight(40)
 <screen name="AboutReleaseNotes" position="center,200" size="1300,720" title="About Release Notes">
 <widget name="list" position="20,20" size="1260,680" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="NetworkSetup" position="30,120" size="820,850" title="Network setup">
-<widget name="menu" position="20,20" size="780,800" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
 <screen name="UnhandledKey" flags="wfNoBorder" position="center,30" size="34,45" zPosition="100" backgroundColor="transparent">
 <widget name="UnhandledKeyPixmap" pixmap="MX_Titanium_C/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
 </screen>video
@@ -6029,13 +4966,6 @@ self["list"].instance.setItemHeight(40)
 <widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="BhBackupSettings" position="30,120" size="820,850" title="Backup your settings">
-<widget name="infotext" position="20,20" size="780,600" font="Regular;28" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget source="key_red" render="Label" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
 <screen name="AutoVideoModeLabel" position="712,498" size="500,80" title=" " flags="wfNoBorder" backgroundColor="#35000000">
 <widget name="content" position="10,10" size="480,35" font="Regular;28" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="restxt" position="10,45" size="480,35" font="Regular;28" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
@@ -6088,45 +5018,6 @@ self["list"].instance.setItemHeight(40)
 <convert type="ServicePosition">Position</convert>
 </widget>
 <eLabel position="15,53" size="420,3" backgroundColor="grey" zPosition="1" />
-</screen>
-<screen name="LCDdisplayFile" position="30,120" size="820,850" title="Select File/Dir...">
-<widget name="LCDfile" position="20,20" size="780,620" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="File" render="Label" position="20,700" size="780,60" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<eLabel text="Select" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="FlashOnline" position="30,120" size="820,850" title="FlashOnline">
-<widget name="info-online" position="20,20" size="780,300" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<widget name="info-local" position="20,340" size="780,300" font="Regular;30" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_yellow" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="doFlashImage" position="30,120" size="820,850" title="doFlashImage">
-<widget name="imageList" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="DeviceBrowser" position="30,120" size="820,850" title="LogManagerMenu">
-<widget name="filelist" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="message" render="Label" position="20,650" size="780,60" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="ImageBackup" position="30,120" size="820,850" title="ImageBackup">
 <widget name="info-hdd" position="20,20" size="780,300" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -6827,7 +5718,7 @@ shadowOffset="2,2" font="Regular;56" valign="center" halign="right" >
 <widget name="ErrorPixmap" pixmap="MX_Titanium_C/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
 <widget name="QuestionPixmap" pixmap="MX_Titanium_C/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
 <widget name="InfoPixmap" pixmap="MX_Titanium_C/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="on"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="MX_Titanium_C/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="text" position="20,120" size="820,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="list" position="20,380" size="820,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 </screen>
