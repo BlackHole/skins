@@ -1764,7 +1764,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="timerlist" position="0,10" size="820,675" zPosition="2" itemHeight="75" rowSplit="40" setEventNameFont="Regular;28" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="300" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="timerlist" position="5,10" size="810,675" zPosition="2" itemHeight="75" rowSplit="40" setEventNameFont="Regular;28" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="TimerLog" position="135,150" size="1650,840" title="Timer log">
 <widget name="loglist" position="15,15" size="1620,525" scrollbarMode="showOnDemand"/>
@@ -3916,8 +3916,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="timeline3" position="20,30" zPosition="1" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline4" position="20,30" zPosition="1" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline5" position="20,30" zPosition="1" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
-<widget name="list" position="20,83" size="1178,675" itemHeight="75" Wrap="1" EntryFontWrap="no" foregroundColor="button" backgroundColor="#06161616" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" ServiceBackgroundColorSelected="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
-<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="20,83" size="3,673" zPosition="5" alphatest="blend"/>
+<widget name="lab1" position="20,30" size="1178,725" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" valign="center" transparent="0" zPosition="1" />
+<widget name="list" position="20,83" size="1178,675" itemHeight="75" foregroundColor="button" backgroundColor="#06161616" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceFontGraphical="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666"/>
+<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="20,83" size="3,673" zPosition="4" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
@@ -3945,7 +3946,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="Event" render="Label" position="1218,422" zPosition="1" size="580,355" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventName">ExtendedDescription</convert>
 </widget>
-<widget name="bouquetlist" position="20,20" size="1180,756" zPosition="5" scrollbarMode="showNever" enableWrapAround="1" itemHeight="36" foregroundColorSelected="#00a5e6" transparent="1"/>
+<widget name="bouquetlist" position="20,20" size="1180,756" itemHeight="36" font="Regular;28" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" foregroundColorSelected="white" backgroundColorSelected="#0009546e" scrollbarMode="showNever" zPosition="6" transparent="1" />
 </screen>
 <screen name="GraphicalEPG" position="center,110" size="1780,880" title="Electronic Program Guide">
 <ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="1590,810" size="48,48" alphatest="blend"/>
@@ -3964,8 +3965,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="timeline3" position="20,30" zPosition="2" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline4" position="20,30" zPosition="2" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline5" position="20,30" zPosition="2" size="2,40" pixmap="MX_Titanium_C/timeline.png"/>
-<widget name="list" position="20,83" size="1178,675" itemHeight="75" Wrap="1" EntryFontWrap="no" foregroundColor="button" backgroundColor="#06161616" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" ServiceBackgroundColorSelected="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
-<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="20,83" size="2,675" zPosition="10" alphatest="blend"/>
+<widget name="lab1" position="20,30" size="1178,725" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" valign="center" transparent="0" zPosition="1" />
+<widget name="list" position="20,83" size="1178,675" itemHeight="75" foregroundColor="button" backgroundColor="#06161616" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceFontGraphical="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666"/>
+<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="20,83" size="2,675" zPosition="4" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
@@ -3990,7 +3992,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventName">ExtendedDescription</convert>
 </widget>
-<widget name="bouquetlist" position="20,20" size="1180,756" zPosition="5" scrollbarMode="showNever" enableWrapAround="1" itemHeight="36" foregroundColorSelected="#00a5e6" transparent="1"/>
+<widget name="bouquetlist" position="20,20" size="1180,756" itemHeight="36" font="Regular;28" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" foregroundColorSelected="white" backgroundColorSelected="#0009546e" scrollbarMode="showNever" zPosition="6" transparent="1" />
 </screen>
 <screen name="GraphicalInfoBarEPG" flags="wfNoBorder" position="0,765" size="1920,325" title="GraphicalInfoBarEPG" backgroundColor="transparent2">
 <ePixmap position="0,0" zPosition="-1" size="1920,325" pixmap="MX_Titanium_C/infobar_ext.png"/>
@@ -4068,51 +4070,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="timeline3" position="60,90" zPosition="1" size="2,35" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline4" position="60,90" zPosition="1" size="2,35" pixmap="MX_Titanium_C/timeline.png"/>
 <widget name="timeline5" position="60,90" zPosition="1" size="2,35" pixmap="MX_Titanium_C/timeline.png"/>
-<widget name="list" position="60,125" size="1800,100" itemHeight="50" Wrap="1" EntryFontWrap="no" foregroundColor="button" backgroundColor="#06161616" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" ServiceBackgroundColorSelected="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
-<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="60,125" size="2,100" zPosition="10" alphatest="blend"/>
-<widget name="bouquetlist" position="60,125" size="1800,100" zPosition="5" scrollbarMode="showNever" enableWrapAround="1" itemHeight="33" foregroundColorSelected="#00a5e6" transparent="1"/>
-</screen>
-<screen name="GraphMultiEPGList" position="center,110" size="1780,880" title="Electronic Program Guide">
-<ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="1650,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/menu/epg.png" position="1710,810" size="48,48" alphatest="blend"/>
-<widget source="global.CurrentTime" render="Label" position="1220,60" size="540,60" font="Regular;46" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="ClockToText">Format:%d.%m.%Y</convert>
-</widget>
-<widget name="timeline_text" position="20,30" size="1178,42" font="Regular;28" itemHeight="42" foregroundColor="#00e5b243" backgroundColor="#161616" transparent="1"/>
-<widget name="list" position="20,83" size="1178,700" itemHeight="50" foregroundColor="button" backgroundColor="#03222222" ServiceBackgroundColorSelected="#0400264d" EntryBackgroundColorNow="#0400264d" EntryBackgroundColor="#03363636" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#04003b8f" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"   EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
-<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now2.png" position="6,83" size="15,698" zPosition="5" alphatest="blend"/>
-<eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
-<eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="Event" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-<convert type="EventTime">StartTime</convert>
-<convert type="ClockToText"></convert>
-</widget>
-<widget source="Event" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
-</widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Titanium_C/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
-<convert type="EventTime">Progress</convert>
-</widget>
-<widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="EventName">ExtendedDescription</convert>
-</widget>
-</screen>
-<screen name="GraphMultiEpgSetup" position="30,120" size="820,850" title="GraphMultiEpg Settings">
-<widget name="config" position="20,20" size="780,640" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="canceltext" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="oktext" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="lab1" position="60,125" size="1800,100" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" valign="center" transparent="0" zPosition="1" />
+<widget name="list" position="60,125" size="1800,100" itemHeight="50" foregroundColor="button" backgroundColor="#06161616" RecordBackgroundColorSelected="#6a0000" ZapForegroundColorSelected="#06012161" ServiceForegroundColorNow="info" ServiceBackgroundColor="#06191d21" ServiceBackgroundColorNow="#0001102f" EntryBackgroundColorNow="#00002031" EntryForegroundColorNowSelected="info" EntryBackgroundColorNowSelected="#0001102f" EntryBackgroundColor="#06191d21" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="#06011848" ServiceFontGraphical="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" ServiceBorderColor="#666666" EntryBorderColor="#666666"/>
+<widget name="timeline_now" pixmap="MX_Titanium_C/timeline-now.png" position="60,125" size="2,100" zPosition="4" alphatest="blend"/>
+<widget name="bouquetlist" position="60,90" size="1800,135" itemHeight="33" font="Regular;28" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" foregroundColorSelected="white" backgroundColorSelected="#0009546e" scrollbarMode="showNever" zPosition="6" transparent="1" />
 </screen>
 <screen name="QuickEPG" flags="wfNoBorder" position="0,660" size="1920,425" title="QuickEPG" backgroundColor="transparent2">
 <ePixmap position="0,0" zPosition="-1" size="1920,425" pixmap="MX_Titanium_C/epgbar.png"/>
