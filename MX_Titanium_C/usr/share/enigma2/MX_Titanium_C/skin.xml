@@ -5534,20 +5534,6 @@ MultiContentEntryText(pos = (580, 0), size = (220, 65), font = 1, flags = RT_HAL
 <screen name="StreamingClientsInfo" position="30,120" size="820,850" title="Streaming clients info">
 <widget name="ScrollLabel" position="20,20" size="780,800" font="Regular;28" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 </screen>
-<screen name="DreamExplorerII" position="30,120" size="820,850" title="Dream-Explorer">
-<ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="670,645" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/menu/epg.png" position="750,645" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Titanium_C/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
-<eLabel text="Delete" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel text="Rename" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel text="Move/Copy" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<eLabel text="Bookmarks" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="filelist" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-</screen>
 <screen name="PermanentClockScreen" position="1680,0" size="400,70" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
 <widget source="global.CurrentTime" render="Label" position="1,1" size="400,70" transparent="1" zPosition="0" foregroundColor="#ffffff" backgroundColor="#ff000000" shadowColor="#40101010"
 shadowOffset="2,2" font="Regular;56" valign="center" halign="right" >
