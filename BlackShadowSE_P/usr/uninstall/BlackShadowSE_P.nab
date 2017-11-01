@@ -1,0 +1,15 @@
+#!/bin/sh
+
+rm -rf /usr/share/enigma2/BlackShadowSE_P
+rm -rf /usr/uninstall/BlackShadowSE_P.nab
+
+activeskin=`grep -c -e 'BlackShadowSE_P' /etc/enigma2/settings`
+
+if test $activeskin = 1
+then
+sed -e '/BlackShadowSE_P/d' /etc/enigma2/settings > /tmp/settings
+mv /tmp/settings /etc/enigma2/settings
+killall -9 enigma2
+fi
+
+exit 0
