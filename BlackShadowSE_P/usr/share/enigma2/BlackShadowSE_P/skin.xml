@@ -195,7 +195,7 @@ skin author: Matrix10
 <convert type="ServiceInfo">Is4K</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.CurrentService" render="Pixmap" position="1510,32" size="55,48" zPosition="5" pixmap="BlackShadowSE_P/ico_ip_on.png" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" position="828,30" size="420,50" zPosition="5" pixmap="BlackShadowSE_P/iptv.png" alphatest="blend">
 <convert type="ServiceInfo">IsStream</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
@@ -536,7 +536,7 @@ skin author: Matrix10
 <convert type="ServiceInfo">Is4K</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.CurrentService" render="Pixmap" position="1510,32" size="55,48" zPosition="5" pixmap="BlackShadowSE_P/ico_ip_on.png" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" position="0,30" size="1920,295" zPosition="10" pixmap="BlackShadowSE_P/iptvn.png" alphatest="on">
 <convert type="ServiceInfo">IsStream</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
@@ -1210,9 +1210,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <widget name="yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="infolist" position="20,30" size="780,660" font="Regular;28" itemHeight="40" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="session.CurrentService" render="Label" position="1309,540" size="531,90" font="Regular;42" halign="center" valign="center" backgroundColor="bgbutton" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
 </screen>
 <screen name="About" position="30,120" size="820,850" title="About">
 <eLabel text="Skin BlackShadow SE P" position="400,10" size="395,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
