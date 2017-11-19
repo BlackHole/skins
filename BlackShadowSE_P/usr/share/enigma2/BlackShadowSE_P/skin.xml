@@ -6135,7 +6135,7 @@ self["list"].instance.setItemHeight(40)
 </screen>
 <screen name="UnhandledKey" flags="wfNoBorder" position="center,30" size="34,45" zPosition="100" backgroundColor="transparent">
 <widget name="UnhandledKeyPixmap" pixmap="BlackShadowSE_P/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off"/>
-</screen>video
+</screen>
 <screen name="MMIDialog" position="30,120" size="820,850" title="Common Interface">
 <widget name="title" position="20,20" size="780,60" font="Regular;23" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="entries" position="20,100" size="780,210" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1"/>
@@ -6295,17 +6295,6 @@ self["list"].instance.setItemHeight(40)
 <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-</screen>
-<screen name="ImageBackup" position="30,120" size="820,850" title="ImageBackup">
-<widget name="info-hdd" position="20,20" size="780,300" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<widget name="info-usb" position="20,340" size="780,300" font="Regular;30" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_blue" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="SubsSupportSettings" position="30,120" size="820,850" title="SubsSupport Settings">
 <widget source="menuList" render="Listbox" position="20,20" size="780,700" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x50.png" selectionPixmap="BlackShadowSE_P/menu/button820x50.png" transparent="1">
@@ -6658,18 +6647,20 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <widget name="pleasewait" position="20,560" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="AutoBouquetsMaker_Log" position="center,200" size="1300,720" title="AutoBouquetsMaker Log">
-<ePixmap name="yellow" pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="600,650" size="48,48" alphatest="blend"/>
+<ePixmap name="red" pixmap="BlackShadowSE_P/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
 <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="key_yellow" position="650,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="list" position="20,20" size="1260,600" zPosition="2" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="list" position="20,20" size="1260,600" zPosition="2" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="AutoBouquetsMaker_About" position="center,200" size="1300,720" title="AutoBouquetsMaker About">
 <ePixmap name="red" pixmap="BlackShadowSE_P/buttons/red48x48.png" position="600,650" size="48,48" alphatest="blend"/>
 <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
 <widget name="key_red" position="650,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="about" position="20,20" size="1260,500" zPosition="2" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="about" position="20,20" size="1260,500" zPosition="2" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="oealogo" position="1050,420" size="200,135"  zPosition="4" transparent="1" alphatest="blend"/>
 </screen>
 <screen name="ConfigMenu" position="center,center" size="1445,765" title="IPTV Player - settings">
