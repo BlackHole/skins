@@ -195,7 +195,7 @@ skin author: Matrix10
 <convert type="ServiceInfo">Is4K</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.CurrentService" render="Pixmap" position="828,30" size="420,50" zPosition="5" pixmap="BlackShadowSE_P/iptv.png" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" position="828,30" size="437,50" zPosition="5" pixmap="BlackShadowSE_P/iptv.png" alphatest="blend">
 <convert type="ServiceInfo">IsStream</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
