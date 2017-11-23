@@ -6822,7 +6822,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <screen name="SeriesPluginInfoScreen" position="center,105" size="1820,880" title="SeriesPlugin">
 <eLabel position="1200,20" size="620,320" zPosition="2" backgroundColor="black"/>
 <widget source="session.VideoPicture" render="Pig" position="1228,30" zPosition="3" size="530,300" backgroundColor="#ff000000"/>
-<widget name="logo" position="1318,550" size="380,64" zPosition="1" alphatest="blend" />
+<widget name="logo" position="0,0" size="0,0" />
 <widget name="event_title" position="20,20" size="1170,45" zPosition="1" font="Regular;38" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="event_episode" position="20,70" zPosition="1" size="1170,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="event_description" position="20,120" size="1170,665" font="Regular;32" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
