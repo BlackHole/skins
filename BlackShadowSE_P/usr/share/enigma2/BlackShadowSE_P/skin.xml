@@ -384,97 +384,97 @@ skin author: Matrix10
 <convert type="ValueBitTest">262144</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="884,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="884,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">0,0</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="900,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="900,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">1,1</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="915,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="915,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">2,2</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="931,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="931,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">3,3</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="946,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="946,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">4,4</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="961,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="961,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">5,5</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="976,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="976,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">6,6</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="993,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="993,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">7,7</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1006,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1006,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">8,8</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1016,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1016,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">9,9</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="K" position="1029,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="K" position="1029,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">10,10</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="L" position="1044,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="L" position="1044,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">11,11</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="M" position="1061,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="M" position="1061,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">12,12</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="N" position="1081,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="N" position="1081,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">13,13</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="O" position="1099,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="O" position="1099,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">14,14</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="P" position="1114,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="P" position="1114,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">15,15</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="Q" position="1130,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="Q" position="1130,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">16,16</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="R" position="1146,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="R" position="1146,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">17,17</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="S" position="1162,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="S" position="1162,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">18,18</convert>
 <convert type="ConditionalShowHide"/>
@@ -725,97 +725,97 @@ skin author: Matrix10
 <convert type="ValueBitTest">262144</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="884,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="884,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">0,0</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="900,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="900,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">1,1</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="915,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="915,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">2,2</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="931,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="931,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">3,3</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="946,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="946,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">4,4</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="961,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="961,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">5,5</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="976,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="976,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">6,6</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="993,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="993,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">7,7</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1006,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1006,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">8,8</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1016,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1016,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">9,9</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="K" position="1029,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="K" position="1029,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">10,10</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="L" position="1044,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="L" position="1044,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">11,11</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="M" position="1061,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="M" position="1061,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">12,12</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="N" position="1081,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="N" position="1081,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">13,13</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="O" position="1099,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="O" position="1099,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">14,14</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="P" position="1114,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="P" position="1114,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">15,15</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="Q" position="1130,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="Q" position="1130,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">16,16</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="R" position="1146,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="R" position="1146,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">17,17</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.FrontendInfo" render="FixedLabel" text="S" position="1162,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="blue" backgroundColor="#000308" transparent="1">
+<widget source="session.FrontendInfo" render="FixedLabel" text="S" position="1162,54" zPosition="3" size="18,24" font="Regular;22" halign="center" foregroundColor="#008cff" backgroundColor="#000308" transparent="1">
 <convert type="FrontendInfo">NUMBER</convert>
 <convert type="ValueRange">18,18</convert>
 <convert type="ConditionalShowHide"/>
