@@ -4209,6 +4209,19 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 </widget>
 <widget name="lab1" position="10,580" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 </screen>
+<screen name="Seekbar" position="center,60" size="800,75" title="Seekbar" backgroundColor="transparent2" flags="wfNoBorder">
+<ePixmap position="0,0" zPosition="-1" size="800,75" pixmap="BlackShadowSE_P/Seekbar.png"/>
+<widget name="cursor" position="0,28" size="20,20" pixmap="BlackShadowSE_P/slider-seek.png" alphatest="blend" zPosition="4"/>
+<ePixmap position="130,34" size="540,9" pixmap="BlackShadowSE_P/progressbarbackground.png" alphatest="blend" zPosition="2" />
+<widget name="PositionGauge" position="130,34" size="540,9"/>
+<widget source="session.CurrentService" render="PositionGauge" position="130,34" size="540,9" pointer="BlackShadowSE_P/progressbar.png:540,0" transparent="1" zPosition="3">
+<convert type="ServicePosition">Gauge</convert>
+</widget>
+<widget name="time" position="10,22" size="120,35" font="Regular;30" halign="center" backgroundColor="#000000" transparent="1"/>
+<widget source="session.CurrentService" render="Label" position="670,22" size="120,35" font="Regular;30" halign="center" backgroundColor="#000000" transparent="1">
+<convert type="ServicePosition">Length</convert>
+</widget>
+</screen>
 <screen name="TimeDateInput" position="center,center" size="900,450" title="Time/Date Input">
 <widget name="cancel" pixmap="BlackShadowSE_P/buttons/red.png" position="15,0" size="210,60" alphatest="on" />
 <widget name="ok" pixmap="BlackShadowSE_P/buttons/green.png" position="675,0" size="210,60" alphatest="on" />
@@ -7139,5 +7152,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # in
 <widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="InstallWizardIpkgUpdater" position="center,center" size="600,50" title=" ">
+<widget source="statusbar" render="Label" position="10,5" zPosition="10" size="580,40" halign="center" valign="center" font="Regular;30" backgroundColor="transpBlack" transparent="1" />
 </screen>
 </skin>                        
