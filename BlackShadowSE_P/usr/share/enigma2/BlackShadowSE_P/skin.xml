@@ -4389,18 +4389,14 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 </screen>
 <screen name="EMCMediaCenter" position="0,815" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 <ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="BlackShadowSE_P/moviebar.png"/>
-<ePixmap position="100,104" size="150,100" zPosition="1" pixmap="BlackShadowSE_P/movie.png" alphatest="blend"/>
-<ePixmap position="110,45" size="130,32" zPosition="1" pixmap="BlackShadowSE_P/ster2.png" alphatest="blend"/>
-<ePixmap position="1670,104" size="150,100" zPosition="1" pixmap="BlackShadowSE_P/camera.png" alphatest="blend"/>
-<widget name="Cover" position="110,35" size="130,185" zPosition="10" alphatest="on" />
+<ePixmap position="100,104" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/movie.png" alphatest="blend"/>
+<ePixmap position="95,41" size="180,32" zPosition="10" pixmap="BlackShadowSE_P/ster.png" alphatest="blend"/>
+<ePixmap position="1670,104" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/camera.png" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
 <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Format::%S</convert>
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1369,168" size="240,35" font="Regular;28" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServiceName">Name</convert>
@@ -4419,12 +4415,14 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="session.RecordState" render="Pixmap" pixmap="BlackShadowSE_P/rec_1.png" position="1636,136" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" font="Regular;28" position="302,168" size="87,36" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServiceInfo">VideoWidth</convert>
+<widget source="session.CurrentService" render="Label" position="328,168" size="210,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="left" transparent="1">
+<convert type="PliExtraInfo">ResolutionString</convert>
 </widget>
-<eLabel text="x" font="Regular;28" position="394,168" size="19,36" halign="center"  foregroundColor="button" backgroundColor="bgosd" transparent="1"/>
-<widget source="session.CurrentService" render="Label" font="Regular;28" position="413,168" size="87,36" halign="left"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServiceInfo">VideoHeight</convert>
+<widget source="session.CurrentService" render="Label" position="1200,168" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="left" transparent="1">
+<convert type="PliExtraInfo">VideoCodec</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="1308,168" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
+<convert type="VAudioInfo">AudioCodec</convert>
 </widget>
 <ePixmap position="328,148" zPosition="1" size="1280,9" pixmap="BlackShadowSE_P/slidermovie_bg.png"/>
 <widget source="session.CurrentService" render="Progress" pixmap="BlackShadowSE_P/slidermovie.png" position="328,148" size="1280,9" zPosition="2" transparent="1">
@@ -6805,6 +6803,19 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <widget name="sub_title" position="20,0" size="780,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="list" position="20,50" size="780,350" zPosition="2" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x90.png" selectionPixmap="BlackShadowSE_P/menu/button820x90.png" transparent="1"/>
 <widget name="console" position="0,0" size="780,360" zPosition="1" valign="center" halign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="ConfigGroupsMenu" position="center,center" size="1445,765" title="IPTV Player - settings">
+<widget name="config" position="20,10" size="1405,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1410x40.png" selectionPixmap="BlackShadowSE_P/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="240,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="535,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="830,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1125,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="295,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green"  position="590,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_ok"  position="0,0" size="0,0" />
+<widget name="key_yellow" position="885,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_blue"  position="1180,715" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="SeriesPluginConfiguration" position="center,200" size="1300,720" title="SeriesPlugin Setup">
 <widget name="config" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1"/>
