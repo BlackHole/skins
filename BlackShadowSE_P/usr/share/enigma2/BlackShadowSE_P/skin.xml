@@ -6002,6 +6002,7 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="SoftwareUpdateChoices" position="30,120" size="820,850" title="SoftwareUpdateChoices">
+<ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="755,720" size="48,48" alphatest="blend"/>
 <widget name="list" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
 <widget name="text" position="20,700" size="780,80" font="Regular;28" halign="center" backgroundColor="bgmain" transparent="1"/>
 </screen>
