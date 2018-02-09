@@ -1493,9 +1493,9 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
 <widget source="ServiceEvent" render="Label" position="1218,385" zPosition="1" size="580,352" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventName">FullDescription</convert>
 </widget>
-<widget source="ServiceEvent" render="NextEpgInfo" position="1218,745" zPosition="1" size="580,70" font="Regular;30" foregroundColor="grey" backgroundColor="bgbutton" transparent="1"/>
-<widget source="ServiceEvent" render="Label" position="1218,825" size="200,40" font="Regular;32" halign="left" foregroundColor="grey" backgroundColor="bgbutton" transparent="1">
-<convert type="ServiceOrbitalPosition"/>
+<widget source="ServiceEvent" render="NextEpgInfo" position="1218,740" zPosition="1" size="538,70" font="Regular;30" foregroundColor="grey" backgroundColor="bgbutton" transparent="1"/>
+<widget source="ServiceEvent" render="Label" position="1218,810" size="435,60" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="TransponderInfo"></convert>
 </widget>
 </screen>
 <screen name="ChannelSelectionRadio" position="70,145" size="1780,580" title="">
