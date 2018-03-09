@@ -1087,20 +1087,20 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <widget name="labstop" position="240,495" size="225,35" font="Regular;28" valign="center" halign="center" backgroundColor="red"/>
 <widget name="labrun" position="240,495" size="225,35" zPosition="1" font="Regular;28" valign="center" halign="center" backgroundColor="green"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_green" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="DeliteInaSetup" position="30,120" size="820,850" title="Inadyn Setup">
 <widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<eLabel text="Virtual Keyboard" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_red" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+<widget name="key_green" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<eLabel text="Virtual Keyboard" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="DeliteInaLog" position="30,120" size="820,850" title="Inadyn Log">
 <widget name="infotext" position="20,20" size="780,580" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3636,10 +3636,10 @@ MultiContentEntryText(pos = (510,50),size = (300,35),font=1,flags = RT_HALIGN_LE
 <convert type="StringList" />
 </widget>
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="LEDBrightnessSetup" position="30,120" size="820,850" title="Restore Backups">
 <widget name="config" position="10,20" size="800,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
