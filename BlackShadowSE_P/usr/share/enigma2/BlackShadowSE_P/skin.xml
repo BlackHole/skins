@@ -3037,9 +3037,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 20), size = (80, 80), png = 2),
 </widget>
 <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
 <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_yellow" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="lab1" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1"/>>
 </screen>
 <screen name="DeliteSetupDevicePanelConf" position="center,200" size="1300,720" title="Devices Mountpoints Setup">
