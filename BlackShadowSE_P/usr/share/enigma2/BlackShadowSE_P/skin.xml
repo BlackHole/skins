@@ -2134,10 +2134,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="560,168" size="250,30" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="VNetSpeedInfo">TM</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1200,168" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="left" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1070,168" size="270,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="PliExtraInfo">VideoCodec</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1315,168" size="280,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1340,168" size="270,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="VAudioInfo">AudioCodec</convert>
 </widget>
 <ePixmap position="328,148" zPosition="1" size="1280,9" pixmap="BlackShadowSE_P/slidermovie_bg.png"/>
@@ -2156,8 +2156,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="1435,103" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<widget name="speed" position="1065,168" size="200,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgosd" transparent="1" />
-<ePixmap position="900,185" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
+<widget name="speed" position="890,157" size="150,30" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgosd" transparent="1" />
+<ePixmap position="890,190" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="MovieContextMenu" position="30,120" size="820,850" title="Movielist menu">
 <widget name="menu" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
@@ -2886,180 +2886,6 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget name="audioLabel" position="1305,35" size="90,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="subtitleLabel" position="1395,35" size="90,35" font="Regular;20" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <ePixmap position="900,180" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
-</screen>
-<screen name="MyTubePlayer" position="0,815" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="BlackShadowSE_P/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/movie.png" alphatest="blend"/>
-<ePixmap position="95,41" size="180,32" zPosition="10" pixmap="BlackShadowSE_P/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/you_tube.png" alphatest="blend"/>
-<widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
-<convert type="ClockToText">Default</convert>
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
-<convert type="ClockToText">Format::%S</convert>
-</widget>
-<widget source="global.CurrentTime" render="Label" position="1369,162" size="240,35" font="Regular;28" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ClockToText">Format:%d.%m.%Y</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="325,35" size="1280,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
-<ePixmap pixmap="BlackShadowSE_P/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="BlackShadowSE_P/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
-<convert type="ConditionalShowHide">Blink</convert>
-</widget>
-<ePixmap position="328,143" zPosition="1" size="1280,9" pixmap="BlackShadowSE_P/slidermovie_bg.png"/>
-<widget source="session.CurrentService" render="Progress" pixmap="BlackShadowSE_P/slidermovie.png" position="328,143" size="1280,9" zPosition="2" transparent="1">
-<convert type="ServicePosition">Position</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="327,98" size="180,40" font="Regular;32" halign="left"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServicePosition">Position</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="827,98" size="285,40" font="Regular;32" halign="center"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServicePosition">Length</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="1435,98" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
-<convert type="ServicePosition">Remaining</convert>
-</widget>
-<ePixmap position="900,180" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
-</screen>
-<screen name="MyTubePlayerMainScreen" position="center,110" size="1780,880" title="MyTubePlayerMainScreen...">
-<eLabel position="967,46" size="793,708" zPosition="-1" backgroundColor="black"/>
-<ePixmap pixmap="BlackShadowSE_P/menu/menubutton3.png" position="1612,695" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/menu/epg3.png" position="1692,695" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/menu/exit3.png" position="1532,695" size="48,48" alphatest="blend"/>
-<widget source="session.VideoPicture" render="Pig" position="1059,127" zPosition="2" size="610,333" backgroundColor="#ff000000"/>
-<widget name="config" zPosition="2" position="967,44" size="793,35" font="Regular;28" itemHeight="39" scrollbarMode="showNever" transparent="1" backgroundColorSelected="selbutton" selectionPixmap="BlackShadowSE_P/menu/button800x35.png"/>
-<widget source="feedlist" render="Listbox" position="20,46" size="910,708" zPosition="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg900x118.png" selectionPixmap="BlackShadowSE_P/menu/button900x118.png" transparent="1">
-<convert type="TemplatedMultiContent">
-{"templates":
-{"default": (118,[
-MultiContentEntryPixmapAlphaTest(pos = (10, 20), size = (100, 75), png = 4), # index 4 is the thumbnail
-MultiContentEntryText(pos = (120, 10), size = (770, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-MultiContentEntryText(pos = (120, 45), size = (450, 30), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-MultiContentEntryText(pos = (120, 75), size = (450, 30), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-MultiContentEntryText(pos = (575, 45), size = (292, 30), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-MultiContentEntryText(pos = (575, 75), size = (292, 30), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
-]),
-"state": (118,[
-MultiContentEntryText(pos = (15, 10), size = (880, 35), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (15, 42), size = (880, 69), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
-])
-},
-"fonts": [gFont("Regular", 28),gFont("Regular", 24),gFont("Regular", 26),gFont("Regular", 26)],
-"itemHeight": 118
-}
-</convert>
-</widget> 
-<eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<eLabel text="Virtual Keyboard"  position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="thumbnail" position="0,0" size="100,75" alphatest="blend"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-<widget name="HelpWindow" position="1200,630" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
-<eLabel name="new eLabel" position="90,195" size="0,0" />
-<widget name="VKeyIcon" position="0,0" size="0,0"/>
-<widget source="session.CurrentService" render="Label" position="1059,470" size="610,100" valign="center" font="Regular;32" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
-</screen>
-<screen name="MyTubeSuggestionsListScreen" position="1037,222" zPosition="6" backgroundColor="black" size="793,440" title="MyTube - Search" flags="wfNoBorder" >
-<widget source="suggestionslist" render="Listbox" position="0,0" zPosition="7" size="793,400" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (4, 4), size = (525, 32), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (540, 4), size = (240, 32), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
-],
-"fonts": [gFont("Regular", 30),gFont("Regular", 26)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-</screen>
-<screen name="MyTubeHistoryScreen" position="1037,222" zPosition="6" size="793,440" backgroundColor="black" flags="wfNoBorder" >
-<widget source="historylist" render="Listbox" position="0,0" zPosition="7" size="793,400" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1">
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (5, 1), size = (780, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-],
-"fonts": [gFont("Regular", 28),gFont("Regular", 28)],
-"itemHeight": 40
-}
-</convert>
-</widget>
-</screen>
-<screen name="MyTubeVideoHelpScreen" position="450,160" size="1020,765" title="MyTubePlayerHelpScreen...">
-<widget name="detailtext" position="15,15" size="990,665" zPosition="3" font="Regular;30" transparent="1" halign="left" valign="top" backgroundColor="transpBlack"/>
-<eLabel position="0,687" size="1020,2" backgroundColor="grey" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="442,705" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="517,705" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
-<widget name="title" position="0,0" size="0,0"/>
-</screen>
-<screen name="MyTubeVideoInfoScreen" position="135,120" size="1650,855" title="MyTubePlayerMainScreen...">
-<widget name="title" position="15,22" size="1620,45" zPosition="5" valign="center" halign="left" font="Regular;34" transparent="1" noWrap="1"/>
-<widget name="author" position="30,105" size="450,35" zPosition="10" font="Regular;30" transparent="1" halign="left" valign="top" />
-<widget name="duration" position="30,165" size="450,35" zPosition="10" font="Regular;30" transparent="1" halign="left" valign="top" />
-<widget name="published" position="30,210" size="450,35" zPosition="10" font="Regular;30" transparent="1" halign="left" valign="top" />
-<widget name="views" position="30,255" size="450,35" zPosition="10" font="Regular;30" transparent="1" halign="left" valign="top" />
-<widget name="tags" position="30,300" size="450,112" zPosition="10" font="Regular;30" transparent="1" halign="left" valign="top" />
-<widget name="starsbg" position="135,420" size="100,20" pixmap="~/starsbar_empty.png"  zPosition="5" transparent="1" alphatest="blend" />
-<widget name="stars" position="135,420" size="100,20" pixmap="~/starsbar_filled.png" zPosition="6" transparent="1" />
-<widget source="infolist" render="Listbox" position="525,100" size="1110,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-<convert type="TemplatedMultiContent">
-{"templates":
-{"default": (135,[
-MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail
-]),
-"state": (135,[
-MultiContentEntryText(pos = (0, 35), size = (1110, 97), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
-])
-},
-"fonts": [gFont("Regular", 28),gFont("Regular", 22),gFont("Regular", 36)],
-"itemHeight": 135
-}
-</convert>
-</widget>
-<widget name="detailtext" position="525,270" size="1095,490" zPosition="10" font="Regular;28" foregroundColor="white" backgroundColor="black" transparent="1" />
-<eLabel position="0,777" size="1650,1" backgroundColor="grey" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="727,795" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="802,795" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
-<widget name="thumbnail" position="0,0" size="270,135" alphatest="blend"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-</screen>
-<screen name="MyTubeSettingsScreen" position="450,120" size="1020,765" title="MyTubeSettingsScreen" >
-<widget name="config" position="30,15" size="960,665" zPosition="3" scrollbarMode="showOnDemand" font="Regular;28" itemHeight="35" transparent="1"/>
-<eLabel position="0,687" size="1020,1" backgroundColor="grey" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="240,705" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="645,705" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="315,705" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
-<widget name="key_green" position="720,705" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
-<widget name="title" position="0,0" size="0,0"/>
-</screen>
-<screen name="MyTubeTasksScreen" position="450,150" size="1020,795" title="MyTubeTasksScreen" >
-<widget source="tasklist" render="Listbox" position="15,15" size="990,570" zPosition="3" scrollbarMode="showOnDemand" transparent="1" >
-<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (15, 4), size = (345, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-MultiContentEntryText(pos = (375, 4), size = (270, 36), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-MultiContentEntryProgress(pos = (660, 4), size = (150, 24), percent = -3), # index 3 should be progress 
-MultiContentEntryText(pos = (825, 4), size = (105, 36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
-],
-"fonts": [gFont("Regular", 28),gFont("Regular", 24)],
-"itemHeight": 45
-}
-</convert>
-</widget>
-<eLabel position="0,687" size="1020,2" backgroundColor="grey" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="442,720" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="517,720" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
-<widget name="title" position="0,0" size="0,0"/>
 </screen>
 <screen name="DeliteDevicesPanel" position="center,200" size="1300,720" title="Devices Manager">
 <widget source="list" render="Listbox" position="20,20" size="1260,600" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x120.png" selectionPixmap="BlackShadowSE_P/menu/button1260x120.png" transparent="1" >
@@ -4226,8 +4052,8 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="Version" render="Label" position="1250,850" size="200,30" zPosition="1" font="Regular;22" halign="left" backgroundColor="bgmain" transparent="1" />
 <widget source="LibUSB" render="Label" position="1450,830" size="200,30" zPosition="1" font="Regular;22" halign="left" foregroundColor="red" backgroundColor="bgmain" transparent="1" />
 <widget source="About" render="Label" position="1250,810" size="200,30" zPosition="1" font="Regular;22" halign="left" backgroundColor="bgmain" transparent="1" />
-<widget name="LCD1" position="800,22" zPosition="1" size="1220,490" transparent="1" alphatest="on" />
-<widget name="LCD2" position="800,514" zPosition="2" size="1220,490" transparent="1" alphatest="on" />
+<widget name="LCD1" position="955,21" zPosition="1" size="1220,490" transparent="1" alphatest="on" />
+<widget name="LCD2" position="955,514" zPosition="2" size="1220,490" transparent="1" alphatest="on" />
 <widget source="LCD1text" render="Label" position="990,700" size="850,30" zPosition="1" font="Regular;22" halign="center" backgroundColor="bgmain" transparent="1" />
 <widget source="LCD2text" render="Label" position="990,750" size="850,30" zPosition="1" font="Regular;22" halign="center" backgroundColor="bgmain" transparent="1" />			
 </screen>
@@ -4467,10 +4293,10 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="session.CurrentService" render="Label" position="560,168" size="250,30" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="VNetSpeedInfo">TM</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1200,168" size="300,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="left" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1070,168" size="270,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="PliExtraInfo">VideoCodec</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1315,168" size="280,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1340,168" size="270,35" font="Regular;28" foregroundColor="button" backgroundColor="bgosd" halign="right" transparent="1">
 <convert type="VAudioInfo">AudioCodec</convert>
 </widget>
 <ePixmap position="328,148" zPosition="1" size="1280,9" pixmap="BlackShadowSE_P/slidermovie_bg.png"/>
@@ -4489,8 +4315,8 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 <widget source="session.CurrentService" render="Label" position="1435,103" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<widget name="speed" position="1065,168" size="200,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgosd" transparent="1" />
-<ePixmap position="900,185" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
+<widget name="speed" position="890,157" size="150,30" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgosd" transparent="1" />
+<ePixmap position="890,190" zPosition="1" size="150,25" pixmap="BlackShadowSE_P/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="EnhancedMovieCenterMenu" position="center,200" size="1300,720" title="EnhancedMovieCenterMenu">
 <ePixmap pixmap="BlackShadowSE_P/menu/film.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
@@ -4839,6 +4665,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 </screen>
 <screen name="EPGImportConfig" position="30,120" size="820,850" title="EPG Import Configuration">
+<ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="760,785" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/menu/epg.png" position="760,715" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
@@ -4869,11 +4697,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="list" position="20,20" size="780,720" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
 </screen>
 <screen name="OMBManagerList" position="30,120" size="820,850" title="openMultiboot Manager">
