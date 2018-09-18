@@ -3572,11 +3572,19 @@ MultiContentEntryText(pos = (510,50),size = (300,35),font=1,flags = RT_HALIGN_LE
 <widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="BlindscanState" position="center,200" size="1300,720" title="Blindscan">
-<widget name="progress" position="20,0" size="1260,150" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<eLabel position="0,155" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<eLabel position="0,585" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="config" position="20,160" size="1260,440" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="post_action" position="20,600" size="1260,120" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="progress" position="20,0" size="1260,130" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<eLabel position="0,135" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="config" position="20,140" size="1260,400" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1"/>
+<widget name="post_action" position="20,550" size="1260,70" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="20,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="680,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1010,650" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="75,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="405,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="CrossEPG_Menu" position="30,120" size="560,850" title="CrossEPG">
 <widget source="list" render="Listbox" enableWrapAround="1" position="0,10" size="560,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
