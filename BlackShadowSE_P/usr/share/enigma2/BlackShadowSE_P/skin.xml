@@ -1895,10 +1895,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="1710,810" size="48,48" alphatest="blend"/>
 <eLabel position="1200,20" size="620,320" zPosition="2" backgroundColor="black"/>
 <widget source="session.VideoPicture" render="Pig" position="1228,30" zPosition="3" size="530,300" backgroundColor="#ff000000"/>
-<widget name="channel" position="610,30" zPosition="1" size="540,40" font="Regular;32" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="channel" position="20,10" zPosition="1" size="1170,40" font="Regular;34" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="datetime" position="1250,370" size="460,40" font="Regular;32" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="duration" position="1250,370" size="460,40" font="Regular;32" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="epg_description" position="20,30" size="1170,740" font="Regular;32" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="epg_description" position="20,60" size="1170,730" font="Regular;32" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <eLabel position="0,790" size="1820,3" zPosition="1" backgroundColor="#272727"/>
 <eLabel position="1190,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
@@ -1920,7 +1920,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget source="session.Event_Now" render="Progress" position="1315,345" zPosition="1" pixmap="BlackShadowSE_P/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
-<widget source="session.Event_Next" render="Label" position="1218,420" zPosition="1" size="580,40" font="Regular;28"  foregroundColor="grey" backgroundColor="bgbutton" transparent="1">
+<widget source="session.Event_Next" render="Label" position="1218,420" zPosition="1" size="580,35" font="Regular;28"  foregroundColor="grey" backgroundColor="bgbutton" transparent="1">
 <convert type="EventName">Name</convert>
 </widget>
 <widget source="session.Event_Next" render="Label" position="1218,460" zPosition="1" size="580,320" font="Regular;28" foregroundColor="grey" backgroundColor="bgbutton" transparent="1">
@@ -3570,6 +3570,13 @@ MultiContentEntryText(pos = (510,50),size = (300,35),font=1,flags = RT_HALIGN_LE
 <widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="BlindscanState" position="center,200" size="1300,720" title="Blindscan">
+<widget name="progress" position="20,0" size="1260,150" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<eLabel position="0,155" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,585" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="config" position="20,160" size="1260,440" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="post_action" position="20,600" size="1260,120" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="CrossEPG_Menu" position="30,120" size="560,850" title="CrossEPG">
 <widget source="list" render="Listbox" enableWrapAround="1" position="0,10" size="560,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
