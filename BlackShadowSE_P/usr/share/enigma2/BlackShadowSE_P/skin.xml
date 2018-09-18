@@ -2382,7 +2382,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
 </screen>
 <screen name="CableScanScreen" position="30,120" size="820,850" title="CableScanScreen">
 <widget name="config" position="20,20" size="780,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1"/>
-<widget name="introduction" position="20,790" size="780,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="introduction" position="20,730" size="780,90" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="CableScanStatus" position="center,center" size="900,650" title="CableScanStatus">
 <widget name="scan_state" position="30,157" size="840,35" zPosition="2" font="Regular;30" backgroundColor="transpBlack" transparent="1"/>
