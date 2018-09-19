@@ -2036,8 +2036,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="capacity" position="10,80" size="800,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="bus" position="10,140" size="800,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
-<widget name="initializetext" position="445,780" size="400,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="HarddiskWait" position="30,120" size="820,850" title="Harddisk">
 <widget name="wait" position="10,20" size="800,300" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
