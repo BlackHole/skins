@@ -1,7 +1,7 @@
 <skin>
 <!--
 MX BlackShadow SE P
-Open black hole 1.0
+Open black hole 4.2
 skin author: Matrix10
 -->
 <output id="0">
@@ -4271,9 +4271,10 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
 </screen>
 <screen name="EMCMediaCenter" position="0,815" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 <ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="BlackShadowSE_P/moviebar.png"/>
-<ePixmap position="100,104" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/movie.png" alphatest="blend"/>
-<ePixmap position="95,41" size="180,32" zPosition="10" pixmap="BlackShadowSE_P/ster.png" alphatest="blend"/>
-<ePixmap position="1670,104" size="150,100" zPosition="10" pixmap="BlackShadowSE_P/camera.png" alphatest="blend"/>
+<ePixmap position="100,104" size="150,100" zPosition="1" pixmap="BlackShadowSE_P/movie.png" alphatest="blend"/>
+<ePixmap position="110,45" size="130,32" zPosition="1" pixmap="BlackShadowSE_P/ster2.png" alphatest="blend"/>
+<ePixmap position="1670,104" size="150,100" zPosition="1" pixmap="BlackShadowSE_P/camera.png" alphatest="blend"/>
+<widget name="Cover" position="110,35" size="130,185" zPosition="10" alphatest="on" />
 <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
