@@ -6615,14 +6615,14 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <widget name="key_red" position="495,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="key_green" position="920,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="IPTVPlayerWidget" position="center,center" size="1445,765" title="IPTVPlayer">
+<screen name="E2iPlayerWidget" position="center,center" size="1445,765" title="IPTVPlayer">
 <widget name="cover" position="1120,0" size="240,370" zPosition="3" alphatest="blend" />
 <widget name="headertext" position="20,0" size="1000,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="statustext" position="20,0" size="1000,35" zPosition="1" halign="right" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="statustext" position="20,650" size="1015,40" zPosition="4" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="console" position="1055,380" zPosition="1" size="380,300" halign="left" font="Regular;26" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="list" position="20,50" size="1015,640" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x40.png" selectionPixmap="BlackShadowSE_P/menu/button1180x40.png" transparent="1"/>
-<widget name="playerlogo" zPosition="4" position="1310,720" size="120,40" alphatest="blend" />
-<widget name="sequencer" position="0,0" zPosition="1" size="1445,765" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="#00000000" />
+<widget name="playerlogo" zPosition="4" position="1310,715" size="120,40" alphatest="blend" />
+<widget name="sequencer" position="0,0" size="1445,765" font="Regular;160"  zPosition="6" halign="center" valign="center" transparent="1" backgroundColor="#00000000" />
 <widget name="spinner"  zPosition="2" position="489,400" size="16,16" transparent="1" alphatest="blend" />
 <widget name="spinner_1" zPosition="1" position="489,400" size="16,16" transparent="1" alphatest="blend" />
 <widget name="spinner_2" zPosition="1" position="505,400" size="16,16" transparent="1" alphatest="blend" />
@@ -6640,6 +6640,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <widget source="key_green" render="Label" position="390,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_yellow" render="Label" position="685,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_blue" render="Label" position="980,715" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green_ext" position="0,0" size="0,0" />
 </screen>
 <screen name="IPTVArticleRichVisualizer" position="center,center" size="1445,765" title="Info...">
 <widget name="text" position="20,50" size="1000,700" zPosition="1" halign="left" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -6840,7 +6841,6 @@ shadowOffset="2,2" font="Regular;56" valign="center" halign="right" >
 <widget name="list" position="10,20" size="800,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"/>
 <widget name="lab1" position="30,440" size="760,35" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="backupstatus" position="30,500" size="760,35" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="description" position="30,650" size="760,100" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
