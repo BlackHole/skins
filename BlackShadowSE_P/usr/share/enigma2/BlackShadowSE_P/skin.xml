@@ -6618,7 +6618,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <screen name="E2iPlayerWidget" position="center,center" size="1445,765" title="IPTVPlayer">
 <widget name="cover" position="1120,0" size="240,370" zPosition="3" alphatest="blend" />
 <widget name="headertext" position="20,0" size="1000,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="statustext" position="20,650" size="1015,40" zPosition="4" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="statustext" position="20,300" size="1015,100" zPosition="4" halign="center" font="Regular;40" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="console" position="1055,380" zPosition="1" size="380,300" halign="left" font="Regular;26" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="list" position="20,50" size="1015,640" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x40.png" selectionPixmap="BlackShadowSE_P/menu/button1180x40.png" transparent="1"/>
 <widget name="playerlogo" zPosition="4" position="1310,715" size="120,40" alphatest="blend" />
@@ -6637,10 +6637,9 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="630,715" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="925,715" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="95,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="key_green" render="Label" position="390,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green_ext" position="390,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_yellow" render="Label" position="685,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_blue" render="Label" position="980,715" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green_ext" position="0,0" size="0,0" />
 </screen>
 <screen name="IPTVArticleRichVisualizer" position="center,center" size="1445,765" title="Info...">
 <widget name="text" position="20,50" size="1000,700" zPosition="1" halign="left" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
