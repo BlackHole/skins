@@ -56,7 +56,7 @@ skin author: Matrix10
 <alias name="HelpMenuListExt0" font="Regular" size="30" height="75"/> 
 <alias name="HelpMenuListExt1" font="Regular" size="30"/>
 <alias name="ServiceInfo" font="Regular" size="28" height="32" />
-<alias name="VirtualKeyBoard" font="Regular" size="40" height="72"/>
+<alias name="VirtualKeyboard" font="Regular" size="38" height="68" />
 </fonts>
 <parameters>
 <parameter name="FileListMultiLock" value="2,0,25,25"/>
@@ -84,7 +84,7 @@ skin author: Matrix10
 <parameter name="ChoicelistName" value="45,0,850,35"/>
 <parameter name="ServiceInfoLeft" value="0,0,450,45"/>
 <parameter name="ServiceInfoRight" value="340,0,535,45"/>
-<parameter name="VirtualKeyBoard" value="76,72"/>
+<parameter name="VirtualKeyboard" value="68,68"/>
 <parameter name="AutotimerEnabledIcon" value="2,1,25,25"/>
 <parameter name="AutotimerRecordIcon" value="30,1,25,25"/>
 </parameters>
@@ -2806,15 +2806,11 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget source="package" render="Label" position="20,70" size="780,30" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="status" render="Label" position="20,115" size="780,65" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="VirtualKeyBoard" position="center,200" size="1084,630" zPosition="99" flags="wfNoBorder">
-<ePixmap pixmap="BlackShadowSE_P/buttons/virtualkb.png" position="0,0" size="1084,630" alphatest="off" zPosition="-1" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/vkey_text.png" position="10,55" zPosition="4" size="1064,70" alphatest="blend" />
-<widget name="prompt" position="20,10" size="1044,35" font="Regular;30" foregroundColor="white" backgroundColor="#10000000" transparent="1" noWrap="1" />
-<widget name="text" position="20,65" size="1044,59" font="Regular;40" foregroundColor="white" backgroundColor="#10000000" noWrap="1" halign="right" valign="center" transparent="1"/>
-<widget name="list" position="10,135" size="1064,360" foregroundColor="white" backgroundColor="#004262" transparent="1" selectionDisabled="1" />
-<widget name="mode" position="20,535" size="1044,35" font="Regular;30" backgroundColor="#10000000" halign="center" transparent="1" />
-<widget name="locale" position="20,575" size="1044,35" font="Regular;30" backgroundColor="#10000000" transparent="1" />
-<widget name="language" position="0,0" size="0,0" />
+<screen name="VirtualKeyBoard" position="center,210" size="836,480" zPosition="99" title="Virtual KeyBoard">
+<ePixmap pixmap="BlackShadowSE_P/buttons/vkey_text.png" position="10,35" zPosition="-4" size="816,78" alphatest="blend"/>
+<widget name="header" position="10,3" size="816,30" font="Regular;28" transparent="1" noWrap="1"/>
+<widget name="text" position="18,52" size="800,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
+<widget name="list" position="10,130" size="816,340" selectionDisabled="1" foregroundColor="#fcfcfc" transparent="1"/>
 </screen>
 <screen name="DeliteCronMang" position="30,120" size="820,850" title="Cron Manager">
 <widget source="list" render="Listbox" position="5,20" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1">
