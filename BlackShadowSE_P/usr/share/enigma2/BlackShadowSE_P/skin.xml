@@ -865,6 +865,12 @@ skin author: Matrix10
 <widget source="session.CurrentService" render="Label" position="80,261" size="435,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">CryptoBar</convert>
 </widget>
+<widget source="session.CurrentService" render="Label" position="70,233" size="500,30" halign="left" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
+<convert type="BhStreamInfo">StreamUrl</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="80,261" size="220,30" halign="center" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
+<convert type="BhStreamInfo">StreamType</convert>
+</widget>
 </screen> 
 <screen name="DeliteGreenPanel" position="30,120" size="820,850" title="Open Black Hole Green Panel">
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
