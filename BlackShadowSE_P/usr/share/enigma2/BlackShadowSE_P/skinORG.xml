@@ -865,12 +865,6 @@ skin author: Matrix10
 <widget source="session.CurrentService" render="Label" position="80,261" size="435,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">CryptoBar</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="70,233" size="500,30" halign="left" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
-<convert type="BhStreamInfo">StreamUrl</convert>
-</widget>
-<widget source="session.CurrentService" render="Label" position="80,261" size="220,30" halign="center" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
-<convert type="BhStreamInfo">StreamType</convert>
-</widget>
 </screen> 
 <screen name="DeliteGreenPanel" position="30,120" size="820,850" title="Open Black Hole Green Panel">
 <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
@@ -2815,11 +2809,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 </screen>
 <screen name="VirtualKeyBoard" position="center,200" size="1084,630" zPosition="99" flags="wfNoBorder">
 <ePixmap pixmap="BlackShadowSE_P/buttons/virtualkb.png" position="0,0" size="1084,630" alphatest="off" zPosition="-1" />
-<ePixmap pixmap="BlackShadowSE_P/buttons/vkey_text.png" position="10,82" zPosition="4" size="1064,70" alphatest="blend" />
-<ePixmap pixmap="BlackShadowSE_P/menu/help.png" position="1010,560" size="48,48" alphatest="blend"/>
-<widget name="prompt" position="40,15" size="1044,60" font="Regular;46" foregroundColor="white" backgroundColor="#10000000" transparent="1" noWrap="1" />
-<widget name="text" position="20,92" size="1044,59" font="Regular;40" foregroundColor="white" backgroundColor="#10000000" noWrap="1" halign="right" valign="center" transparent="1"/>
-<widget name="list" position="10,160" size="1064,360" foregroundColor="white" backgroundColor="#004262" transparent="1" selectionDisabled="1" />
+<ePixmap pixmap="BlackShadowSE_P/buttons/vkey_text.png" position="10,55" zPosition="4" size="1064,70" alphatest="blend" />
+<widget name="prompt" position="20,10" size="1044,35" font="Regular;30" foregroundColor="white" backgroundColor="#10000000" transparent="1" noWrap="1" />
+<widget name="text" position="20,65" size="1044,59" font="Regular;40" foregroundColor="white" backgroundColor="#10000000" noWrap="1" halign="right" valign="center" transparent="1"/>
+<widget name="list" position="10,135" size="1064,360" foregroundColor="white" backgroundColor="#004262" transparent="1" selectionDisabled="1" />
 <widget name="mode" position="20,535" size="1044,35" font="Regular;30" backgroundColor="#10000000" halign="center" transparent="1" />
 <widget name="locale" position="20,575" size="1044,35" font="Regular;30" backgroundColor="#10000000" transparent="1" />
 <widget name="language" position="0,0" size="0,0" />
