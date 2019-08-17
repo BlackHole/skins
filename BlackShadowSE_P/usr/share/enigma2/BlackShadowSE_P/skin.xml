@@ -2081,25 +2081,43 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 <widget name="list" position="100,100" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" size="480,400" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x36.png" selectionPixmap="BlackShadowSE_P/menu/button1180x36.png" transparent="1"/>
 <applet type="onLayoutFinish">
 from enigma import eSize, ePoint
+if self.timerRunning:
+	titleheight = 30
+else:
+	titleheight = 0
+	self.setTitle("")
 orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 100, textsize[1] + 100)
-offset = 20
+textsize = (textsize[0] + 76, textsize[1] + 30)
+wsizex = textsize[0] + 90
+wsizey = textsize[1]
+lenlist = len(self.list)*38
+if (lenlist &gt; 190):
+	lenlist = 190
+if (96 &gt; wsizey):
+	wsizey = 96
 if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 100
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
+	wsizey += lenlist + 15
+if (420 &gt; wsizex):
+	wsizex = 420
+wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
+self[&quot;text&quot;].instance.move(ePoint(97, 12 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 70)
-self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.resize(eSize(80,80))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.resize(eSize(80,80))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.resize(eSize(80,80))
+if self.type == self.TYPE_YESNO:
+	listsize = (wsizex-6, lenlist)
+	self[&quot;list&quot;].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
+	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 		</applet>
 </screen>
 <screen name="MoviePlayer" position="0,815" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
@@ -4673,25 +4691,43 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <widget name="list" position="100,100" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" size="480,400" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x36.png" selectionPixmap="BlackShadowSE_P/menu/button1180x36.png" transparent="1"/>
 <applet type="onLayoutFinish">
 from enigma import eSize, ePoint
+if self.timerRunning:
+	titleheight = 30
+else:
+	titleheight = 0
+	self.setTitle("")
 orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 100, textsize[1] + 100)
-offset = 20
+textsize = (textsize[0] + 76, textsize[1] + 30)
+wsizex = textsize[0] + 90
+wsizey = textsize[1]
+lenlist = len(self.list)*38
+if (lenlist &gt; 190):
+	lenlist = 190
+if (96 &gt; wsizey):
+	wsizey = 96
 if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 100
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
+	wsizey += lenlist + 15
+if (420 &gt; wsizex):
+	wsizex = 420
+wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
+self[&quot;text&quot;].instance.move(ePoint(97, 12 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 70)
-self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.resize(eSize(80,80))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.resize(eSize(80,80))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.resize(eSize(80,80))
+if self.type == self.TYPE_YESNO:
+	listsize = (wsizex-6, lenlist)
+	self[&quot;list&quot;].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
+	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 		</applet>
 </screen>
 <screen name="EPGImportConfig" position="30,120" size="820,850" title="EPG Import Configuration">
