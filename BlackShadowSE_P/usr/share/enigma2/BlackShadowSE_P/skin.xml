@@ -2073,52 +2073,41 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 </convert>
 </widget>
 </screen>
-<screen name="MessageBox" position="center,340" size="900,10" >
-<widget name="text" position="97,15" size="780,0" font="Regular;28"/>
-<widget name="ErrorPixmap" pixmap="BlackShadowSE_P/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="QuestionPixmap" pixmap="BlackShadowSE_P/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="InfoPixmap" pixmap="BlackShadowSE_P/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="list" position="100,100" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" size="480,400" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x36.png" selectionPixmap="BlackShadowSE_P/menu/button1180x36.png" transparent="1"/>
-<applet type="onLayoutFinish">
+<screen name="MessageBoxTemplate" position="center,340" size="900,10">
+  <widget name="text" position="100,50" size="780,50" font="Regular;30" />
+  <widget name="ErrorPixmap" pixmap="BlackShadowSE_P/icons/input_error.png" position="5,5" size="53,53" alphatest="blend" />
+  <widget name="QuestionPixmap" pixmap="BlackShadowSE_P/icons/input_question.png" position="5,5" size="53,53" alphatest="blend" />
+  <widget name="InfoPixmap" pixmap="BlackShadowSE_P/icons/input_info.png" position="5,5" size="53,53" alphatest="blend" />
+  <widget name="list" position="150,150" font="Regular;32" itemHeight="35" scrollbarMode="showOnDemand" size="480,400" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x36.png" selectionPixmap="BlackShadowSE_P/menu/button1180x36.png" transparent="1" />
+  <applet type="onLayoutFinish">
+self.autoResize()
 from enigma import eSize, ePoint
-if self.timerRunning:
-	titleheight = 30
-else:
-	titleheight = 0
-	self.setTitle("")
 orgwidth = self.instance.size().width()
-orgheight = self.instance.size().height()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 76, textsize[1] + 30)
-wsizex = textsize[0] + 90
-wsizey = textsize[1]
-lenlist = len(self.list)*38
-if (lenlist &gt; 190):
-	lenlist = 190
-if (96 &gt; wsizey):
-	wsizey = 96
+textsize = (textsize[0] + 100, textsize[1] + 100)
+offset = 20
 if self.type == self.TYPE_YESNO:
-	wsizey += lenlist + 15
-if (420 &gt; wsizex):
-	wsizex = 420
-wsize = (wsizex, wsizey + titleheight)
+    offset = 100
+wsizex = textsize[0] + 100
+wsizey = textsize[1] + offset
+if (600 &gt; wsizex):
+    wsizex = 600
+wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.move(ePoint(97, 12 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-self[&quot;ErrorPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;ErrorPixmap&quot;].instance.resize(eSize(80,80))
-self[&quot;QuestionPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;QuestionPixmap&quot;].instance.resize(eSize(80,80))
-self[&quot;InfoPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;InfoPixmap&quot;].instance.resize(eSize(80,80))
-if self.type == self.TYPE_YESNO:
-	listsize = (wsizex-6, lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
-	self[&quot;list&quot;].instance.resize(eSize(*listsize))
+listsize = (wsizex - 20, 70)
+self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
+self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
-		</applet>
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+</applet>
+</screen>
+<screen name="MessageBox" position="center,340" size="900,10">
+<panel name= "MessageBoxTemplate"/>
+</screen>
+<screen name="MessageBoxSimple" position="center,340" size="900,10">
+<panel name= "MessageBoxTemplate"/>
 </screen>
 <screen name="MoviePlayer" position="0,815" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 <ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="BlackShadowSE_P/moviebar.png"/>
@@ -4682,53 +4671,6 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 </screen>
 <screen name="TextBox" position="30,120" size="820,850" title="">
 <widget name="text" position="20,20" zPosition="1" size="800,810" halign="left" enableWrapAround="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-</screen>
-<screen name="MessageBoxSimple" position="center,340" size="900,10" >
-<widget name="text" position="97,15" size="780,0" font="Regular;28"/>
-<widget name="ErrorPixmap" pixmap="BlackShadowSE_P/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="QuestionPixmap" pixmap="BlackShadowSE_P/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="InfoPixmap" pixmap="BlackShadowSE_P/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
-<widget name="list" position="100,100" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" size="480,400" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x36.png" selectionPixmap="BlackShadowSE_P/menu/button1180x36.png" transparent="1"/>
-<applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-if self.timerRunning:
-	titleheight = 30
-else:
-	titleheight = 0
-	self.setTitle("")
-orgwidth = self.instance.size().width()
-orgheight = self.instance.size().height()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 76, textsize[1] + 30)
-wsizex = textsize[0] + 90
-wsizey = textsize[1]
-lenlist = len(self.list)*38
-if (lenlist &gt; 190):
-	lenlist = 190
-if (96 &gt; wsizey):
-	wsizey = 96
-if self.type == self.TYPE_YESNO:
-	wsizey += lenlist + 15
-if (420 &gt; wsizex):
-	wsizex = 420
-wsize = (wsizex, wsizey + titleheight)
-self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.move(ePoint(97, 12 + titleheight))
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-self[&quot;ErrorPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;ErrorPixmap&quot;].instance.resize(eSize(80,80))
-self[&quot;QuestionPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;QuestionPixmap&quot;].instance.resize(eSize(80,80))
-self[&quot;InfoPixmap&quot;].instance.move(ePoint(7, 7 + titleheight))
-self[&quot;InfoPixmap&quot;].instance.resize(eSize(80,80))
-if self.type == self.TYPE_YESNO:
-	listsize = (wsizex-6, lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
-	self[&quot;list&quot;].instance.resize(eSize(*listsize))
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
-		</applet>
 </screen>
 <screen name="EPGImportConfig" position="30,120" size="820,850" title="EPG Import Configuration">
 <ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="760,785" size="48,48" alphatest="blend"/>
