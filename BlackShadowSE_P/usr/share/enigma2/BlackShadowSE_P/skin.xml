@@ -895,7 +895,7 @@ skin author: Matrix10
     <widget source="session.CurrentService" render="Label" position="420,233" size="690,90" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="80,261" size="435,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+    <widget source="session.CurrentService" render="Label" position="80,261" size="450,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
       <convert type="PliExtraInfo">CryptoBar</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="70,233" size="500,30" halign="left" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
@@ -1501,14 +1501,14 @@ MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT
     <widget source="streams" render="Listbox" position="0,430" size="820,333" zPosition="3" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1">
       <convert type="TemplatedMultiContent">
 {"templates":
-{"default": (37, [ 
+{"default": (37, [
 MultiContentEntryText(pos = (0, 0),   size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 MultiContentEntryText(pos = (2, 3),  size = (62, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 MultiContentEntryText(pos = (60, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 MultiContentEntryText(pos = (310, 3), size = (360, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 ], True, "showNever"),
-"notselected": (37, [ 
+"notselected": (37, [
 MultiContentEntryText(pos = (0, 0),   size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 MultiContentEntryText(pos = (2, 3),  size = (62, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 MultiContentEntryText(pos = (60, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
@@ -1848,8 +1848,8 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
     <widget source="languages" render="Listbox" position="20,270" size="820,350" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x50.png" selectionPixmap="BlackShadowSE_P/menu/button820x50.png" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (100, 7), size = (650, 35), flags = RT_HALIGN_LEFT, text = 1), 
-MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), 
+MultiContentEntryText(pos = (100, 7), size = (650, 35), flags = RT_HALIGN_LEFT, text = 1),
+MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 ],
 "fonts": [gFont("Regular", 32)],
 "itemHeight": 50
@@ -2104,8 +2104,8 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <widget source="languages" render="Listbox" enableWrapAround="1" position="2,10" size="556,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1), 
-MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2), 
+MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1),
+MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 ],
 "fonts": [gFont("Regular", 32)],
 "itemHeight": 55
@@ -2327,8 +2327,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="nimlist" render="Listbox" position="20,10" size="1260,600" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="#272727" backgroundPixmap="BlackShadowSE_P/menu/bg1260x150.png" selectionPixmap="BlackShadowSE_P/menu/button1260x150.png" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (10, 10), size = (1240, 35), flags = RT_HALIGN_LEFT, text = 1), 
-MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HALIGN_LEFT, text = 2), 
+MultiContentEntryText(pos = (10, 10), size = (1240, 35), flags = RT_HALIGN_LEFT, text = 1),
+MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HALIGN_LEFT, text = 2),
 ],
 "fonts": [gFont("Regular", 28), gFont("Regular", 24)],
 "itemHeight": 150
@@ -2649,9 +2649,9 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
     <widget source="key_red" render="Label" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="menu" render="Listbox" position="5,20" size="810,600" zPosition="3" scrollbarMode="showOnDemand" transparent="1" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png">
       <convert type="TemplatedMultiContent">
-{"template": [  MultiContentEntryText(pos = (5, 2), size = (500, 35), flags = RT_HALIGN_LEFT, text = 0), 
-MultiContentEntryText(pos = (510, 5), size = (300, 35), flags = RT_HALIGN_LEFT, text = 1)], 
-"fonts": [gFont("Regular", 30)], 
+{"template": [  MultiContentEntryText(pos = (5, 2), size = (500, 35), flags = RT_HALIGN_LEFT, text = 0),
+MultiContentEntryText(pos = (510, 5), size = (300, 35), flags = RT_HALIGN_LEFT, text = 1)],
+"fonts": [gFont("Regular", 30)],
 "itemHeight": 40 }
 </convert>
     </widget>
@@ -6522,8 +6522,8 @@ MultiContentEntryText(pos = (1060, 0), size = (220, 40), font = 1, flags = RT_HA
     <widget source="languages" render="Listbox" enableWrapAround="1" position="2,10" size="556,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1), 
-MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2), 
+MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1),
+MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 ],
 "fonts": [gFont("Regular", 32)],
 "itemHeight": 55
