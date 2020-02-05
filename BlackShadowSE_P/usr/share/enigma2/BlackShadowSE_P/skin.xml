@@ -2125,18 +2125,18 @@ from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 100, textsize[1] + 100)
+textsize = (textsize[0] + 80, textsize[1] + 80)
 offset = 20
 if self.type == self.TYPE_YESNO:
-    offset = 100
-wsizex = textsize[0] + 100
+    offset = 80
+wsizex = textsize[0] + 10
 wsizey = textsize[1] + offset
 if (600 &gt; wsizex):
     wsizex = 600
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 100)
+listsize = (wsizex - 20, 80)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
