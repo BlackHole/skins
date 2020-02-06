@@ -2136,7 +2136,7 @@ if (600 &gt; wsizex):
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 100)
+listsize = (wsizex - 20, 80)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
@@ -2504,10 +2504,20 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="HelpWindow" position="740,825" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <widget name="footnote" position="1000,640" size="280,70" zPosition="1" font="Regular;26" halign="right" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
   </screen>
-  <screen name="SkinSelector" position="30,120" size="820,850" title="Choose your Skin">
-    <widget name="SkinList" position="20,20" size="780,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
-    <widget name="Preview" position="280,350" size="280,210" alphatest="blend" />
-    <widget source="introduction" render="Label" position="20,590" size="820,35" zPosition="10" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+  <screen name="SkinSelector" position="30,120" size="820,850" >
+    <widget source="skins" render="Listbox" position="20,20" size="780,320" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"  >
+      <convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryText(pos = (10, 0), size = (560, 40), flags = RT_HALIGN_LEFT, font=0, text = 1),
+MultiContentEntryText(pos = (570, 0), size = (200, 40), flags = RT_HALIGN_RIGHT, font=0, text = 2)
+],
+"fonts": [gFont("Regular", 28)],
+"itemHeight": 40
+}
+</convert>
+    </widget>
+    <widget name="preview" position="280,350" size="280,210" alphatest="blend" />
+    <widget source="description" render="Label" position="20,590" size="820,35" zPosition="10" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend" />
