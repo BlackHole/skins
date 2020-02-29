@@ -2294,11 +2294,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="freeDiskSpace" position="20,740" size="1170,35" zPosition="1" halign="right" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
-  <screen name="NumberZap" position="center,center" size="380,60" title="Channel:">&gt;
-<widget name="channel" position="0,0" size="0,0" font="Regular;26" /><widget name="number" position="0,12" size="380,45" halign="center" font="Regular;42" /></screen>
-  <screen name="ParentalControlChangePin" position="30,120" size="820,850" title="Change pin code">
-    <widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
-  </screen>
+<screen name="NumberZap" position="center,center" size="380,60" title="Channel:">
+<widget name="channel" position="0,0" size="0,0" font="Regular;26" />
+<widget name="number" position="0,12" size="380,45" halign="center" font="Regular;42" />
+</screen>
+<screen name="NumberZapPicon" title="Channel" position="150,67" size="651,300" backgroundColor="transparent" flags="wfNoBorder">
+<widget name="channel" position="0,0" size="180,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+<widget name="number" position="180,0" size="150,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+<widget name="servicename" position="0,67" size="651,90" backgroundColor="transparent" transparent="1" font="Regular;33" borderColor="black" borderWidth="2" valign="center" halign="left"/>
+<widget source="Service" render="Picon" position="0,160" size="220,132" alphatest="blend" backgroundColor="background" transparent="1">
+<convert type="ServiceName">Reference</convert>
+</widget>		
+</screen>
+<screen name="ParentalControlChangePin" position="30,120" size="820,850" title="Change pin code">
+<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
+</screen>
   <screen name="ParentalControlEditor" position="30,120" size="820,850" title="Parental control services Editor">
     <widget name="servicelist" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
   </screen>
@@ -2994,7 +3004,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 20), size = (80, 80), png = 2),
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend" />
     <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget name="lab1" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1" />&gt;
+    <widget name="lab1" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1" />
 </screen>
   <screen name="DeliteSetupDevicePanelConf" position="center,200" size="1300,720" title="Devices Mountpoints Setup">
     <widget name="config" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
@@ -3003,7 +3013,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 20), size = (80, 80), png = 2),
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
     <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget name="Linconn" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1" />&gt;
+    <widget name="Linconn" zPosition="2" position="30,580" size="1250,60" font="Regular;24" halign="center" transparent="1" />
 </screen>
   <screen name="DeliteKernelModules" position="30,120" size="820,850" title="Extra Kernel Modules Setup">
     <widget name="config" position="5,20" size="810,720" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
@@ -3073,7 +3083,7 @@ MultiContentEntryText(pos = (5, 2), size = (810, 36), flags = RT_HALIGN_LEFT|RT_
     <widget source="IFtext" render="Label" position="10,30" size="210,35" zPosition="10" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="IF" render="Label" position="230,30" size="570,35" zPosition="10" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="menulist" position="10,75" size="800,315" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
-    <widget source="description" render="Label" position="10,475" size="800,225" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />&gt;
+    <widget source="description" render="Label" position="10,475" size="800,225" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
 <widget source="Statustext" render="Label" position="15,385" size="180,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" /><widget name="statuspic" position="100,394" size="15,16" pixmaps="BlackShadowSE_P/buttons/button_green.png,BlackShadowSE_P/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="blend" /><ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend" /><eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" /><widget source="key_red" render="Label" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" /></screen>
   <screen name="NameserverSetup" position="30,120" size="820,850" title="Nameserver Setup">
     <widget name="config" position="10,20" size="800,525" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
@@ -4077,7 +4087,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="VKeyIcon" pixmap="BlackShadowSE_P/buttons/key_text.png" position="10,650" zPosition="10" size="35,25" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="NetDrivebrowser" position="30,120" size="820,850" title="NetDrive Setup &gt; Mount Point">
+  <screen name="NetDrivebrowser" position="30,120" size="820,850" title="NetDrive Setup Mount Point">
     <widget name="filelist" position="10,20" size="800,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
     <widget source="status" render="Label" position="10,580" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend" />
