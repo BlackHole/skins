@@ -1860,6 +1860,9 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="BlackShadowSE_P/arrowdown.png" zPosition="11" alphatest="blend" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="BlackShadowSE_P/arrowup.png" zPosition="11" alphatest="blend" />
     <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="BlackShadowSE_P/arrowup.png" zPosition="11" alphatest="blend" />
+	<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="34,650" size="48,48" alphatest="blend" />
+    <widget name="key_blue" position="94,640" size="350,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="EPGSelection" position="center,105" size="1820,880" title="EPG Selection">
     <eLabel position="1200,20" size="620,320" zPosition="2" backgroundColor="black" />
@@ -2101,7 +2104,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="BlackShadowSE_P/arrowup.png" zPosition="11" alphatest="blend" />
   </screen>
   <screen name="LanguageSelection" position="30,120" size="560,850" title="Language selection">
-    <widget source="languages" render="Listbox" enableWrapAround="1" position="2,10" size="556,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+    <widget source="languages" render="Listbox" enableWrapAround="1" position="2,10" size="556,660" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1),
@@ -2112,6 +2115,11 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 }
 </convert>
     </widget>
+  <eLabel position="0,695" size="560,3" zPosition="-1" backgroundColor="un272727" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="30,720" size="48,48" alphatest="blend" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="30,785" size="48,48" alphatest="blend" />
+  <widget name="key_yellow" position="90,720" size="430,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  <widget name="key_blue" position="90,785" size="430,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="MessageBoxTemplate" position="center,340" size="900,10">
     <widget name="text" position="97,15" size="780,0" font="Regular;28" />
@@ -6584,9 +6592,9 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
     <eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="un272727" />
     <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget name="config" position="20,20" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
-    <widget name="pleasewait" position="20,560" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
-    <widget name="description" position="20,590" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+    <widget name="config" position="20,20" size="1260,440" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="pleasewait" position="20,490" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+    <widget name="description" position="20,525" size="1260,100" zPosition="2" font="Regular; 28" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
   </screen>
   <screen name="AutoBouquetsMaker_Menu" position="center,200" size="1300,720" title="AutoBouquetsMaker Menu">
     <widget source="list" render="Listbox" position="20,20" size="1260,400" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1">
