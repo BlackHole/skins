@@ -2037,19 +2037,19 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <panel name="ButtonBarAuto1"/>
     <widget name="timerlist" position="5,15" size="810,675" zPosition="2" itemHeight="75" rowSplit="40" setEventNameFont="Regular;28" setServiceNameFont="Regular;28" setFont="Regular;26" satPosLeft="300" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x75.png" selectionPixmap="BlackShadowSE_P/menu/button820x75.png" transparent="1" />
   </screen>
-  <screen name="TimerLog" position="135,150" size="1650,840" title="Timer log">
-    <widget name="loglist" position="15,15" size="1620,525" scrollbarMode="showOnDemand" />
-    <eLabel position="0,555" size="1650,1" backgroundColor="grey" />
-    <widget name="logentry" position="15,570" size="1620,195" font="Regular;28" />
-    <eLabel position="0,777" size="1650,1" backgroundColor="grey" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,787" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="435,787" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="840,787" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1245,787" size="48,48" alphatest="blend" />
-    <widget name="key_red" position="105,787" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_green" position="510,787" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_yellow" position="915,787" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_blue" position="1320,787" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
+  <screen name="TimerLog" position="center,200" size="1300,720" title="Timer log">
+    <widget name="loglist" position="15,10" size="1270,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" selectionPixmap="BlackShadowSE_P/menu/button1410x40.png" transparent="1"/>
+    <widget name="logentry" position="15,510" size="1270,120" font="Regular;28" />
+    <eLabel position="0,500" size="1300,3" zPosition="-1" backgroundColor="un272727" />
+    <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend" />
+    <widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="TimerSanityConflict" position="center,200" size="1300,720" title="Timer sanity error">
     <widget name="list" position="20,20" size="1260,140" zPosition="2" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x35.png" selectionPixmap="BlackShadowSE_P/menu/button1260x35.png" transparent="1" />
