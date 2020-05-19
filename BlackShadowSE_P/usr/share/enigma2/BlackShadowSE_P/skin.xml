@@ -1673,7 +1673,7 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
   </screen>
 <screen name="ChoiceBox" position="center,300" size="900,850" title="Input">
   <widget name="text" position="20,20" size="900,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-  <widget name="list" position="20,280" size="900,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button1180x40" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x40.png" selectionPixmap="BlackShadowSE_P/menu/button1180x40c.png" transparent="1" />
+  <widget name="list" position="20,280" size="900,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1180x40.png" selectionPixmap="BlackShadowSE_P/menu/button1180x40c.png" transparent="1" />
   <applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
