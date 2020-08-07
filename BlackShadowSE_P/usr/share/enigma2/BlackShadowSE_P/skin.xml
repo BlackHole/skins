@@ -2538,7 +2538,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget source="key_green" render="Label" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="config" position="20,0" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
     <widget name="description" position="5,520" size="1290,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
-    <widget name="HelpWindow" position="740,825" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+    <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <widget name="footnote" position="1000,640" size="280,70" zPosition="1" font="Regular;26" halign="right" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
   </screen>
   <screen name="SkinSelector" position="30,120" size="820,850" >
@@ -7059,6 +7059,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
   <screen name="WitAiSttSetup" position="30,120" size="820,850" title="Wit.ai Speech to Text Setup">
     <widget name="config" position="10,20" size="800,140" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
     <widget source="description" render="Label" position="20,220" size="780,300" zPosition="1" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
+    <widget name="HelpWindow" position="200,600" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="160,780" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="490,780" size="48,48" alphatest="blend" />
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un323232" />
