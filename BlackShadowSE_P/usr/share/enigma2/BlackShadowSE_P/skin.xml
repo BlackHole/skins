@@ -2530,7 +2530,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="scan_progress" position="30,250" size="840,30" borderWidth="2" borderColor="uncccccc" />
     <widget name="servicelist" position="30,300" size="840,540" itemHeight="40" font="Regular;28" valign="center" selectionDisabled="1" />
   </screen>
-  <screen name="Setup" position="center,200" size="1300,720" title="Setup">
+  <screen name="Setup" position="center,200" size="1300,720" >
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend" />
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
