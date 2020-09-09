@@ -1095,6 +1095,9 @@ MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT
 </convert>
     </widget>
     <widget name="statuslab" position="0,600" size="820,100" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="385,780" size="48,48" alphatest="blend" />
+    <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
+    <widget name="key_green" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="DeliteSettings" position="30,120" size="820,850" title="Open Black Hole Settings">
     <widget source="list" render="Listbox" enableWrapAround="1" position="0,20" size="820,780" zPosition="1" scrollbarMode="showNever" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x60.png" selectionPixmap="BlackShadowSE_P/menu/sel820x60.png" transparent="1">
@@ -2530,7 +2533,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="scan_progress" position="30,250" size="840,30" borderWidth="2" borderColor="uncccccc" />
     <widget name="servicelist" position="30,300" size="840,540" itemHeight="40" font="Regular;28" valign="center" selectionDisabled="1" />
   </screen>
-  <screen name="Setup" position="center,200" size="1300,720" >
+  <screen name="Setup" position="center,200" size="1300,720" title="Setup">
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend" />
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
