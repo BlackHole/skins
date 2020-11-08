@@ -1459,6 +1459,16 @@ MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT
 </convert>
     </widget>
   </screen>
+  <screen name="menu_rec" position="30,120" size="700,850" title="Menu">
+  <widget source="menu" render="Listbox" enableWrapAround="1" position="0,10" size="700,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x60.png" selectionPixmap="BlackShadowSE_P/menu/sel820x60.png" scrollbarMode="showNever" transparent="1">
+    <convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (20, 7), size = (660, 40), flags = RT_HALIGN_LEFT, text =0) ],
+"fonts": [gFont("Regular",34)],
+"itemHeight":60
+}
+</convert>
+  </widget>
+</screen>
   <screen name="Menu" position="30,120" size="560,850" title="Menu">
   <widget source="menu" render="Listbox" enableWrapAround="1" position="0,10" size="560,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x55.png" selectionPixmap="BlackShadowSE_P/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
     <convert type="TemplatedMultiContent">
