@@ -2494,9 +2494,14 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget source="key_green" render="Label" position="330,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="key_yellow" render="Label" position="600,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
-  <screen name="ScanSetup" position="30,120" size="820,850" title="Manual scan">
-    <widget name="config" position="20,20" size="780,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
-    <widget name="introduction" position="20,790" size="780,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+<screen name="ScanSetup" position="30,120" size="820,850" title="Manual scan">
+  <widget name="introduction" position="20,710" size="780,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+  <widget name="config" position="20,20" size="780,665" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1"/>
+  <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
+  <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+  <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+  <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+  <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727"/>
   </screen>
   <screen name="CableScanScreen" position="30,120" size="820,850" title="CableScanScreen">
     <widget name="config" position="20,20" size="780,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
@@ -2506,10 +2511,14 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="scan_state" position="30,157" size="840,35" zPosition="2" font="Regular;30" backgroundColor="transpBlack" transparent="1" />
     <widget name="scan_progress" position="30,250" size="840,30" borderWidth="2" borderColor="uncccccc" />
   </screen>
-  <screen name="ScanSimple" position="30,120" size="820,850" title="Automatic scan">
-    <widget name="header" position="20,20" size="780,35" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
-    <widget name="footer" position="20,790" size="780,35" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
-    <widget name="config" position="20,80" size="780,455" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1" />
+<screen name="ScanSimple" position="30,120" size="820,850" title="Automatic scan">
+  <widget name="introduction" position="20,710" size="780,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+  <widget name="config" position="20,20" size="780,665" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x35.png" selectionPixmap="BlackShadowSE_P/menu/button820x35.png" transparent="1"/>
+  <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
+  <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+  <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+  <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+  <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727"/>
   </screen>
   <screen name="DefaultServiceScan" position="center,center" size="900,650" title="DefaultServiceScan">
     <widget source="FrontendInfo" render="Pixmap" pixmap="BlackShadowSE_P/icons/scan-s.png" position="22,22" size="64,64" transparent="1" alphatest="blend">
