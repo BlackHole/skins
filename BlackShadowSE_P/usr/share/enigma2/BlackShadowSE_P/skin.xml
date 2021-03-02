@@ -2396,17 +2396,18 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="NimSetup" position="center,200" size="1300,720" title="Reception Settings">
-    <widget name="config" position="20,10" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
-    <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="20,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="680,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1010,650" size="48,48" alphatest="blend" />
-    <widget source="key_red" render="Label" position="75,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_green" render="Label" position="405,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+<screen name="NimSetup" position="center,200" size="1300,720" title="Reception Settings">
+  <widget name="config" position="20,10" size="1260,480" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  <widget name="description" position="5,520" size="1290,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+  <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="20,650" size="48,48" alphatest="blend" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="680,650" size="48,48" alphatest="blend" />
+  <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1010,650" size="48,48" alphatest="blend" />
+  <widget source="key_red" render="Label" position="75,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  <widget source="key_green" render="Label" position="405,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="Satfinder" position="30,120" size="820,850" title="Satfinder">
     <eLabel name="snr" text="SNR:" position="35,22" size="90,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
