@@ -2730,7 +2730,7 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
     <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="config" position="5,20" size="810,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
-    <widget name="lab1" position="20,710" size="780,40" zPosition="1" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+    <widget name="lab1" position="20,650" size="780,80" zPosition="1" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
   </screen>
   <screen name="picshow" position="center,200" size="1300,720" title="PicturePlayer">
     <ePixmap pixmap="BlackShadowSE_P/menu/picc.png" position="995,210" size="150,150" zPosition="-1" alphatest="on" />
