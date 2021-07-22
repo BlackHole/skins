@@ -1708,7 +1708,7 @@ listsize = (wsizex - 20, 40 * count)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 3)))
+self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 or 3)))
   </applet>
 </screen>
   <screen name="Console" position="center,200" size="1300,720" title="Command execution...">
@@ -2180,7 +2180,7 @@ listsize = (wsizex - 20, 40 * count)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
 </applet>
   </screen>
   <screen name="MessageBox" position="center,340" size="900,10">
