@@ -979,7 +979,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
     <widget name="Ilab4" position="30,274" size="640,35" font="Regular;28" zPosition="2" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="Ecmtext" position="30,320" size="790,370" font="Regular;24" halign="left" zPosition="2" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
-  <screen name="DeliteAddons" position="30,120" size="820,850" title="Addons Manager">
+  <screen name="DeliteAddons" position="30,120" size="820,850" title="Feeds and Update Manager">
     <widget source="list" render="Listbox" enableWrapAround="1" position="0,20" size="820,600" zPosition="1" scrollbarMode="showNever" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x60.png" selectionPixmap="BlackShadowSE_P/menu/sel820x60.png" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (80,11), size = (730,40), flags = RT_HALIGN_LEFT, text = 0),
