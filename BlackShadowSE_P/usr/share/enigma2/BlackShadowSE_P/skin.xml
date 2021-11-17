@@ -7001,6 +7001,34 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
     <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
+	<screen name="JobView" position="30,120" size="820,850">
+		<widget source="job_name" render="Label" position="30,10" size="760,40" font="Regular;32"/>
+		<widget source="job_task" render="Label" position="30,60" size="760,40" font="Regular;30"/>
+		<widget source="job_progress" render="Progress" position="30,110" size="760,50" borderWidth="3" backgroundColor="#254f7497"/>
+		<widget source="job_progress" render="Label" position="180,170" size="420,40" font="Regular;32" foregroundColor="button" backgroundColor="bgkey" zPosition="2" halign="center" transparent="1">
+			<convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="30,220" size="760,40" font="Regular;32"/>
+		<widget name="config" position="30,270" size="760,30"/>
+		<widget source="cancelable" render="Pixmap" pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="70,770" size="280,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="BlackShadowSE_P/buttons/green48x48.png" position="550,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="340,770" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="610,770" size="200,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
   <screen name="OBHBackupManagerLogView" position="30,120" size="820,850" title="LogView">
     <widget name="list" position="20,20" size="780,820" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
