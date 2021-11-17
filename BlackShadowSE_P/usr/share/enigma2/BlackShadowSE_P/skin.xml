@@ -6043,6 +6043,13 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
   <screen name="ServiceInfoSimple" position="30,120" size="820,850" title="ServiceInfoSimple">
     <widget name="infolist" position="20,20" size="780,805" font="Regular;28" selectionDisabled="1" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
+  <screen name="CommitInfo" position="30,120" size="820,850" title="CommitInfo">
+    <widget name="AboutScrollLabel" position="20,20" size="780,630" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget name="HintText" position="20,650" size="780,100" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1" />
+    <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
+   <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend" />
+    <widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  </screen>
   <screen name="SoftwareUpdateChanges" position="30,120" size="820,850" title="SoftwareUpdateChanges">
     <widget name="text" position="20,20" size="780,735" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
