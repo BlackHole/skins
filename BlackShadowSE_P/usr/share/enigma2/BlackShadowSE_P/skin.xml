@@ -112,7 +112,7 @@ skin author: Matrix10
     <parameter name="HelpMenuListExtHlp0" value="0,0,840,39" />
     <parameter name="HelpMenuListExtHlp1" value="0,42,840,30" />
     <parameter name="ConfigListSeperator" value="500" />
-    <parameter name="ChoicelistIcon" value="2,4,35,35" />
+    <parameter name="ChoicelistIcon" value="2,6,35,35" />
     <parameter name="ChoicelistDash" value="0,0,850,35" />
     <parameter name="ChoicelistName" value="45,0,850,35" />
     <parameter name="ServiceInfoLeft" value="0,0,450,40" />
@@ -7267,7 +7267,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # in
     <widget name="status" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
 <screen name="CCcamInfoMain" position="center,200" size="1300,720" title="">
-    <widget name="menu" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="menu" position="20,0" size="1260,700" zPosition="2" font="Regular;30" itemHeight="50" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
   </screen>
 <screen name="CCcamInfoEcmInfoSelection" position="center,200" size="1300,720" title="">
     <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
@@ -7280,7 +7280,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # in
     <widget name="info" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="blue" backgroundColor="bgbutton" transparent="1" />
   </screen>
 <screen name="CCcamInfoServerMenu" position="center,200" size="1300,720" title="">
-    <widget name="list" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="list" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="50" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
     <widget name="info" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="blue" backgroundColor="bgbutton" transparent="1" />
   </screen>
 <screen name="CCcamInfoConfigMenu" position="center,200" size="1300,720" title="">
