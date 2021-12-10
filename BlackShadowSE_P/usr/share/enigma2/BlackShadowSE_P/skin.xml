@@ -330,13 +330,13 @@ skin author: Matrix10
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1740,135" zPosition="2" size="48,48" transparent="1">
-      <convert type="BhAnalogic">Hours</convert>
+      <convert type="AnalogClock2">Hours</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1725,120" zPosition="3" size="78,78" transparent="1">
-      <convert type="BhAnalogic">Minutes</convert>
+      <convert type="AnalogClock2">Minutes</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1723,119" borderColor="unf23d21" zPosition="4" size="81,81" transparent="1">
-      <convert type="BhAnalogic">Seconds</convert>
+      <convert type="AnalogClock2">Seconds</convert>
     </widget>
     <eLabel text="A" position="884,54" zPosition="1" size="18,24" font="Regular;22" halign="center" foregroundColor="un505050" backgroundColor="un308" transparent="1" />
     <eLabel text="B" position="900,54" zPosition="1" size="18,24" font="Regular;22" halign="center" foregroundColor="un505050" backgroundColor="un308" transparent="1" />
@@ -680,13 +680,13 @@ skin author: Matrix10
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1740,135" zPosition="2" size="48,48" transparent="1">
-      <convert type="BhAnalogic">Hours</convert>
+      <convert type="AnalogClock2">Hours</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1725,120" zPosition="3" size="78,78" transparent="1">
-      <convert type="BhAnalogic">Minutes</convert>
+      <convert type="AnalogClock2">Minutes</convert>
     </widget>
     <widget source="global.CurrentTime" render="Bhclock" position="1723,119" borderColor="unf23d21" zPosition="4" size="81,81" transparent="1">
-      <convert type="BhAnalogic">Seconds</convert>
+      <convert type="AnalogClock2">Seconds</convert>
     </widget>
     <eLabel text="A" position="884,54" zPosition="1" size="18,24" font="Regular;22" halign="center" foregroundColor="un505050" backgroundColor="un308" transparent="1" />
     <eLabel text="B" position="900,54" zPosition="1" size="18,24" font="Regular;22" halign="center" foregroundColor="un505050" backgroundColor="un308" transparent="1" />
