@@ -2221,18 +2221,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
     <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <ePixmap position="1466,32" size="55,48" zPosition="1" pixmap="BlackShadowSE_P/ico_dolby_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="1466,32" size="55,48" zPosition="2" pixmap="BlackShadowSE_P/ico_dolby_on.png" alphatest="blend">
+    <ePixmap position="1450,32" size="55,48" zPosition="1" pixmap="BlackShadowSE_P/ico_dolby_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1450,32" size="55,48" zPosition="2" pixmap="BlackShadowSE_P/ico_dolby_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1466,32" size="55,48" zPosition="2" pixmap="BlackShadowSE_P/ico_stereo_on.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="1450,32" size="55,48" zPosition="2" pixmap="BlackShadowSE_P/ico_stereo_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsStereo</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="BlackShadowSE_P/ico_format_off.png" position="1545,32" zPosition="1" size="55,48" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="BlackShadowSE_P/ico_format_on.png" position="1545,32" size="55,48" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="BlackShadowSE_P/ico_format_off.png" position="1510,32" zPosition="1" size="55,48" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="BlackShadowSE_P/ico_format_on.png" position="1510,32" size="55,48" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap position="1570,32" size="55,48" zPosition="1" pixmap="BlackShadowSE_P/ico_hd_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1570,32" size="55,48" zPosition="2" pixmap="BlackShadowSE_P/ico_sd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsSD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1570,32" size="55,48" zPosition="3" pixmap="BlackShadowSE_P/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1570,32" size="55,48" zPosition="4" pixmap="BlackShadowSE_P/ico_uhd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="BlackShadowSE_P/recbg.png" position="1636,136" size="30,30" zPosition="1" alphatest="blend" />
