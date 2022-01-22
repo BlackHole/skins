@@ -76,7 +76,6 @@ skin author: Matrix10
     <font filename="tuxtxt.ttf" name="Console" scale="100" />
     <alias name="ChoiceList" font="Regular" size="30" height="35" />
     <alias name="Body" font="Regular" size="30" height="35" />
-    <alias name="FileListMulti" font="Regular" size="28" height="32" />
     <alias name="FileList" font="Regular" size="28" height="37" />
     <alias name="PlayList" font="Regular" size="28" height="37" />
     <alias name="PluginBrowser0" font="Regular" size="28" height="32" />
@@ -88,7 +87,6 @@ skin author: Matrix10
     <alias name="HelpMenuList" font="Regular" size="30" height="50" />
     <alias name="HelpMenuListExt0" font="Regular" size="30" height="75" />
     <alias name="HelpMenuListExt1" font="Regular" size="30" />
-    <alias name="ServiceInfo" font="Regular" size="28" height="32" />
     <alias name="VirtualKeyBoard" font="Regular" size="40" height="72" />
   </fonts>
   <parameters>
@@ -2416,16 +2414,14 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
 }
 </convert>
     </widget>
-    <widget name="config" position="20,10" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="20,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="680,650" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="1010,650" size="48,48" alphatest="blend" />
-    <widget source="key_red" render="Label" position="75,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_green" render="Label" position="405,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend" />
+    <widget source="key_red" render="Label" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget source="key_green" render="Label" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget source="key_yellow" render="Label" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
 <screen name="NimSetup" position="center,200" size="1300,720" title="Reception Settings">
   <widget name="config" position="20,10" size="1260,480" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
@@ -2599,7 +2595,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="scan_progress" position="30,250" size="840,30" borderWidth="2" borderColor="uncccccc" />
     <widget name="servicelist" position="30,300" size="840,540" itemHeight="40" font="Regular;28" valign="center" selectionDisabled="1" />
   </screen>
-  <screen name="Setup" position="center,200" size="1300,720" title="Setup">
+ <screen name="Setup" position="center,200" size="1300,720" title="Setup">
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend" />
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
@@ -2608,7 +2604,7 @@ MultiContentEntryText(pos = (10, 48), size = (1240, 90), font = 1, flags = RT_HA
     <widget name="config" position="20,0" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
     <widget name="description" position="5,520" size="1290,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
     <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
-    <widget name="footnote" position="1000,640" size="280,70" zPosition="1" font="Regular;26" halign="right" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1" />
+    <widget name="footnote" position="5,688" size="1290,32" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="red" backgroundColor="bgmain" transparent="1" />
   </screen>
   <screen name="SkinSelector" position="30,120" size="820,850" >
     <widget source="skins" render="Listbox" position="20,20" size="780,320" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1"  >
