@@ -2701,7 +2701,7 @@ MultiContentEntryText(pos = (520, 0), size = (250, 40), flags = RT_HALIGN_RIGHT,
     <sub name="Subtitle_Italic" font="Regular;50" borderColor="black" borderWidth="3" />
     <sub name="Subtitle_MAX" font="Regular;50" borderColor="black" borderWidth="3" />
   </subtitles>
-  <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
+  <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent"/>   
   <screen name="TimerEdit" position="135,120" size="1650,840" title="Timer Edit">
     <widget name="description" position="15,15" size="1620,60" font="Regular;32" />
     <widget name="lbegin" position="907,153" size="154,45" font="Regular;32" foregroundColor="red" />
@@ -7429,6 +7429,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # in
 <widget source="description" render="Label" position="20,460" zPosition="1" size="1260,110" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="choices" render="Label" position="20,580" zPosition="1" size="1260,35" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
     <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727" />
+<widget name="HelpWindow" position="740,825" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="926,650" size="48,48" alphatest="blend" />
