@@ -7422,4 +7422,270 @@ MultiContentEntryText(pos = (20, 128), size = (1240, 30), font=1, flags = RT_HAL
   <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1" />
   <widget source="key_blue" render="Label" position="1065,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1" />
   </screen>
+<screen name="BhsysInfo2" position="center,228" size="1300,700" title="OpenBh System Info">
+<widget name="smallmon" position="300,271" size="280,210" zPosition="1" backgroundColor="black" foregroundColor="#ffffff" font="Regular;25" halign="center"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="27,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="237,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="447,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="657,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="867,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="1077,10" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="657,257" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_1.png" position="867,257" size="195,195" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/meter_2.png" position="1077,257" size="195,195" alphatest="on"/>
+
+<widget name="ramg" position="49,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="swapg" position="259,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="memtg" position="469,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="flashg" position="679,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="spacetg" position="889,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="mmcfg" position="1099,31" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="usbg" position="679,278" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="hddg" position="889,278" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+<widget name="hddtempg" position="1099,278" size="150,150" zPosition="1" borderColor="red" transparent="1"/>
+
+<eLabel text="Ram" position="27,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Swap" position="237,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Total Mem" position="447,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Flash" position="657,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Total Space" position="867,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Micro SD" position="1077,209" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="USB" position="657,460" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="HDD Space" position="867,460" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="HDD Temp" position="1077,460" zPosition="1" size="195,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+
+<ePixmap pixmap="MX_Slim-Line_NP/moni.png" position="292,262" size="295,225" alphatest="on"/>
+
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="227,530" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="382,530" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="537,530" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="692,530" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="847,530" alphatest="on"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/monibutton.png" size="70,30" position="1002,530" alphatest="on"/>
+
+<eLabel text="Ssh" position="217,570" zPosition="1" size="90,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Telnet" position="352,570" zPosition="1" size="130,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Ftp" position="527,570" zPosition="1" size="90,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Vpn" position="682,570" zPosition="1" size="90,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Samba" position="817,570" zPosition="1" size="130,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Nfs" position="992,570" zPosition="1" size="90,36" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+
+<widget name="spy1" size="30,30" position="267,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy2" size="30,30" position="382,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy3" size="30,30" position="422,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy4" size="30,30" position="537,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy5" size="30,30" position="577,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy6" size="30,30" position="692,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy7" size="30,30" position="732,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy8" size="30,30" position="847,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy9" size="30,30" position="887,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy10" size="30,30" position="1002,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+<widget name="spy11" size="30,30" position="1042,530" zPosition="1" pixmap="MX_Slim-Line_NP/buttons/monibutton_g.png" alphatest="on"/>
+
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/epg_b.png" position="27,287" size="52,52" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/epg_b.png" position="27,347" size="52,52" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/epg_b.png" position="27,407" size="52,52" alphatest="blend"/>
+<eLabel text="1" position="46,297" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="#ffffff" backgroundColor="grey" transparent="1"/>
+<eLabel text="2" position="46,357" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="#ffffff" backgroundColor="grey" transparent="1"/>
+<eLabel text="3" position="46,417" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="#ffffff" backgroundColor="grey" transparent="1"/>
+<eLabel text="Settings" position="90,297" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Service Info" position="90,357" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="About" position="90,417" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="moni" size="0,0" position="0,0" zPosition="2" foregroundColor="#ffffff" backgroundColor="#060d0d0d" />
+<widget name="monipix" size="0,0" position="0,0" />
+<widget name="moni2" size="1260,620" position="20,10" font="Regular;25" zPosition="3" foregroundColor="#ffffff" backgroundColor="#060d0d0d" />
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,640" size="48,48" zPosition="6" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,640" size="48,48" zPosition="6" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,640" size="48,48" zPosition="6" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,640" size="48,48" zPosition="6" alphatest="blend"/>
+<eLabel text="Memory" position="90,630" size="240,70" zPosition="6" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Space" position="390,630" size="240,70" zPosition="6" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Cpu" position="690,630" size="240,70" zPosition="6" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Process" position="990,630" size="240,70" zPosition="6" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="DeliteAutocamMan2" position="center,center" size="1302,782" title="OpenBh Autocam Manager" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="defaultcam" position="20,88" size="820,50" font="Regular;30" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="list" render="Listbox" position="20,170" size="820,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="StringList"/>
+</widget>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green"  position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="DeliteSetupAutocam2" position="center,center" size="1302,782" title="OpenBh Autocam Setup" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="config" position="20,88" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="396,710" size="48,48" alphatest="blend"/>
+<widget name="key_green" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="NabProcInfo" position="center,center" size="1302,782" title="Process Info" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/proc.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="pibartit" zPosition="2" position="30,88" size="810,35" font="Regular;28" valign="center" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
+<widget name="infotext" position="20,140" size="810,540" font="Regular;24" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="NabEnsetInfo" position="center,center" size="1302,782" title="Settings Info" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/enset.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="infotext" position="30,100" size="800,600" font="Regular;24" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="NetflixEd" position="center,center" size="1302,782" title="Netflix Setup" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/netflix.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="HelpWindow" position="455,670" zPosition="2" size="1,1" transparent="1" alphatest="blend" />
+<widget name="config" position="20,90" size="810,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="570,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="YoutubeTVEd" position="center,center" size="1302,782" title="YoutubeTV Setup" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/youtubee.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="HelpWindow" position="455,670" zPosition="2" size="1,1" transparent="1" alphatest="blend" />
+<widget name="config" position="20,90" size="810,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="570,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="SATIPTuner" position="center,center" size="1302,782" title="SAT>IP Client Tuner Setup" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/setupp.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="config" position="20,88" size="810,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="description" render="Label" position="10,420" zPosition="1" size="800,200" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="choices" render="Label" position="10,645" zPosition="1" size="800,35" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="570,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_yellow" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="SATIPClient" position="center,center" size="1302,782" title="SATIPClient" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/setupp.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget source="vtunerList" render="Listbox" position="20,88" size="810,525" enableWrapAround="1" zPosition="2" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (75,[
+MultiContentEntryText(pos = (10, 2), size = (760, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+MultiContentEntryText(pos = (10, 32), size = (250, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+MultiContentEntryText(pos = (270, 32), size = (250, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+MultiContentEntryText(pos = (520, 32), size = (250, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
+MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
+]),
+},
+"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+"itemHeight": 75
+}
+</convert>
+</widget>
+<widget source="description" render="Label" position="20,620" zPosition="1" size="820,85" font="Regular;24" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="GBIpboxMenu" position="center,center" size="1302,782" title="GBIpbox Client" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/setupp.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="config" position="20,90" size="810,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="text" render="Label" position="20,580" size="810,80" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="GBIpboxAbout" position="center,center" size="1302,782" title="GBIpbox Client About" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/aboutt.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="about" position="20,90" size="810,640" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
 </skin>
