@@ -1,0 +1,15 @@
+#!/bin/sh
+
+rm -rf /usr/share/enigma2/MX_Slim-Line_NP
+rm -rf /usr/uninstall/MX_Slim-Line_NP.nab
+
+activeskin=`grep -c -e 'MX_Slim-Line_NP' /etc/enigma2/settings`
+
+if test $activeskin = 1
+then
+sed -e '/MX_Slim-Line_NP/d' /etc/enigma2/settings > /tmp/settings
+mv /tmp/settings /etc/enigma2/settings
+killall -9 enigma2
+fi
+
+exit 0
