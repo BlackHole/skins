@@ -182,18 +182,18 @@ Pls Read skin info
 <widget source="global.CurrentTime" render="Label" position="1680,22" size="120,55" font="Regular;42" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="#21000000" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="3" pixmap="MX_Slim-Line_NP/ico_hlg_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHLG</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="4" pixmap="MX_Slim-Line_NP/ico_hdr_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHDR</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="5" pixmap="MX_Slim-Line_NP/ico_hdr10_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHDR10</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="3" pixmap="MX_Slim-Line_NP/ico_hlg_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHLG</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="4" pixmap="MX_Slim-Line_NP/ico_hdr_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHDR</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="5" pixmap="MX_Slim-Line_NP/ico_hdr10_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHDR10</convert>
+<convert type="ConditionalShowHide" />
+</widget>
 <ePixmap pixmap="MX_Slim-Line_NP/ico_dolby_off.png" position="1280,32" size="39,25" zPosition="1" alphatest="blend"/>
 <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_dolby_on.png" position="1280,32" size="39,25" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
@@ -510,18 +510,18 @@ Pls Read skin info
 <widget source="global.CurrentTime" render="Label" position="1680,22" size="120,55" font="Regular;42" valign="top" halign="left" foregroundColor="#ffffff" backgroundColor="#21000000" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="3" pixmap="MX_Slim-Line_NP/ico_hlg_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHLG</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="4" pixmap="MX_Slim-Line_NP/ico_hdr_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHDR</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="5" pixmap="MX_Slim-Line_NP/ico_hdr10_on.png" alphatest="blend">
-      <convert type="ServiceInfo">IsHDR10</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="3" pixmap="MX_Slim-Line_NP/ico_hlg_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHLG</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="4" pixmap="MX_Slim-Line_NP/ico_hdr_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHDR</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+<widget source="session.CurrentService" render="Pixmap" position="1227,32" size="38,25" zPosition="5" pixmap="MX_Slim-Line_NP/ico_hdr10_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHDR10</convert>
+<convert type="ConditionalShowHide" />
+</widget>
 <ePixmap pixmap="MX_Slim-Line_NP/ico_dolby_off.png" position="1280,32" size="39,25" zPosition="1" alphatest="blend"/>
 <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_dolby_on.png" position="1280,32" size="39,25" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
