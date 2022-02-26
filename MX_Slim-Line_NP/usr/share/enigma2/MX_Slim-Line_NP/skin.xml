@@ -7717,4 +7717,20 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
 <convert type="ServiceName">Name</convert>
 </widget>
 </screen>
+<screen name="BhGreenPluginsSetup" position="center,center" size="1302,782" title="Reorder Plugin List" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/greenp.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget name="config" position="20,88" size="810,595" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green"  position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
 </skin>
