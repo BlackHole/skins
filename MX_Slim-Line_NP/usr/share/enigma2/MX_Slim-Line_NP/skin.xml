@@ -2226,6 +2226,8 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="396,710" size="48,48" alphatest="blend"/>
+<widget name="key_blue" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="EPGSelection" position="center,center" size="1782,962" title="EPG Selection" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,10" size="1150,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
