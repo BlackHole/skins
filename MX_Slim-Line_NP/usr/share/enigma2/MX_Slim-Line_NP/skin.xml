@@ -1120,7 +1120,7 @@ MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT
 }
 </convert>
 </widget>
-<widget name="statuslab" position="20,470" size="820,100" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="statuslab" position="20,590" size="820,100" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -7683,6 +7683,31 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/aboutt.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="about" position="20,90" size="810,640" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+</screen>
+<screen name="JobView" position="center,center" size="1302,782" flags="wfNoBorder">
+<widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/hddd.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+<widget source="job_name" render="Label" position="20,100" size="810,40" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="job_task" render="Label" position="20,170" size="810,40" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="job_progress" render="Progress" position="20,220" size="810,50" borderWidth="3" backgroundColor="#254f7497" />
+<widget source="job_progress" render="Label" position="180,280" size="420,40" font="Regular;32" foregroundColor="button" backgroundColor="bgbutton" zPosition="2" halign="center" transparent="1">
+<convert type="ProgressToText" />
+</widget>
+<widget source="job_status" render="Label" position="20,330" size="810,40" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+<widget name="config" position="30,380" size="760,280" font="Regular;28" itemHeight="40"  foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="630,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="690,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
