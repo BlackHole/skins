@@ -3197,10 +3197,12 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <screen name="Setup" position="center,center" size="1302,782" title="Setup" flags="wfNoBorder">
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="config" position="20,88" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton"  transparent="1"/>
-<widget name="description" position="10,610" size="1280,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="config" position="20,88" size="1260,494" zPosition="2" font="Regular;30" itemHeight="38" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton"  transparent="1"/>
+<widget name="description" position="10,590" size="1280,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141" />
+<eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141" />
 <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
-<widget name="footnote" position="1000,710" size="280,50" zPosition="1" font="Regular;26" halign="right" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;24" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,710" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
