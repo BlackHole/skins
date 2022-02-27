@@ -167,7 +167,9 @@ Pls Read skin info
 </screen>
 <screen name="InfoBar" position="0,910" size="1920,170" title="InfoBar" flags="wfNoBorder">
 <ePixmap position="0,0" zPosition="-1" size="1920,170" pixmap="MX_Slim-Line_NP/infobar.png" alphatest="off"/>
-<widget source="session.CurrentService" render="ChannelNumber" position="340,20" size="260,50" font="Regular;34" foregroundColor="#ffffff" backgroundColor="#21000000" valign="center" halign="left" transparent="1"/>
+<widget source="session.CurrentService" render="Label" position="340,28" size="290,35" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#21000000" halign="left" transparent="1">
+<convert type="ServiceName">Provider</convert>
+</widget>
 <eLabel text="SNR" position="1619,68" size="50,30" font="Regular;19" halign="right" foregroundColor="#ffffff" backgroundColor="#21000000" transparent="1"/>
 <widget source="session.FrontendStatus" render="Label" position="1797,67" size="82,30" font="Regular;21" halign="left" foregroundColor="#ffffff" backgroundColor="#21000000" transparent="1">
 <convert type="FrontendInfo">SNR</convert>
@@ -2945,16 +2947,19 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <convert type="ServiceName">Name</convert>
 </widget>
 </screen>
-<screen name="UserInterfacePositioner" position="0,0" size="1920,1080" backgroundColor="#16102042" flags="wfNoBorder">
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,840" size="48,48" alphatest="blend" zPosition="3" />
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,840" size="48,48" alphatest="blend" zPosition="3" />
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="1155,840" size="48,48" alphatest="blend" zPosition="3" />
-<widget source="key_red" render="Label" position="510,840" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" backgroundColor="bgbutton" transparent="1"/>
-<widget source="key_green" render="Label" position="862,840" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" backgroundColor="bgbutton" transparent="1"/>
-<widget source="key_yellow" render="Label" position="1215,840" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" backgroundColor="bgbutton" transparent="1"/>
-<widget name="config" position="560,265" size="800,280" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="status" render="Label" position="center,615" size="1200,150" zPosition="10" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" valign="center" transparent="1"/>
-</screen>
+ <screen name="UserInterfacePositioner" position="center,center" size="1920,1080" title="User Interface Positioner" flags="wfNoBorder">
+    <eLabel position="310,180" size="1300,720" backgroundColor="bgmain" zPosition="1" />
+    <widget name="HelpWindow" position="310,900" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="MX_Slim-Line_NP/positioner.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1" />
+    <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="520,825" size="48,48" alphatest="blend" zPosition="4" />
+    <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="920,825" size="48,48" alphatest="blend" zPosition="4" />
+    <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="1320,825" size="48,48" alphatest="blend" zPosition="4" />
+    <widget source="key_red" render="Label" position="580,825" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget source="key_green" render="Label" position="980,825" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1380,825" size="285,48" zPosition="4" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget name="config" position="330,220" size="1260,280" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget source="status" render="Label" position="330,620" size="1260,150" zPosition="10" font="Regular;28" foregroundColor="info" halign="center" valign="center" transparent="1" backgroundColor="background" />
+  </screen>
 <screen name="Satfinder" position="center,center" size="1302,782" title="Satfinder" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
