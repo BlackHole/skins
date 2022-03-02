@@ -7564,8 +7564,8 @@ MultiContentEntryText(pos = (20, 128), size = (1240, 30), font=1, flags = RT_HAL
 <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/proc.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget name="pibartit" zPosition="2" position="30,88" size="810,35" font="Regular;28" valign="center" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
-<widget name="infotext" position="20,140" size="810,540" font="Regular;24" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
+<widget name="pibartit" zPosition="2" position="40,88" size="785,35" font="Regular;28" valign="center" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
+<widget name="infotext" position="40,140" size="785,540" font="Regular;30" transparent="1" foregroundColor="button" backgroundColor="bgbutton"/>
 <widget source="global.CurrentTime" render="Label" position="840,72" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
