@@ -1805,7 +1805,7 @@ MultiContentEntryPixmapAlphaBlend(pos=(10, 5), size=(100, 60), png=6, flags = BT
 </screen>
 <screen name="Menu" position="center,center" size="1302,782" title="Menu" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/1300-4.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/mainn.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <panel name="ButtonBarAuto2"/>
 <widget source="key_previous" conditional="key_previous" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/key_prev.png" alphatest="blend" position="1190,640" size="48,48">
