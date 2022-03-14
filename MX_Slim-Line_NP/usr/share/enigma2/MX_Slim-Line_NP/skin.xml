@@ -3262,7 +3262,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141" />
 <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141" />
 <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
-<widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;24" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,710" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -5921,7 +5921,7 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/usbb.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget source="list" render="Listbox" position="20,90" size="820,520" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<widget source="list" render="Listbox" position="20,90" size="820,440" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="StringList"/>
 </widget>
 <widget name="label1" position="20,540" size="780,110" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -5959,7 +5959,7 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/usbb.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget source="list" render="Listbox" position="20,90" size="810,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<widget source="list" render="Listbox" position="20,90" size="810,520" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="StringList"/>
 </widget>
 <widget name="info" position="20,650" size="810,40" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -6783,33 +6783,50 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 <widget name="text" position="20,20" size="780,220" font="Regular;28"/>
 </screen>
 <screen name="SlimChannelSelection" position="center,center" size="1782,962" title="" flags="wfNoBorder">
-<widget source="Title" render="Label" position="40,15" size="1150,45" halign="left" font="Regular;40" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="Title" render="Label" position="40,15" size="1150,50" halign="left" font="Regular;42" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1780.png" position="0,0" size="1782,962" zPosition="-1" alphatest="off"/>
-<widget source="global.CurrentTime" render="Label" position="1220,60" size="540,60" font="Regular;46" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="ClockToText">Format:%d.%m.%Y</convert>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1692,882" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1332,882" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1452,882" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/epg.png" position="1572,882" size="48,48" alphatest="blend"/>
+<widget name="list" position="10,138" size="1180,765" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" progressBarWidth="80" progressPercentWidth="80" fieldMargins="13" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="white" colorServiceDescription="#62ceff" colorServiceDescriptionSelected="white" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="40,80" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="340,80" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="640,80" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="940,80" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="105,80" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="405,80" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_yellow" position="705,80" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_blue" position="1005,80" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="ServiceEvent" render="Label" position="30,910" size="1150,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="TransponderInfo"></convert>
 </widget>
-<widget name="list" position="10,90" size="1180,765" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="#ffffff" colorServiceDescription="#ffffff" colorServiceDescriptionSelected="#ffffff" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="40,880" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="340,880" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="640,880" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="940,880" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="105,880" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="405,880" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="705,880" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1005,880" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="session.Event_Now" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
+<widget source="ServiceEvent" render="Label" position="1220,25" zPosition="1" size="540,68" font="Regular;30" halign="center" valign="top" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="ServiceName">Name</convert>
+</widget>
+<widget source="ServiceEvent" render="Label" position="1220,80" zPosition="1" size="540,68" font="Regular;30" halign="center" valign="top" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="EventName">Name</convert>
+</widget>
+<widget source="ServiceEvent" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
 </widget>
-<widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<widget source="ServiceEvent" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
+<widget source="ServiceEvent" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
 </widget>
-<widget source="session.Event_Now" render="Label" position="1228,220" zPosition="1" size="528,705" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-<convert type="EventName">ExtendedDescription</convert>
+<widget source="ServiceEvent" render="Label" position="1228,195" zPosition="1" size="528,288" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1">
+<convert type="EventName">FullDescription</convert>
+</widget>
+<eLabel text="-------------- Next --------------" position="1228,488" size="528,40" font="Regular;36" halign="center" zPosition="1" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1"/>
+<widget source="ServiceEvent" render="Label" position="1228,533" zPosition="1" size="528,36" font="Regular;30" foregroundColor="#aaaaaa" backgroundColor="#10000000" transparent="1">
+<convert type="EventName">NextName</convert>
+</widget>
+<widget source="ServiceEvent" render="Label" position="1228,579" zPosition="1" size="528,288" font="Regular;28" foregroundColor="#aaaaaa" backgroundColor="#10000000" transparent="1">
+<convert type="EventName">NextDescription</convert>
 </widget>
 </screen>
 <screen name="LogManager" position="center,center" size="1302,782" title="LogManager" flags="wfNoBorder">
