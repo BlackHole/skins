@@ -167,21 +167,21 @@ Pls Read skin info
 <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="995,880" size="285,48" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="RedAuto2">
-<widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
+<widget source="key_red" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
 <widget objectTypes="key_red,Button,Label" name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="GreenAuto2">
-<widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend">
+<widget source="key_green" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
 <widget objectTypes="key_green,Button,Label" name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="YellowAuto2">
-<widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend">
+<widget source="key_yellow" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
 <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2468,6 +2468,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget source="Title" render="Label" position="40,15" size="1150,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1780.png" position="0,0" size="1782,962" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/epg.png" position="1692,882" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1630,882" size="48,48" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1220,60" size="540,60" font="Regular;46" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
