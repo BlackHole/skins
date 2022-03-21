@@ -2627,7 +2627,7 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 <widget name="ErrorPixmap" pixmap="MX_Slim-Line_NP/icons/input_error.png" position="5,0" size="53,53" alphatest="blend" />
 <widget name="QuestionPixmap" pixmap="MX_Slim-Line_NP/icons/input_question.png" position="5,0" size="53,53" alphatest="blend" />
 <widget name="InfoPixmap" pixmap="MX_Slim-Line_NP/icons/input_info.png" position="5,0" size="53,53" alphatest="blend" />
-<widget name="list" position="100,100" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" size="480,400" backgroundColor="bgbutton" backgroundColorSelected="selbutton" selectionPixmap="MX_Slim-Line_NP/menu/button1180x40.png" transparent="1" />
+<widget name="list" position="100,100" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" size="480,400" backgroundColor="bgbutton" transparent="1" />
     <applet type="onLayoutFinish">
 self.autoResize()
 from enigma import eSize, ePoint
@@ -3004,7 +3004,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 </widget>
 </screen>
  <screen name="UserInterfacePositioner" position="center,center" size="1920,1080" title="User Interface Positioner" flags="wfNoBorder">
-    <eLabel position="310,180" size="1300,720" backgroundColor="bgmain" zPosition="1" />
+    <eLabel position="310,181" size="1300,718" backgroundColor="#0a000000" zPosition="1" />
     <widget name="HelpWindow" position="310,900" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <ePixmap pixmap="MX_Slim-Line_NP/positioner.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1" />
     <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="520,825" size="48,48" alphatest="blend" zPosition="4" />
@@ -3197,7 +3197,6 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/tune.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="config" position="20,90" size="810,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="introduction" position="20,660" size="810,40" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4309,8 +4308,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/videoo.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget name="config" position="20,90" size="810,560" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="introduction" render="Label" position="20,660" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget name="config" position="20,90" size="810,525" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="introduction" render="Label" position="20,620" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget source="footnote" render="Label" position="20,660" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
@@ -4489,8 +4489,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 
 <ePixmap pixmap="MX_Slim-Line_NP/menu/netww.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="config" position="20,145" size="810,350" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="HelpWindow" position="530,650" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="396,710" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label"  position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -4983,12 +4985,10 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <ePixmap pixmap="MX_Slim-Line_NP/menu/searchh.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="config" position="20,90" size="810,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="introduction" position="20,610" zPosition="1" size="820,90" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="570,710" size="48,48" alphatest="blend"/>
-<widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="key_blue" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label"  position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -6842,11 +6842,9 @@ self["list"].instance.setItemHeight(40)
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend"/>
 <widget name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -7052,6 +7050,10 @@ MultiContentEntryText(pos = (58, 2), size = (440, 38), font=0, flags = RT_HALIGN
 "itemHeight": 40			}
 </convert>
 </widget>
+<ePixmap name="red" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="AutoBouquetsMaker_ProvidersSetup" position="center,228" size="1300,720" title="AutoBouquetsMaker Providers Setup">
 <ePixmap name="red" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
