@@ -1205,7 +1205,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 8), size = (50, 50), png = 1),
 {"template": [
 MultiContentEntryText(pos = (125, 5), size = (670, 40), font=0, text = 0),
 MultiContentEntryText(pos = (125, 42), size = (670, 32), font=1, text = 1),
-MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
+MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flags = BT_SCALE)
 ],
 "fonts": [gFont("Regular", 32),gFont("Regular", 24)],
 "itemHeight": 75
@@ -2068,6 +2068,7 @@ self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 or 3)))
   </applet>
+<widget name="description" position="0,0" size="0,0"/>
 </screen>
 <screen name="Console" position="center,228" size="1300,700" title="Command execution...">
 <widget name="text" position="20,30" size="1260,605" zPosition="2" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/>
@@ -2215,8 +2216,10 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 </widget>
 <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
 <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
 <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="ImageWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2911,6 +2914,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="PluginBrowser" position="center,center" size="1302,782" title="Plugin browser" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3002,6 +3006,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
  <screen name="UserInterfacePositioner" position="center,center" size="1920,1080" title="User Interface Positioner" flags="wfNoBorder">
     <eLabel position="310,181" size="1300,718" backgroundColor="#0a000000" zPosition="1" />
@@ -3050,8 +3055,9 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <convert type="FrontendInfo">LOCK</convert>
 <convert type="ConditionalShowHide">Invert</convert>
 </widget>
-<widget name="config" position="15,280" size="810,385" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="introduction" position="10,660" size="810,40" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="config" position="15,280" size="810,315" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="description" position="10,605" size="810,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="introduction" position="10,645" size="810,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -3061,6 +3067,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_yellow" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="ServicesFound" position="center,center" size="1302,782" title="Info" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3165,6 +3172,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="CableScanScreen" position="center,center" size="1302,782" title="CableScanScreen" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3178,6 +3186,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="CableScanStatus" position="center,center" size="1302,782" title="CableScanStatus" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3207,6 +3216,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="DefaultServiceScan" position="center,center" size="900,650" title="DefaultServiceScan">
 <widget source="FrontendInfo" render="Pixmap" pixmap="MX_Slim-Line_NP/icons/scan-s.png" position="22,22" size="64,64" transparent="1" alphatest="blend">
@@ -3702,6 +3712,11 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (0, 0), png = 3), # index
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="tl_off" pixmap="MX_Slim-Line_NP/icons/aoff.png" position="0,0" size="0,0"/>
+<widget name="tl_red" pixmap="MX_Slim-Line_NP/icons/ared.png" position="0,0" size="0,0"/>
+<widget name="tl_yellow" pixmap="MX_Slim-Line_NP/icons/ayellow.png" position="0,0" size="0,0"/>
+<widget name="tl_green" pixmap="MX_Slim-Line_NP/icons/agreen.png" position="0,0" size="0,0"/>
+<widget name="feedStatusMSG" position="0,0" size="0,0"/>
 </screen>
 <screen name="VirtualKeyBoard" position="center,200" size="1084,630" zPosition="99" flags="wfNoBorder">
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/virtualkb.png" position="0,0" size="1084,630" alphatest="off" zPosition="-1" />
@@ -3886,6 +3901,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 20), size = (80, 80), png = 2),
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="NetworkAdapterSelection" position="center,center" size="1302,782" title="Select Network Adapter" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4308,9 +4324,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/videoo.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget name="config" position="20,90" size="810,525" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="introduction" render="Label" position="20,620" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
-<widget source="footnote" render="Label" position="20,660" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget name="config" position="20,90" size="810,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="description" position="20,520" size="820,80" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget name="footnote" position="20,620" size="820,80" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" halign="center" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
@@ -4325,13 +4341,14 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="VideoEnhancementPreview" position="center,center" size="1302,782" title="VideoEnhancementPreview" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/videoo.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="config" position="20,90" size="810,560" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget source="introduction" render="Label" position="20,660" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget source="introduction" render="Label" position="20,660" size="820,40" zPosition="1" font="Regular;28" foregroundColor="" backgroundColor="bgbutton" halign="center" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4342,6 +4359,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="WlanScan" position="center,center" size="1302,782" title="WlanScan" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4420,6 +4438,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="NetworkServiceSetup" position="center,center" size="1302,782" title="NetworkServiceSetup" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4806,6 +4825,7 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="EPGImportSources" position="center,center" size="1302,782" title="EPG Import Sources" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4984,7 +5004,8 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/searchh.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
 <widget name="config" position="20,90" size="810,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="introduction" position="20,610" zPosition="1" size="820,90" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="description" position="20,520" zPosition="1" size="820,90" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="introduction" position="20,610" zPosition="1" size="820,90" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4995,6 +5016,7 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="BlindscanState" position="center,228" size="1300,700" title="Blindscan">
 <widget name="progress" position="20,0" size="1260,120" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -5027,6 +5049,7 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 <screen name="CrossEPG_Menu" position="center,center" size="1302,782" title="CrossEPG" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -5048,6 +5071,10 @@ MultiContentEntryText(pos = (70,12), size = (760,40), flags = RT_HALIGN_LEFT, te
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green"  position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="CrossEPG_Providers" position="center,center" size="1302,782" title="CrossEPG Providers" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -6739,8 +6766,9 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/softwaree.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-<widget name="list" position="20,90" size="810,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="text" position="20,700" size="810,80" font="Regular;28" halign="center" backgroundColor="bgbutton" transparent="1"/>
+<widget name="list" position="20,90" size="810,520" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="description" position="20,620" size="810,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+<widget name="text" position="20,670" size="810,80" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -7829,5 +7857,6 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
 <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
+<widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
 </screen>
 </skin>
