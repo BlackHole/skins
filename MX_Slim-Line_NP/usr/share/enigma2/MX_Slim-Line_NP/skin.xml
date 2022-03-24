@@ -5033,6 +5033,21 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
 <widget source="key_yellow" render="Label" position="690,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="key_blue" render="Label" position="990,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1"/>
 </screen>
+<screen name="SatBlindscanState2" position="center,228" size="1300,700" title="Blindscan">
+<widget name="progress" position="20,0" size="1260,120" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel position="0,125" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,620" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="config" position="20,130" size="1260,400" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="post_action" position="20,540" size="1260,80" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,640" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,640" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,640" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,640" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="390,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,630" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton2" transparent="1"/>
+</screen>
 <screen name="CrossEPG_Setup" position="center,center" size="1302,782" title="CrossEPG Setup" flags="wfNoBorder">
 <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
