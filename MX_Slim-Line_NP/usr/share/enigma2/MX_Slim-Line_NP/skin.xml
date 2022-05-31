@@ -88,6 +88,7 @@ Pls Read skin info
 <parameter name="VirtualKeyBoard" value="76,72"/>
 <parameter name="AutotimerEnabledIcon" value="2,1,25,25"/>
 <parameter name="AutotimerRecordIcon" value="30,1,25,25"/>
+<parameter name="AllowUserDatesAndTimes" value="1,1"/>
 </parameters>
 <windowstyle type="skinned" id="0">
 <title offset="30,15" font="Regular;46"/>
@@ -1448,7 +1449,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
 </widget>
 <widget source="Event" render="Label" position="1677,340" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,345" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
@@ -1496,7 +1497,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
 </widget>
 <widget source="Event" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
@@ -1604,7 +1605,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
 </widget>
 <widget source="Event" render="Label" position="627,115" zPosition="1" size="115,35" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="#10000000" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="Event" render="Progress" position="265,120" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
@@ -1905,7 +1906,7 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -1945,7 +1946,7 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
 </widget>
 <widget source="ServiceEvent" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="ServiceEvent" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2311,7 +2312,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="Event" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2346,7 +2347,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="Event" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2377,7 +2378,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2431,7 +2432,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="Event" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2457,7 +2458,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2483,7 +2484,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton2" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -2545,7 +2546,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -3268,7 +3269,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="config" position="20,88" size="1260,494" zPosition="2" font="Regular;30" itemHeight="38" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton"  transparent="1"/>
-<widget name="description" position="10,590" size="1280,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="description" position="10,590" size="1280,110" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141" />
 <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141" />
 <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
@@ -6857,7 +6858,7 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 </widget>
 <widget source="ServiceEvent" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="ServiceEvent" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#c0c0c0">
 <convert type="EventTime">Progress</convert>
@@ -7399,7 +7400,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
 </widget>
 <widget source="session.Event_Now" render="Label" position="1677,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="EventTime">EndTime</convert>
-<convert type="ClockToText">Format:%H:%M</convert>
+<convert type="ClockToText"/>
 </widget>
 <widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_Slim-Line_NP/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
