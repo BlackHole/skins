@@ -325,7 +325,7 @@ Pls Read skin info
 <ePixmap pixmap="MX_Slim-Line_NP/recbg.png" position="1625,125" size="15,15" zPosition="5" alphatest="blend"/>
 <widget source="session.RecordState" render="Pixmap" pixmap="MX_Slim-Line_NP/stream.png" position="1625,125" size="15,15" zPosition="6" alphatest="blend">
 <convert type="ClientsStreaming"/>
-<convert type="ConditionalShowHide">Blink</convert>
+<convert type="ConditionalShowHide"></convert>
 </widget>
 <widget source="session.RecordState" render="Pixmap" pixmap="MX_Slim-Line_NP/rec_1.png" position="1625,125" size="15,15" zPosition="7" alphatest="blend">
 <convert type="ConditionalShowHide">Blink</convert>
@@ -653,7 +653,7 @@ Pls Read skin info
 <ePixmap pixmap="MX_Slim-Line_NP/recbg.png" position="1625,125" size="15,15" zPosition="5" alphatest="blend"/>
 <widget source="session.RecordState" render="Pixmap" pixmap="MX_Slim-Line_NP/stream.png" position="1625,125" size="15,15" zPosition="6" alphatest="blend">
 <convert type="ClientsStreaming"/>
-<convert type="ConditionalShowHide">Blink</convert>
+<convert type="ConditionalShowHide"></convert>
 </widget>
 <widget source="session.RecordState" render="Pixmap" pixmap="MX_Slim-Line_NP/rec_1.png" position="1625,125" size="15,15" zPosition="7" alphatest="blend">
 <convert type="ConditionalShowHide">Blink</convert>
