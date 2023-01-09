@@ -2717,9 +2717,9 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
         <widget name="longshift_key0" position="870,665" size="400,35" font="Regular;20*f" valign="center" halign="center" backgroundColor="bgbutton" foregroundColor="button" transparent="1"/>
         <widget name="longshift_key1" position="870,665" size="400,35" font="Regular;20*f" valign="center" halign="center" backgroundColor="bgbutton" foregroundColor="button" transparent="1"/>
     </screen>
-    <screen name="__RcPanel__" position="center,center" size="1302,782" flags="wfNoBorder">      
+    <screen name="__RcPanel__" position="center,center" size="1302,782" flags="wfNoBorder">
             <panel name="__RcPanelOld__" conditional="arrowdown"/>
-            <panel name="__RcPanelNew__" conditional="indicatorU0"/>     
+            <panel name="__RcPanelNew__" conditional="indicatorU0"/>
     </screen>
     <screen name="__RcPanelOld__" position="center,center" size="1302,782" flags="wfNoBorder">
     <widget name="rc" position="1010,120" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
@@ -2730,42 +2730,42 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </screen>
     <screen name="__RcPanelNew__" position="center,center" size="1302,782" flags="wfNoBorder">
         <widget name="rc" pixmaps="rc.png,rcold.png" position="1010,120" size="154,500" zPosition="10" alphatest="blend" transparent="0"/>
-        <widget alphatest="blend" name="indicatorU0" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU1" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU2" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU3" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU4" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU5" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU6" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU7" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU8" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU9" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU10" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU11" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU12" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU13" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU14" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorU15" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL0" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL1" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL2" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL3" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL4" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL5" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL6" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL7" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL8" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL9" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL10" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL11" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL12" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL13" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL14" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
-        <widget alphatest="blend" name="indicatorL15" pixmap="buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU0" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU1" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU2" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU3" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU4" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU5" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU6" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU7" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU8" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU9" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU10" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU11" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU12" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU13" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU14" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorU15" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL0" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL1" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL2" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL3" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL4" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL5" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL6" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL7" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL8" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL9" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL10" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL11" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL12" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL13" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL14" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+        <widget alphatest="blend" name="indicatorL15" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
     </screen>
     <screen name="TextBox" position="center,center" size="1302,782" title="Help..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>		
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
 	<widget name="text" position="10,90" size="1280,680" font="Regular;28" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="586,710" size="48,48" alphatest="blend"/>
         <widget name="key_red" position="646,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
