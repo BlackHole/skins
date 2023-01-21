@@ -2122,10 +2122,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
     </screen>
     <screen name="VideoWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2145,10 +2142,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
     </screen>
     <screen name="StartWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2168,10 +2162,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
     </screen>
     <screen name="DreamPackageWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2191,10 +2182,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
     </screen>
     <screen name="NetworkWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2214,11 +2202,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
         <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
     </screen>
     <screen name="ImageWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
@@ -2239,10 +2223,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+ <panel name="__RcPanel__"/>
     </screen>
     <screen name="TutorialWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2260,11 +2241,7 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
 </convert>
         </widget>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="396,710" size="48,48" alphatest="blend"/>
-        <widget name="languagetext" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
     </screen>
     <screen name="LanguageWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -2282,10 +2259,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 }
 </convert>
         </widget>
-        <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
-        <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowup.png" zPosition="11" alphatest="blend"/>
+<panel name="__RcPanel__"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="396,710" size="48,48" alphatest="blend"/>
         <widget name="key_blue" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
