@@ -6110,6 +6110,17 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="260,265" size="48,48" alphatest="blend"/>
         <widget source="key_red" render="Label" position="320,265" zPosition="1" size="330,50" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
+    <screen name="VuplusKexec" position="center,center" size="1302,782" flags="wfNoBorder">
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+        <widget source="Title" render="Label" position="40,18" size="1200,60" halign="left" font="Regular;45" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="description" render="Label" position="20,88" size="1280,500" font="Regular;36" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" zPosition="1"/>
+        <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
+        <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,710" size="48,48" alphatest="blend"/>
+        <eLabel text="Press the GREEN button to enable Vu+ Multiboot, or press Exit to cancel" position="10,570" size="1280,120" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <eLabel text="Cancel" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="key_green" render="Label" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
     <screen name="OMBManagerList" position="center,center" size="1302,782" title="openMultiboot Manager" flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
