@@ -6121,7 +6121,6 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
         <eLabel text="Press the Green button to enable Vu+ Multiboot, or press Red to cancel" position="10,590" size="1280,110" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <eLabel text="Cancel" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_red" render="Label" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="key_green" render="Label" position="862,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
     <screen name="OMBManagerList" position="center,center" size="1302,782" title="openMultiboot Manager" flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
