@@ -1350,7 +1350,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
         <widget source="lab1" render="Label" position="20,100" size="800,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="lab2" render="Label" position="20,140" size="800,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="lab3" render="Label" position="20,180" size="800,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="AboutScrollLabel" position="20,220" size="798,460" scrollbarMode="showOnDemand" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="AboutScrollLabel" position="20,220" size="815,460" scrollbarMode="showOnDemand" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/mx.png" position="710,100" size="110,18" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
