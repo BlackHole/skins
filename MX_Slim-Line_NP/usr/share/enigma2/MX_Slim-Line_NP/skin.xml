@@ -2774,26 +2774,26 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
-    <screen name="MessageBoxTemplate" position="center,340" size="1125,10">
-        <widget name="text" position="80,15" size="995,0" font="Regular;28"/>
+    <screen name="MessageBoxTemplate" position="center,center" size="1125,520">
+        <widget name="text" position="80,15" size="995,40" itemHeight="40" font="Regular;28"/>
         <widget name="ErrorPixmap" pixmap="MX_Slim-Line_NP/icons/input_error.png" position="10,5" size="53,53" alphatest="blend"/>
         <widget name="QuestionPixmap" pixmap="MX_Slim-Line_NP/icons/input_question.png" position="10,5" size="53,53" alphatest="blend"/>
         <widget name="InfoPixmap" pixmap="MX_Slim-Line_NP/icons/input_info.png" position="10,5" size="53,53" alphatest="blend"/>
-        <widget name="list" position="100,100" font="Regular;30" textOffSet="5,5" itemHeight="40" scrollbarMode="showOnDemand" size="1120,520" backgroundColor="bgbutton" transparent="1"/>
- 		<applet type="onLayoutFinish">
+        <widget name="list" position="10,10" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" size="925,520" backgroundColor="bgbutton" transparent="1"/>
+		<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 20, textsize[1] + 20)
+textsize = (textsize[0] + 40, textsize[1] + 40)
 count = len(self.list)
 if count &gt; 13:
 	count = 13
 offset = 40 * count
-wsizex = textsize[0] + 40
+wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset + 10
-if (636 &gt; wsizex):
-	wsizex = 636
+if (689 &gt; wsizex):
+	wsizex = 689
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
@@ -2803,70 +2803,12 @@ self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 or 3)))
 		</applet>
-    </screen>
-    <screen name="MessageBox" position="center,340" size="900,10">
+	</screen>
+    <screen name="MessageBox" position="center,center" size="1125,10">
         <panel name="MessageBoxTemplate"/>
     </screen>
-    <screen name="MessageBoxSimple" position="center,340" size="900,10">
+    <screen name="MessageBoxSimple" position="center,center" size="1125,10">
         <panel name="MessageBoxTemplate"/>
-    </screen>
-    <screen name="MessageBoxConfirmCode" position="510,300" size="900,10" title="Message">
-        <widget name="text" position="97,15" size="780,0" font="Regular;28"/>
-        <widget name="ErrorPixmap" pixmap="MX_Slim-Line_NP/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="QuestionPixmap" pixmap="MX_Slim-Line_NP/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="InfoPixmap" pixmap="MX_Slim-Line_NP/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="list" position="100,100" font="Regular;28" itemHeight="40" size="480,400"/>
-        <applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 100, textsize[1] + 100)
-offset = 20
-if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 100
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 70)
-self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
-		</applet>
-    </screen>
-    <screen name="MessageBoxConfirm" position="510,300" size="900,10" title="Message">
-        <widget name="text" position="97,15" size="780,0" font="Regular;28"/>
-        <widget name="ErrorPixmap" pixmap="MX_Slim-Line_NP/icons/input_error.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="QuestionPixmap" pixmap="MX_Slim-Line_NP/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="InfoPixmap" pixmap="MX_Slim-Line_NP/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
-        <widget name="list" position="100,100" font="Regular;28" itemHeight="40" size="480,400"/>
-        <applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-textsize = (textsize[0] + 100, textsize[1] + 100)
-offset = 20
-if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 100
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 70)
-self[&quot;list&quot;].instance.move(ePoint(10, textsize[1]))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
-		</applet>
     </screen>
     <screen name="MoviePlayer" position="0,910" size="1920,170" title="InfoBar" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-1" size="1920,170" pixmap="MX_Slim-Line_NP/moviebar.png" alphatest="off"/>
@@ -3068,13 +3010,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
     </screen>
     <screen name="PluginBrowser" position="center,center" size="1302,782" title="Plugin browser" flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/greenp.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
         <widget name="list" position="20,90" size="810,600" scrollbarMode="showOnDemand" itemHeight="75" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="200,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="500,710" size="48,48" alphatest="blend"/>
-        <widget name="key_red" position="260,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="key_green" position="560,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="380,710" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="730,710" size="48,48" alphatest="blend"/>
+        <widget name="key_red" position="90,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="key_green" position="440,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="key_yellow" position="790,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/arrow1.png" position="1170,710" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/menu.png" position="1230,710" size="48,48" alphatest="blend"/> 
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
@@ -7718,7 +7664,7 @@ MultiContentEntryText(pos = (20, 128), size = (1240, 30), font=1, flags = RT_HAL
     </screen>
     <screen name="MultiBootSelector" position="center,200" size="1300,720" title="Multi Boot Image Selector">
         <widget name="config" position="20,10" size="1260,480" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="description" render="Label" position="5,520" size="1290,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="blue" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="description" render="Label" position="5,520" size="1290,110" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="un272727"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="20,650" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend"/>
