@@ -3020,7 +3020,7 @@ self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 o
         <widget name="key_green" position="440,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="key_yellow" position="790,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/arrow1.png" position="1170,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/menu.png" position="1230,710" size="48,48" alphatest="blend"/> 
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1230,710" size="48,48" alphatest="blend"/> 
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
