@@ -2042,32 +2042,21 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
         <widget name="RadioText" position="150,975" size="1620,45" font="Regular;32" valign="center" noWrap="1" foregroundColor="button" backgroundColor="bgbutton"/>
         <widget name="RtpText" position="150,975" size="1620,45" font="Regular;32" halign="right" valign="center" noWrap="1" foregroundColor="button" backgroundColor="bgbutton"/>
     </screen>
-    <screen name="ChoiceBox" position="center,300" size="900,850" title="Input">
-        <widget name="text" position="20,3" size="900,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="list" position="20,280" size="900,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-        <applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
-textsize = (textsize[0] + 10, textsize[1] + 10)
-count = len(self.list)
-if count &gt; 11:
-   count = 11
-offset = 40 * count
-wsizex = textsize[0] + 10
-wsizey = textsize[1] + offset + 10
-if (900 &gt; wsizex):
-   wsizex = 900
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 40 * count)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
-newwidth = wsize[0]
-self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 or 3)))
-  </applet>
+    <screen name="ChoiceBox" position="center,center" size="1302,782" title="Input" flags="wfNoBorder">
+        <widget source="Title" render="Label" position="40,15" size="1220,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+         <widget name="text" position="20,3" size="1260,80" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="list" position="20,88" size="1260,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+        <widget source="key_previous" conditional="key_previous" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/key_prev.png" alphatest="blend" position="1190,710" size="48,48">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="key_next" conditional="key_next" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/key_next.png" alphatest="blend" position="1240,710" size="48,48">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+		<applet type="onLayoutFinish">
+		self["list"].instance.setItemHeight(40)
+		</applet>
+        <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
         <widget name="description" position="0,0" size="0,0"/>
     </screen>
     <screen name="Console" position="center,228" size="1300,700" title="Command execution...">
@@ -6900,13 +6889,16 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
-    <screen name="InfoBarEventView" position="0,755" size="1920,300" backgroundColor="transparent2" flags="wfNoBorder">
+    <screen name="InfoBarEventView" position="0,10" size="1920,300" backgroundColor="transparent2" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-1" size="1920,300" pixmap="MX_Slim-Line_NP/eventbar.png"/>
         <widget source="Title" render="Label" position="75,15" size="1250,50" font="Regular;40" halign="left" backgroundColor="#10000000" transparent="1"/>
         <widget name="datetime" position="1355,20" size="300,35" font="Regular;30" backgroundColor="#10000000" halign="left" transparent="1"/>
         <widget name="duration" position="1655,20" size="200,35" font="Regular;30" backgroundColor="#10000000" halign="left" transparent="1"/>
-        <widget name="FullDescription" position="75,68" size="1770,220" font="Regular;30" backgroundColor="#10000000" transparent="1"/>
-    </screen>
+        <widget name="FullDescription" position="75,68" size="1500,220" font="Regular;30" backgroundColor="#10000000" scrollbarMode="showNever" transparent="1"/>
+		<widget source="Service" render="Picon" position="1630,70" size="220,132" alphatest="blend" backgroundColor="transparent" transparent="0" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+   </screen>
     <screen name="EventViewSimple" position="0,755" size="1920,300" backgroundColor="transparent2" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-1" size="1920,300" pixmap="MX_Slim-Line_NP/eventbar.png"/>
         <widget source="Title" render="Label" position="75,15" size="1250,50" font="Regular;40" halign="left" backgroundColor="#10000000" transparent="1"/>
