@@ -1829,6 +1829,38 @@ MultiContentEntryPixmapAlphaBlend(pos=(10, 5), size=(100, 60), png=6, flags = BT
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
+    <screen name="MenuHorizontal" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+       <eLabel position="0,940" size="1920,250" backgroundColor="background" transparent="0" zPosition="-2"/>
+       <ePixmap position="0,904" size="1920,180" pixmap="MX_Slim-Line_NP/infobar_ext.png" alphatest="blend" backgroundColor="background" zPosition="-1"/>
+       <widget source="Title" conditional="Title" render="Label" position="0,e-140" size="e,70" font="Regular;48" halign="center" valign="center" transparent="1" backgroundColor="background" zPosition="1" borderWidth="2"/>
+       <widget source="label1" conditional="label1" render="Label" position="20,e-85" size="360,80" font="Regular;30" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" zPosition="1" borderWidth="2" transparent="1">
+           <convert type="ConditionalShowHide"/>
+       </widget>
+       <widget source="label2" conditional="label2" render="Label" position="400,e-85" size="360,80" font="Regular;30" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" zPosition="1" borderWidth="2" transparent="1">
+           <convert type="ConditionalShowHide"/>
+       </widget>
+       <widget source="label3" conditional="label3" render="Label" position="780,e-85" size="360,80" font="Bold;36" halign="center" valign="center" foregroundColor="yellow" backgroundColor="bgbutton" zPosition="1" borderWidth="2" transparent="1">
+           <convert type="ConditionalShowHide"/>
+       </widget>
+       <widget source="label4" conditional="label4" render="Label" position="1160,e-85" size="360,80" font="Regular;30" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" zPosition="1" borderWidth="2" transparent="1">
+           <convert type="ConditionalShowHide"/>
+       </widget>
+       <widget source="label5" conditional="label5" render="Label" position="1540,e-85" size="360,80" font="Regular;30" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" zPosition="1" borderWidth="2" transparent="1">
+           <convert type="ConditionalShowHide"/>
+       </widget>
+       <widget source="menu" render="Listbox" enableWrapAround="off" position="60,e-85" size="1800,80" foregroundColorSelected="yellow" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showNever" selectionFrame="1">
+           <convert type="TemplatedMultiContent">
+               {"template": [ MultiContentEntryText(pos = (10,0), size = (340,80), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER,text = 0) ],
+                   "fonts": [gFont("Regular",30)],
+                   "itemHeight": 80,
+                   "itemWidth": 360,
+                   "orientation" : "orHorizontal",
+               }
+           </convert>
+       </widget>
+       <widget addon="Pager" connection="menu" itemHeight="75" showIcons="onlyFirst" picPage="icons/chevronleft.png" picPageCurrent="icons/chevronlefttrans.png" position="0,e-85" size="50,75" transparent="1" Zposition="5"/>
+       <widget addon="Pager" connection="menu" itemHeight="75" showIcons="onlyLast" picPage="icons/chevronright.png" picPageCurrent="icons/chevronrighttrans.png" position="e-50,e-85" size="50,75" transparent="1" Zposition="5"/>
+   </screen>
     <screen name="AudioSelection" position="center,center" size="1302,782" title="" flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
@@ -3009,7 +3041,7 @@ self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 o
         <widget name="key_green" position="440,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="key_yellow" position="790,700" size="320,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/arrow1.png" position="1170,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1230,710" size="48,48" alphatest="blend"/> 
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1230,710" size="48,48" alphatest="blend"/>
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
