@@ -2185,6 +2185,15 @@ MultiContentEntryText(pos = (5, 0), size = (800, 40), flags = RT_HALIGN_LEFT|RT_
         </widget>
 <panel name="__RcPanel__"/>
     </screen>
+	<screen name="UserInterfacePositionerWizard" position="0,0" size="1920,1080" title="Start Wizard..." flags="wfNoBorder" backgroundColor="background">
+		<eLabel position="center,center" size="1440,720" backgroundColor="#0a000000" zPosition="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/positioner.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="520,825" size="48,48" alphatest="blend" zPosition="4"/>
+		<widget name="languagetext" backgroundColor="skyblue" position="580,830" size="285,48" font="Regular;30" halign="left" render="Label" transparent="1" zPosition="5"/>
+        <widget name="config" position="380,320" size="950,280" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="status" render="Label" position="330,620" size="1260,150" zPosition="10" font="Regular;28" foregroundColor="info" halign="center" valign="center" transparent="1" backgroundColor="background"/>
+		<panel name="__RcPanelUiW__"/>
+	</screen>
     <screen name="DreamPackageWizard" position="center,center" size="1302,782" title="Welcome..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="on"/>
@@ -2716,6 +2725,11 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
             <panel name="__RcPanelOld__" conditional="arrowdown"/>
             <panel name="__RcPanelNew__" conditional="indicatorU0"/>
     </screen>
+		<screen name="__RcPanelUiW__" position="0,0" size="1920,1080" flags="wfNoBorder">
+		<panel position="950,140" size="154,500">
+			<panel name="__RcPanelNew1__" conditional="indicatorU0"/>
+		</panel>
+	</screen>
     <screen name="__RcPanelOld__" position="center,center" size="1302,782" flags="wfNoBorder">
     <widget name="rc" position="1010,120" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_Slim-Line_NP/arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -2758,6 +2772,41 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
         <widget alphatest="blend" name="indicatorL14" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
         <widget alphatest="blend" name="indicatorL15" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
     </screen>
+		<screen name="__RcPanelNew1__" position="0,0" size="1920,1080" flags="wfNoBorder">
+		<widget name="rc" pixmaps="rc.png,rcold.png" position="525,150" size="154,500" zPosition="10" alphatest="blend" transparent="0"/>
+		<widget alphatest="blend" name="indicatorU0" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU1" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU2" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU3" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU4" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU5" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU6" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU7" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU8" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU9" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU10" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU11" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU12" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU13" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU14" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorU15" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL0" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL1" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL2" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL3" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL4" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL5" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL6" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL7" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL8" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL9" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL10" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL11" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL12" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL13" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL14" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+		<widget alphatest="blend" name="indicatorL15" pixmap="MX_Slim-Line_NP/buttons/yellow_circle23x23.png" position="0,0" offset="11,11" size="23,23" zPosition="11" scale="1"/>
+	</screen>
     <screen name="TextBox" position="center,center" size="1302,782" title="Help..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="on"/>
@@ -2806,12 +2855,12 @@ from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 40, textsize[1] + 40)
+textsize = (textsize[0] + 70, textsize[1] + 70)
 count = len(self.list)
 if count &gt; 13:
 	count = 13
 offset = 40 * count
-wsizex = textsize[0] + 60
+wsizex = textsize[0] + 70
 wsizey = textsize[1] + offset + 10
 if (689 &gt; wsizex):
 	wsizex = 689
@@ -7471,8 +7520,8 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
         <widget name="QuestionPixmap" pixmap="MX_Slim-Line_NP/icons/input_question.png" position="20,20" size="53,53" alphatest="blend"/>
         <widget name="InfoPixmap" pixmap="MX_Slim-Line_NP/icons/input_info.png" position="20,20" size="53,53" alphatest="blend"/>
         <widget name="rc" position="993,70" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="on"/>
-        <widget name="text" position="20,120" size="820,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="list" position="20,380" size="820,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+        <widget name="text" position="20,120" size="800,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="list" position="20,380" size="800,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
     </screen>
     <screen name="BhEpgPanel" position="center,center" size="1302,782" title="OpenBh EPG Panel" flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
