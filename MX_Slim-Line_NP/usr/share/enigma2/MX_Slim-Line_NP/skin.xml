@@ -82,7 +82,7 @@ Pls Read skin info
         <parameter name="ConfigListSeperator" value="500"/>
         <parameter name="ChoicelistIcon" value="2,4,35,35"/>
         <parameter name="ChoicelistDash" value="0,0,850,35"/>
-        <parameter name="ChoicelistName" value="45,0,850,35"/>
+        <parameter name="ChoicelistName" value="45,0,1220,35"/>
         <parameter name="ServiceInfoLeft" value="0,0,370,45"/>
         <parameter name="ServiceInfoRight" value="380,0,420,45"/>
         <parameter name="VirtualKeyBoard" value="76,72"/>
