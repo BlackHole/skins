@@ -890,10 +890,10 @@ Pls Read skin info
             <convert type="PliExtraInfo">CryptoBar</convert>
         </widget>
         <widget source="session.CurrentService" render="Label" position="130,159" size="500,30" halign="left" font="Regular;23" zPosition="12" backgroundColor="#21000000" transparent="1">
-            <convert type="BhStreamInfo">StreamUrl</convert>
+            <convert type="StreamInfo">StreamUrl</convert>
         </widget>
         <widget source="session.CurrentService" render="Label" position="140,183" size="220,30" halign="center" font="Regular;23" zPosition="12" backgroundColor="#21000000" transparent="1">
-            <convert type="BhStreamInfo">StreamType</convert>
+            <convert type="StreamInfo">StreamType</convert>
         </widget>
     </screen>
     <screen name="DeliteGreenPanel" position="center,center" size="1302,782" title="OpenBh Green Panel" flags="wfNoBorder">
