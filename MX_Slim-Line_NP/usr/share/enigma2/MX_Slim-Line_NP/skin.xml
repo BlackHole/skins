@@ -2092,7 +2092,7 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
         <widget name="description" position="0,0" size="0,0"/>
     </screen>
     <screen name="Console" position="center,228" size="1300,700" title="Command execution...">
-        <widget name="text" position="20,30" size="1260,605" zPosition="2" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/>
+        <widget name="text" position="20,30" size="1260,605" zPosition="2" font="Console;28" foregroundColor="button" backgroundColor="bgbutton"/>
     </screen>
     <screen name="clockDisplay" position="630,345" size="510,450">
         <eLabel position="0,0" size="510,2" backgroundColor="grey"/>
