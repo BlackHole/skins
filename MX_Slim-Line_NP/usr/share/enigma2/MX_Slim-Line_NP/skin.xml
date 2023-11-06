@@ -7827,7 +7827,7 @@ MultiContentEntryText(pos = (20, 128), size = (1240, 30), font=1, flags = RT_HAL
         <eLabel text="About" position="90,417" zPosition="1" size="180,36" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="moni" size="0,0" position="0,0" zPosition="2" foregroundColor="#ffffff" backgroundColor="#060d0d0d"/>
         <widget name="monipix" size="0,0" position="0,0"/>
-        <widget name="moni2" size="1260,620" position="20,10" font="Regular;25" zPosition="3" foregroundColor="#ffffff" backgroundColor="#060d0d0d"/>
+        <widget name="moni2" size="1260,620" position="30,0" font="Regular;25" zPosition="3" foregroundColor="#ffffff" backgroundColor="#060d0d0d"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,640" size="48,48" zPosition="6" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,640" size="48,48" zPosition="6" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,640" size="48,48" zPosition="6" alphatest="blend"/>
