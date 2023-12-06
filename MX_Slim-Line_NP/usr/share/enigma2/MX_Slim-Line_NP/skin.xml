@@ -4507,7 +4507,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/videoo.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
         <widget name="config" position="20,90" size="810,420" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="description" position="20,520" size="820,80" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" halign="center" transparent="1"/>
+        <widget name="description" position="20,530" size="820,175" zPosition="1" itemHeight="35" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" halign="center" transparent="1"/>
         <widget name="footnote" position="20,620" size="820,80" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" halign="center" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
@@ -8065,5 +8065,19 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
             <convert type="ServiceName">Name</convert>
         </widget>
         <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
+    </screen>
+    <screen name="StreamRelaySetup" position="center,center" size="1302,782" title="" flags="wfNoBorder">
+        <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/lan.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
+        <widget name="config" position="20,90" size="810,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <panel name="ButtonBarAuto2"/>
+        <widget name="description" position="20,590" size="810,100" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
     </screen>
 </skin>
