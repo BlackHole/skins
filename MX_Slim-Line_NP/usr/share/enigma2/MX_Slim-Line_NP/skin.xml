@@ -1,7 +1,7 @@
 <skin>
     <!--
 MX_Slim-Line_NP
-OpenBh version: 5.3
+OpenBh version: 5.4
 skin author: Matrix10
 THIS SKIN IS COPYRIGHT PROTECTED AND IS FOR OpenBh IMAGES ONLY.
 Pls Read skin info
@@ -80,9 +80,10 @@ Pls Read skin info
         <parameter name="HelpMenuListExtHlp0" value="0,0,840,39"/>
         <parameter name="HelpMenuListExtHlp1" value="0,42,840,30"/>
         <parameter name="ConfigListSeperator" value="500"/>
+        <parameter name="ChoicelistButtonIcon" value="2,6,35,35"/>
         <parameter name="ChoicelistIcon" value="2,4,35,35"/>
         <parameter name="ChoicelistDash" value="0,0,850,35"/>
-        <parameter name="ChoicelistName" value="45,0,1220,35"/>
+        <parameter name="ChoicelistName" value="45,2,1220,35"/>
         <parameter name="ServiceInfoLeft" value="0,0,370,45"/>
         <parameter name="ServiceInfoRight" value="380,0,420,45"/>
         <parameter name="VirtualKeyBoard" value="76,72"/>
@@ -194,6 +195,9 @@ Pls Read skin info
         <widget objectTypes="key_blue,Button,Label" name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
+    <screen name="ActionButtonTemplate">
+        <widget addon="ButtonSequence" connection="key_menu,key_help,key_text,VKeyIcon" pixmaps="key_menu:menu/menubutton.png,key_help:menu/help.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png" alignment="right" position="0,0" size="300,48" spacing="2" transparent="1" alphatest="blend" zPosition="10"/>
+    </screen>
     <screen name="ButtonBarAuto1">
         <panel name="RedAuto1" conditional="key_red"/>
         <panel name="GreenAuto1" conditional="key_green"/>
@@ -205,6 +209,13 @@ Pls Read skin info
         <panel name="GreenAuto2" conditional="key_green"/>
         <panel name="YellowAuto2" conditional="key_yellow"/>
         <panel name="BlueAuto2" conditional="key_blue"/>
+        <panel position="e-425,715" size="300,48">
+            <panel name="ActionButtonTemplate"/>
+        </panel>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1230,715" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,715" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
     </screen>
     <screen name="InfoBar" position="0,910" size="1920,170" title="InfoBar" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-1" size="1920,170" pixmap="MX_Slim-Line_NP/infobar.png" alphatest="off"/>
@@ -2810,7 +2821,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <screen name="TextBox" position="center,center" size="1302,782" title="Help..." flags="wfNoBorder">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
-        <widget name="text" position="10,90" size="1280,680" font="Regular;28" scrollbarMode="showOnDemand"/>
+        <widget name="text" position="10,90" size="1280,560" itemHeight="40" font="Regular;28" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="586,710" size="48,48" alphatest="blend"/>
         <widget name="key_red" position="646,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
@@ -3430,19 +3441,15 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
         <widget name="scan_progress" position="30,210" size="840,30" borderWidth="2" borderColor="#c0c0c0"/>
         <widget name="servicelist" position="30,262" size="840,450" itemHeight="35" font="Regular;28" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
-    <screen name="Setup" position="center,center" size="1302,782" title="Setup" flags="wfNoBorder">
+    <screen name="Setup" position="center,center" size="1302,782" title="" flags="wfNoBorder">
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="config" position="20,88" size="1260,494" zPosition="2" font="Regular;30" itemHeight="38" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="description" position="10,590" size="1280,110" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
         <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
-        <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
         <widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="450,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="802,710" size="48,48" alphatest="blend"/>
-        <widget source="key_red" render="Label" position="510,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="key_green" render="Label" position="862,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <panel name="ButtonBarAuto2"/>
     </screen>
     <screen name="RemoteControlSelection" position="center,center" size="1302,782" title="Remote Control Selection - Teste" flags="wfNoBorder">
         <widget name="rc" position="1010,90" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
@@ -4016,19 +4023,19 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 20), size = (80, 80), png = 2),
         <widget source="Adaptertext" render="Label" position="20,100" size="210,35" zPosition="1" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="Adapter" render="Label" position="260,100" size="570,35" zPosition="1" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="config" position="20,145" size="810,210" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="introduction2" render="Label" position="20,655" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
-        <widget source="introduction" render="Label" position="20,390" size="820,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="left" transparent="1"/>
-        <widget source="IPtext" render="Label" position="20,435" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="IP" render="Label" position="260,435" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
-        <widget source="Netmasktext" render="Label" position="20,480" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="Mask" render="Label" position="260,480" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
-        <widget source="Gatewaytext" render="Label" position="20,525" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="Gateway" render="Label" position="260,525" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
-        <widget source="DNS1text" render="Label" position="20,570" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="DNS1" render="Label" position="260,570" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
-        <widget source="DNS2text" render="Label" position="20,615" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="DNS2" render="Label" position="260,615" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
-        <widget name="HelpWindow" position="455,592" zPosition="2" size="1,1" transparent="1" alphatest="blend"/>
+        <widget source="introduction2" render="Label" position="20,645" size="820,80" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+        <widget source="introduction" render="Label" position="20,370" size="820,35" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" halign="left" transparent="1"/>
+        <widget source="IPtext" render="Label" position="35,415" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="IP" render="Label" position="260,415" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
+        <widget source="Netmasktext" render="Label" position="35,460" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="Mask" render="Label" position="260,460" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
+        <widget source="Gatewaytext" render="Label" position="35,505" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="Gateway" render="Label" position="260,505" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
+        <widget source="DNS1text" render="Label" position="35,550" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="DNS1" render="Label" position="260,550" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
+        <widget source="DNS2text" render="Label" position="35,595" size="210,35" zPosition="1" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="DNS2" render="Label" position="260,595" size="570,35" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1"/>
+        <widget name="HelpWindow" position="455,595" zPosition="2" size="1,1" transparent="1" alphatest="blend"/>
         <widget source="VKeyIcon" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/key_text.png" position="0,0" zPosition="1" size="0,0" transparent="10" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
@@ -4053,7 +4060,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 20), size = (80, 80), png = 2),
         <widget source="IF" render="Label" position="260,100" size="570,35" zPosition="10" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="menulist" position="20,145" size="810,315" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="description" render="Label" position="20,545" size="810,225" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>>
-<widget source="Statustext" render="Label" position="30,455" size="180,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="Statustext" render="Label" position="30,455" size="180,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="statuspic" position="115,464" size="15,16" pixmaps="MX_Slim-Line_NP/buttons/button_green.png,MX_Slim-Line_NP/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="396,710" size="48,48" alphatest="blend"/>
         <widget source="key_red" render="Label" position="456,710" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4073,9 +4080,11 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 20), size = (80, 80), png = 2),
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="570,710" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="840,710" size="48,48" alphatest="blend"/>
         <widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_yellow" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="key_blue" render="Label" position="900,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
@@ -4088,7 +4097,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 20), size = (80, 80), png = 2),
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/netww.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-        <widget source="list" render="Listbox" position="20,90" size="810,420" zPosition="10" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+        <widget source="list" render="Listbox" position="20,90" size="810,332" zPosition="10" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="TemplatedMultiContent">
                 <!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
 {"template": [
@@ -4098,17 +4107,17 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 14), size = (54, 54), png = 3), # in
 MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
 ],
 "fonts": [gFont("Regular", 34),gFont("Regular", 28)],
-"itemHeight": 105
+"itemHeight": 83
 }
 </convert>
         </widget>
         <widget source="introduction" render="Label" position="20,655" size="820,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="300,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="570,710" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="570,710" size="48,48" alphatest="blend"/>
         <widget source="key_red" render="Label" position="90,700" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_green" render="Label" position="360,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="key_yellow" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="key_blue" render="Label" position="630,700" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
