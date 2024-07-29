@@ -1,7 +1,7 @@
 <skin>
     <!--
 MX_Slim-Line_NP
-OpenBh version: 5.4.1 and Up
+OpenBh version: 5.4.1
 skin author: Matrix10
 THIS SKIN IS COPYRIGHT PROTECTED AND IS FOR OpenBh IMAGES ONLY.
 Pls Read skin info
@@ -167,6 +167,12 @@ Pls Read skin info
         <widget objectTypes="key_blue,Button,Label" name="key_blue" position="995,880" size="285,48" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="995,880" size="285,48" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
+<screen name="ButtonBarAuto1">
+        <panel name="RedAuto1" conditional="key_red"/>
+        <panel name="GreenAuto1" conditional="key_green"/>
+        <panel name="YellowAuto1" conditional="key_yellow"/>
+        <panel name="BlueAuto1" conditional="key_blue"/>
+    </screen>
     <screen name="RedAuto2">
         <widget source="key_red" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
@@ -198,12 +204,6 @@ Pls Read skin info
     <screen name="ActionButtonTemplate">
         <widget addon="ButtonSequence" connection="key_menu,key_help,key_text,VKeyIcon" pixmaps="key_menu:menu/menubutton.png,key_help:menu/help.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png" alignment="right" position="0,0" size="300,48" spacing="2" transparent="1" alphatest="blend" zPosition="10"/>
     </screen>
-    <screen name="ButtonBarAuto1">
-        <panel name="RedAuto1" conditional="key_red"/>
-        <panel name="GreenAuto1" conditional="key_green"/>
-        <panel name="YellowAuto1" conditional="key_yellow"/>
-        <panel name="BlueAuto1" conditional="key_blue"/>
-    </screen>
     <screen name="ButtonBarAuto2">
         <panel name="RedAuto2" conditional="key_red"/>
         <panel name="GreenAuto2" conditional="key_green"/>
@@ -215,6 +215,50 @@ Pls Read skin info
         <ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1230,715" size="48,48" alphatest="blend"/>
         <!-- this will show in every screen -->
         <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,715" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
+    </screen>
+        <screen name="RedAuto3">
+        <widget source="key_red" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_red,Button,Label" name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="GreenAuto3">
+        <widget source="key_green" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_green,Button,Label" name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="YellowAuto3">
+        <widget source="key_yellow" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="690,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="BlueAuto3">
+        <widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="ActionButtonTemplate1">
+        <widget addon="ButtonSequence" connection="key_menu,key_help,key_text,VKeyIcon" pixmaps="key_menu:menu/menubutton.png,key_help:menu/help.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png" alignment="right" position="0,0" size="300,48" spacing="2" transparent="1" alphatest="blend" zPosition="10"/>
+    </screen>
+    <screen name="ButtonBarAuto3">
+        <panel name="RedAuto3" conditional="key_red"/>
+        <panel name="GreenAuto3" conditional="key_green"/>
+        <panel name="YellowAuto3" conditional="key_yellow"/>
+        <panel name="BlueAuto3" conditional="key_blue"/>
+        <panel position="e-425,630" size="300,48">
+            <panel name="ActionButtonTemplate1"/>
+        </panel>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1230,630" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,630" size="48,48" alphatest="blend"/>
         <!-- this will show in every screen -->
     </screen>
     <screen name="InfoBar" position="0,910" size="1920,170" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent2">
@@ -3353,7 +3397,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
     </screen>
     <screen name="CableScanScreen" position="center,center" size="1302,782" title="CableScanScreen" flags="wfNoBorder" backgroundColor="transparent2">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/tune.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
         <widget name="config" position="20,90" size="810,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="introduction" position="20,680" size="810,90" font="Regular;28" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -3363,6 +3407,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
         <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ServiceName">Name</convert>
         </widget>
+        <panel name="ButtonBarAuto3"/>
         <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
     </screen>
     <screen name="CableScanStatus" position="center,center" size="1302,782" title="CableScanStatus" flags="wfNoBorder" backgroundColor="transparent2">
@@ -3441,7 +3486,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
         <widget name="scan_progress" position="30,210" size="840,30" borderWidth="2" borderColor="#c0c0c0"/>
         <widget name="servicelist" position="30,262" size="840,450" itemHeight="35" font="Regular;28" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
-    <screen name="Setup" position="center,center" size="1302,782" title="" flags="wfNoBorder">
+    <screen name="Setup" position="center,center" size="1302,782" title="" flags="wfNoBorder" backgroundColor="transparent2">
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="config" position="20,88" size="1260,494" zPosition="2" font="Regular;30" itemHeight="38" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -4871,11 +4916,11 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
-    <screen name="RecordTimerQuestion" zPosition="5" position="center,center" size="300,125" flags="wfNoBorder" backgroundColor="transparent2" title="Input">
+    <screen name="RecordTimerQuestion" zPosition="5" position="center,center" size="300,125" flags="wfNoBorder" title="Input">
         <widget name="text" position="0,0" size="0,0"/>
         <widget name="list" position="10,10" size="280,105" itemHeight="35" valign="center" font="Regular;34" transparent="1"/>
     </screen>
-    <screen name="RemoveTimerQuestion" zPosition="5" position="center,center" size="300,125" flags="wfNoBorder" backgroundColor="transparent2" title="Input">
+    <screen name="RemoveTimerQuestion" zPosition="5" position="center,center" size="300,125" flags="wfNoBorder" title="Input">
         <widget name="text" position="0,0" size="0,0"/>
         <widget name="list" position="10,10" size="280,105" itemHeight="35" valign="center" font="Regular;34" transparent="1"/>
     </screen>
