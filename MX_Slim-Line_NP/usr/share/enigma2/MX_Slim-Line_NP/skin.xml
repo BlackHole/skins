@@ -167,7 +167,7 @@ Pls Read skin info
         <widget objectTypes="key_blue,Button,Label" name="key_blue" position="995,880" size="285,48" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="995,880" size="285,48" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
-<screen name="ButtonBarAuto1">
+    <screen name="ButtonBarAuto1">
         <panel name="RedAuto1" conditional="key_red"/>
         <panel name="GreenAuto1" conditional="key_green"/>
         <panel name="YellowAuto1" conditional="key_yellow"/>
@@ -217,7 +217,7 @@ Pls Read skin info
         <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,715" size="48,48" alphatest="blend"/>
         <!-- this will show in every screen -->
     </screen>
-        <screen name="RedAuto3">
+    <screen name="RedAuto3">
         <widget source="key_red" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
@@ -1698,7 +1698,7 @@ MultiContentEntryPixmapAlphaBlend(pos=(10, 5), size=(100, 60), png=6, flags = BT
 </convert>
         </widget>
     </screen>
-    <screen name="Volume" position="70,5" zPosition="1" size="555,52" title="Volume" backgroundColor="transparent2" flags="wfNoBorder" >
+    <screen name="Volume" position="682,75" zPosition="1" size="555,52" title="Volume" flags="wfNoBorder" backgroundColor="transparent2">
         <ePixmap pixmap="MX_Slim-Line_NP/vol_back.png" position="0,0" size="555,52"/>
         <widget name="Volume" position="60,19" zPosition="1" pixmap="MX_Slim-Line_NP/vol.png" size="450,14" transparent="1"/>
     </screen>
@@ -3088,28 +3088,28 @@ self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 o
         <widget name="freeDiskSpace" position="20,810" size="1160,40" zPosition="1" halign="right" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="DescriptionBorder" position="0,0" size="0,0"/>
     </screen>
-	<screen name="NumberZap" position="center,center" size="720,200" flags="wfNoBorder" backgroundColor="transparent2">
+    <screen name="NumberZap" position="center,center" size="720,200" flags="wfNoBorder" backgroundColor="transparent2">
         <ePixmap position="0,0" zPosition="-1" size="720,200" pixmap="MX_Slim-Line_NP/zap.png" alphatest="off"/>
-		<widget name="number" position="center,10" size="180,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;64" borderWidth="2" valign="center" halign="center"/>
-		<widget name="servicename" position="center,70" size="680,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;42" borderWidth="2" valign="center" halign="center"/>
-		<widget source="Service" render="Label" position="center,120" size="680,50" zPosition="2" font="Regular; 28" valign="center" halign="center" backgroundColor="bgbutton" foregroundColor="button" transparent="1" >
-			<convert type="EventName">Name</convert>
-		</widget>
-	</screen>
-	<screen name="NumberZapPicon" position="center,center" size="1000,240" flags="wfNoBorder" backgroundColor="transparent2">
+        <widget name="number" position="center,10" size="180,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;64" borderWidth="2" valign="center" halign="center"/>
+        <widget name="servicename" position="center,70" size="680,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;42" borderWidth="2" valign="center" halign="center"/>
+        <widget source="Service" render="Label" position="center,120" size="680,50" zPosition="2" font="Regular; 28" valign="center" halign="center" backgroundColor="bgbutton" foregroundColor="button" transparent="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+    </screen>
+    <screen name="NumberZapPicon" position="center,center" size="1000,240" flags="wfNoBorder" backgroundColor="transparent2">
         <ePixmap position="0,0" zPosition="-1" size="1000,240" pixmap="MX_Slim-Line_NP/zappicon.png" alphatest="off"/>
-		<widget name="number" position="25,20" size="120,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;64" borderWidth="2" valign="center" halign="left"/>
-		<widget name="servicename" position="160,20" size="820,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;64" borderWidth="2" valign="center" halign="left"/>
-		<widget position="20,100" size="220,132" render="Picon" source="Service" transparent="1" zPosition="2" alphatest="blend">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<widget source="Service" render="Label" position="260,100" size="720,40" zPosition="2" font="Regular; 30" halign="left" foregroundColor="button" transparent="1" >
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Service" render="Label" position="260,140" size="720,90" zPosition="2" font="Regular; 26" halign="left" foregroundColor="button" transparent="1" >
-			<convert type="EventName">ShortDescription</convert>
-		</widget>
-	</screen>
+        <widget name="number" position="25,20" size="120,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;48" borderWidth="2" valign="center" halign="left"/>
+        <widget name="servicename" position="160,20" size="820,72" backgroundColor="bgbutton" foregroundColor="button" transparent="1" font="Regular;48" borderWidth="2" valign="center" halign="left"/>
+        <widget position="20,100" size="220,132" render="Picon" source="Service" transparent="1" zPosition="2" alphatest="blend">
+            <convert type="ServiceName">Reference</convert>
+        </widget>
+        <widget source="Service" render="Label" position="260,100" size="720,40" zPosition="2" font="Regular; 30" halign="left" foregroundColor="button" transparent="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="Service" render="Label" position="260,140" size="720,90" zPosition="2" font="Regular; 26" halign="left" foregroundColor="button" transparent="1">
+            <convert type="EventName">ShortDescription</convert>
+        </widget>
+    </screen>
     <screen name="ParentalControlChangePin" position="center,center" size="1302,782" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent2">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
