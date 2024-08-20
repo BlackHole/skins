@@ -3772,6 +3772,25 @@ MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # inde
 </convert>
         </widget>
     </screen>
+    <screen name="PackageManager" position="center,center" size="1302,782" title="Package Manager" flags="wfNoBorder" >
+        <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-3.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
+        <widget source="list" render="Listbox" position="20,88" size="1260,600" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+            <convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryText(pos = (10, 7), size = (1180, 32), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+MultiContentEntryText(pos = (10, 40), size = (1180, 32), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+MultiContentEntryPixmapAlphaBlend(pos = (1180, 16), size = (48, 48), png = 4), # index 4 is the status pixmap
+MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # index 4 is the div pixmap
+],
+"fonts": [gFont("Regular", 30),gFont("Regular", 24)],
+"itemHeight": 75
+}
+</convert>
+        </widget>
+        <panel name="ButtonBarAuto2"/>
+        <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
+    </screen>
     <screen name="Ipkg" position="center,center" size="1302,782" title="Installing Software..." flags="wfNoBorder" backgroundColor="transparent2">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
