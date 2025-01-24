@@ -1432,9 +1432,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
         <widget source="Tuner2" render="Label" position="20,220" size="810,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="Tuner3" render="Label" position="20,260" size="810,40" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="HDDHeader" render="Label" position="20,320" size="810,40" font="Regular;34" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="hdd" render="Label" position="20,370" size="810,150" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="hdd" render="Label" position="20,370" size="810,190" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="MountsHeader" render="Label" position="20,570" size="810,40" font="Regular;34" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="mounts" render="Label" position="20,620" size="810,150" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget source="mounts" render="Label" position="20,620" size="810,190" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
