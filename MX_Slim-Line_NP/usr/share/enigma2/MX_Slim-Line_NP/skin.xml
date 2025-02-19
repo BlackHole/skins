@@ -3509,6 +3509,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
         <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;50" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="config" position="20,88" size="1260,494" zPosition="2" font="Regular;30" itemHeight="38" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="description" position="10,590" size="1280,110" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="HelpWindow" position="715,505" zPosition="2" size="1,1" transparent="1" alphatest="blend"/>
         <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
         <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
         <widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
