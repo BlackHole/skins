@@ -3081,7 +3081,7 @@ self.instance.move(ePoint((1920-wsizex)//2, (1080-wsizey)//(count &gt; 7 and 2 o
             <convert type="MovieInfo">MetaDescription</convert>
         </widget>
         <widget name="chosenletter" position="20,90" size="1170,680" foregroundColor="yellow" font="Regular;28" halign="center" valign="center" backgroundColor="bgbutton" transparent="1" zPosition="4"/>
-        <widget name="movie_sort" position="1160,880" size="45,24" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend"/>
+        <widget name="movie_sort" position="1160,880" size="45,24" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/azold.png,icons/dtsdt.png,icons/dtsrt.png,icons/fza.png,icons/longest.png,icons/shortest.png" zPosition="10" transparent="1" alphatest="blend"/>
         <widget name="movie_off" position="1160,905" size="45,24" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend"/>
         <widget name="TrashcanSize" position="400,810" size="250,40" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget name="waitingtext" position="40,810" size="1170,40" zPosition="1" halign="left" font="Regular;28" backgroundColor="bgbutton" foregroundColor="button" transparent="1"/>
