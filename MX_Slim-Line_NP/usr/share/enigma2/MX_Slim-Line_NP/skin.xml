@@ -7850,6 +7850,7 @@ MultiContentEntryText(pos = (20, 128), size = (1240, 30), font=1, flags = RT_HAL
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="350,650" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="680,650" size="48,48" alphatest="blend"/>
         <ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="1010,650" size="48,48" alphatest="blend"/>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/help.png" position="1240,655" size="48,48" alphatest="blend"/>
         <widget source="key_red" render="Label" position="75,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_green" render="Label" position="405,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1"/>
         <widget source="key_yellow" render="Label" position="735,640" size="300,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="bgbutton" transparent="1"/>
