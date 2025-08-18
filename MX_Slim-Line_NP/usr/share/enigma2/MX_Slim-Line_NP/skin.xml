@@ -85,7 +85,7 @@ Pls Read skin info
         <parameter name="ChoicelistDash" value="0,0,850,35"/>
         <parameter name="ChoicelistName" value="45,2,1220,35"/>
         <parameter name="ServiceInfoLeft" value="0,0,370,45"/>
-        <parameter name="ServiceInfoRight" value="380,0,420,45"/>
+        <parameter name="ServiceInfoRight" value="380,0,520,45"/>
         <parameter name="VirtualKeyBoard" value="76,72"/>
         <parameter name="AutotimerEnabledIcon" value="2,1,25,25"/>
         <parameter name="AutotimerRecordIcon" value="30,1,25,25"/>
