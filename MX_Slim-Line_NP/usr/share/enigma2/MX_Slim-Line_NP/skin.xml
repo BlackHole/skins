@@ -312,6 +312,10 @@ Pls Read skin info
             <convert type="ServiceInfo">IsCrypted</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_crypt_on.png" position="1447,32" size="34,25" zPosition="2" alphatest="blend">
+            <convert type="ServiceInfo">IsSoftCSA</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
         <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="38,25" zPosition="1" pixmap="MX_Slim-Line_NP/ico_sd_on.png" alphatest="blend">
             <convert type="ServiceInfo">IsSD</convert>
             <convert type="ConditionalShowHide"/>
@@ -638,6 +642,10 @@ Pls Read skin info
         <ePixmap pixmap="MX_Slim-Line_NP/ico_crypt_off.png" position="1447,32" size="34,25" zPosition="1" alphatest="blend"/>
         <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_crypt_on.png" position="1447,32" size="34,25" zPosition="2" alphatest="blend">
             <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_crypt_on.png" position="1447,32" size="34,25" zPosition="2" alphatest="blend">
+            <convert type="ServiceInfo">IsSoftCSA</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
         <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="38,25" zPosition="1" pixmap="MX_Slim-Line_NP/ico_sd_on.png" alphatest="blend">
@@ -1609,6 +1617,10 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
         <ePixmap pixmap="MX_Slim-Line_NP/ico_crypt_off.png" position="1451,36" size="62,44" zPosition="1" alphatest="blend"/>
         <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_crypt_on.png" position="1451,36" size="62,44" zPosition="2" alphatest="blend">
             <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="MX_Slim-Line_NP/ico_crypt_on.png" position="1451,36" size="62,44" zPosition="2" alphatest="blend">
+            <convert type="ServiceInfo">IsSoftCSA</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
         <ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_Slim-Line_NP/ico_hd_off.png" alphatest="blend"/>
