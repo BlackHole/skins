@@ -1,7 +1,7 @@
 <skin>
     <!--
 MX_Slim-Line_NP
-OpenBh version: 5.4.1
+OpenBh version: 5.6
 skin author: Matrix10
 THIS SKIN IS COPYRIGHT PROTECTED AND IS FOR OpenBh IMAGES ONLY.
 Pls Read skin info
@@ -184,7 +184,7 @@ Pls Read skin info
         <widget source="key_green" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget objectTypes="key_green,Button,Label" name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_green,Button,Label" name="key_green" position="39,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
     <screen name="YellowAuto2">
@@ -198,7 +198,7 @@ Pls Read skin info
         <widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend">
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
     </screen>
     <screen name="ActionButtonTemplate">
@@ -259,6 +259,50 @@ Pls Read skin info
         <ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1230,630" size="48,48" alphatest="blend"/>
         <!-- this will show in every screen -->
         <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,630" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
+    </screen>
+    <screen name="RedAuto4">
+        <widget source="key_red" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_red,Button,Label" name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="GreenAuto4">
+        <widget source="key_green" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_green,Button,Label" name="key_green" position="39,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="390,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="YellowAuto4">
+        <widget source="key_yellow" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="690,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="BlueAuto4">
+        <widget source="key_blue" render="Pixmap" pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="90,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="990,700" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+    </screen>
+    <screen name="ActionButtonTemplate2">
+        <widget addon="ButtonSequence" connection="key_menu,key_help,key_text,VKeyIcon" pixmaps="key_menu:menu/menubutton.png,key_help:menu/help.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png" alignment="right" position="0,0" size="300,48" spacing="2" transparent="1" alphatest="blend" zPosition="10"/>
+    </screen>
+    <screen name="ButtonBarAuto4">
+        <panel name="RedAuto4" conditional="key_red"/>
+        <panel name="GreenAuto4" conditional="key_green"/>
+        <panel name="YellowAuto4" conditional="key_yellow"/>
+        <panel name="BlueAuto4" conditional="key_blue"/>
+        <panel position="e-325,630" size="300,48">
+            <panel name="ActionButtonTemplate2"/>
+        </panel>
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/exit.png" position="1230,715" size="48,48" alphatest="blend"/>
+        <!-- this will show in every screen -->
+        <ePixmap pixmap="MX_Slim-Line_NP/menu/ok.png" position="1180,715" size="48,48" alphatest="blend"/>
         <!-- this will show in every screen -->
     </screen>
     <screen name="InfoBar" position="0,910" size="1920,170" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent2">
@@ -3524,8 +3568,10 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
         <widget name="HelpWindow" position="715,505" zPosition="2" size="1,1" transparent="1" alphatest="blend"/>
         <eLabel position="6,590" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
         <eLabel position="6,697" size="1290,3" zPosition="-1" backgroundColor="#414141"/>
-        <widget name="footnote" position="30,710" size="400,60" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-        <panel name="ButtonBarAuto2"/>
+        <widget name="footnote" position="30,635" size="400,60" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="status" position="20,570" size="810,35" halign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <widget name="statusbar" position="20,610" size="810,35" halign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+        <panel name="ButtonBarAuto4"/>
     </screen>
     <screen name="RemoteControlSelection" position="center,center" size="1302,782" title="Remote Control Selection - Teste" flags="wfNoBorder" backgroundColor="transparent2">
         <widget name="rc" position="1010,90" size="154,500" pixmap="MX_Slim-Line_NP/rc.png" zPosition="10" alphatest="blend"/>
@@ -5088,31 +5134,7 @@ MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
-    <screen name="EPGImportConfig" position="center,center" size="1302,782" title="EPG Import Configuration" flags="wfNoBorder" backgroundColor="transparent2">
-        <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/epglist.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/menubutton.png" position="1230,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/menu/epg.png" position="1230,630" size="48,48" alphatest="blend"/>
-        <widget name="config" position="20,90" size="810,520" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-        <widget name="status" position="20,620" size="810,35" halign="left" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="statusbar" position="20,660" size="810,35" halign="left" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/red48x48.png" position="30,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/green48x48.png" position="330,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/yellow48x48.png" position="630,710" size="48,48" alphatest="blend"/>
-        <ePixmap pixmap="MX_Slim-Line_NP/buttons/blue48x48.png" position="930,710" size="48,48" alphatest="blend"/>
-        <widget name="key_red" position="90,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="key_green" position="390,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="key_yellow" position="690,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="key_blue" position="990,700" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-            <convert type="ClockToText">Default</convert>
-        </widget>
-        <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-            <convert type="ServiceName">Name</convert>
-        </widget>
-        <widget name="HelpWindow" position="740,905" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
-    </screen>
+
     <screen name="EPGImportSources" position="center,center" size="1302,782" title="EPG Import Sources" flags="wfNoBorder" backgroundColor="transparent2">
         <widget source="Title" render="Label" position="40,15" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300-2.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
