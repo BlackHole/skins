@@ -7102,7 +7102,7 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
         <ePixmap pixmap="MX_Slim-Line_NP/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off"/>
         <ePixmap pixmap="MX_Slim-Line_NP/menu/softwaree.png" position="920,165" size="300,300" zPosition="-1" alphatest="on"/>
         <widget name="list" position="20,90" size="810,520" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-        <widget name="description" position="20,620" size="810,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
+        <widget name="description" position="20,450" size="810,200" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="center" transparent="1"/>
         <widget name="text" position="20,670" size="810,80" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
         <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
             <convert type="ClockToText">Default</convert>
