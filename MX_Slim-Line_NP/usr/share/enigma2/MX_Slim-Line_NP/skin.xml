@@ -5752,7 +5752,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
             <convert type="ServiceName">Name</convert>
         </widget>
     </screen>
-    <screen name="QuitMainloopScreen" position="0,0" size="1920,1080" backgroundColor="black" flags="wfNoBorder">
+    <screen name="QuitMainloopScreen" position="0,0" size="1920,1080" backgroundColor="black" flags="wfNoBorder" zPosition="100">
         <ePixmap pixmap="MX_Slim-Line_NP/icons/input_info.png" position="934,500" size="53,53" alphatest="blend"/>
         <widget name="text" position="0,400" size="1920,100" font="Regular;28" foregroundColor="#ffffff" backgroundColor="black" halign="center"/>
     </screen>
